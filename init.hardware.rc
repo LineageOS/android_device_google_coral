@@ -914,7 +914,6 @@ service bugreport /system/bin/dumpstate -d -p -B -z \
     class main
     disabled
     oneshot
-    keycodes 114 115 116
 
 on property:ro.boot.hardware.dsds=1
     setprop persist.radio.multisim.config dsds
