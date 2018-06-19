@@ -64,6 +64,10 @@ function blob_fixup() {
         sed -i 's/xml version="2.0"/xml version="1.0"/' "${2}"
         ;;
 
+    # Fix typo in qcrilmsgtunnel whitelist
+    product/etc/sysconfig/nexus.xml)
+        sed -i 's/qulacomm/qualcomm/' "${2}"
+        ;;
     esac
 }
 
