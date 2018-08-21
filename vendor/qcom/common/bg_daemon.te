@@ -1,0 +1,7 @@
+#policy for bg daemon
+type bg_daemon, domain;
+type bg_daemon_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(bg_daemon)
+
+
