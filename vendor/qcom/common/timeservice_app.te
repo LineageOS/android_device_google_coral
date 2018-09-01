@@ -1,0 +1,4 @@
+type timeservice_app, domain;
+app_domain(timeservice_app);
+
+

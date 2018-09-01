@@ -1,0 +1,8 @@
+# cdsprpcd daemon
+type cdsprpcd, domain;
+type cdsprpcd_exec, exec_type, vendor_file_type, file_type;
+
+# Started by init
+init_daemon_domain(cdsprpcd)
+
+

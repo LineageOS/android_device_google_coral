@@ -1,0 +1,7 @@
+# Policy for ssr_setup
+# ssr_setup - ssr_setup domain
+type vendor_ssr_setup, domain;
+type vendor_ssr_setup_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_ssr_setup);
+
+
