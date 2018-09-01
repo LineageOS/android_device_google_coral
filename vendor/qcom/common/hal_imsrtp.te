@@ -1,0 +1,7 @@
+#ims rtp service
+type hal_imsrtp, domain;
+type hal_imsrtp_exec, exec_type, vendor_file_type, file_type;
+
+# Started by init
+init_daemon_domain(hal_imsrtp)
+
