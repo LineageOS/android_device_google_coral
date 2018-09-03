@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
 
+# Enable missing props
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.opa.eligible_device=true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
