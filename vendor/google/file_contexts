@@ -17,3 +17,5 @@
 /vendor/bin/ramoops                                                         u:object_r:ramoops_exec:s0
 /vendor/bin/init\.ramoops\.sh                                               u:object_r:ramoops_exec:s0
 /vendor/bin/init\.insmod\.sh                                                u:object_r:init-insmod-sh_exec:s0
+/vendor/bin/hw/hardware\.google\.light@1\.0-service                         u:object_r:hal_light_default_exec:s0
+
