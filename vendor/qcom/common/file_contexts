@@ -4,7 +4,6 @@
 /(vendor|system/vendor)/bin/ATFWD-daemon        u:object_r:atfwd_exec:s0
 /(vendor|system/vendor)/bin/PktRspTest          u:object_r:diag_exec:s0
 /(vendor|system/vendor)/bin/audiod              u:object_r:audiod_exec:s0
-/(vendor|system/vendor)/bin/nqnfcinfo           u:object_r:nqnfcinfo_exec:s0
 /(vendor|system/vendor)/bin/charger_monitor                     u:object_r:charger_monitor_exec:s0
 /(vendor|system/vendor)/bin/hvdcp_opti          u:object_r:hvdcp_exec:s0
 /(vendor|system/vendor)/bin/cnd                 u:object_r:cnd_exec:s0
@@ -159,8 +158,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service-qti u:object_r:hal_keymaster_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-strongbox-service-qti u:object_r:hal_keymaster_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service-qti u:object_r:hal_gatekeeper_qti_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.nxp\.hardware\.nfc@1\.0-service     u:object_r:hal_nfc_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.nxp\.hardware\.nfc@1\.1-service     u:object_r:hal_nfc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.1-service\.st     u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/qdmastatsd          u:object_r:qdmastatsd_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.alarm@1\.0-service      u:object_r:hal_alarm_qti_default_exec:s0
 /(vendor|system/vendor)/bin/imsrcsd             u:object_r:hal_rcsservice_exec:s0
@@ -332,5 +330,7 @@
 #
 /(vendor|system/vendor)/bin/toolbox_vendor                          u:object_r:vendor_toolbox_exec:s0
 
+/dev/st21nfc                                     u:object_r:nfc_device:s0
+/data/nfc(/.*)?                        u:object_r:nfc_data_file:s0
 #Android NN Driver
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-qti u:object_r:hal_neuralnetworks_default_exec:s0
