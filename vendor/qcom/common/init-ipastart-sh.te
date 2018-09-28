@@ -1,4 +1,0 @@
-type init-qcom-ipastart-sh, domain;
-type init-qcom-ipastart-sh_exec, exec_type, vendor_file_type, file_type;
-
-init_daemon_domain(init-qcom-ipastart-sh)

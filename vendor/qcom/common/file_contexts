@@ -90,6 +90,8 @@
 /(vendor|system/vendor)/bin/qcom-system-daemon  u:object_r:vendor_qcomsysd_exec:s0
 /(vendor|system/vendor)/bin/poweroffhandler                     u:object_r:poweroffhandler_exec:s0
 /(vendor|system/vendor)/xbin/qlogd                              u:object_r:qlogd_exec:s0
+/(vendor|system/vendor)/bin/ipacm                               u:object_r:ipacm_exec:s0
+/(vendor|system/vendor)/bin/ipacm-diag          u:object_r:ipacm-diag_exec:s0
 /(vendor|system/vendor)/bin/dpmQmiMgr           u:object_r:hal_dpmQmiMgr_exec:s0
 #/(vendor|system/vendor)/bin/dpmd                                u:object_r:dpmd_exec:s0
 /(vendor|system/vendor)/bin/ssr_setup           u:object_r:vendor_ssr_setup_exec:s0
@@ -332,19 +334,3 @@
 /data/nfc(/.*)?                        u:object_r:nfc_data_file:s0
 #Android NN Driver
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-qti u:object_r:hal_neuralnetworks_default_exec:s0
-
-# dev nodes
-/dev/ipa                                        u:object_r:ipa_dev:s0
-/dev/wwan_ioctl                                 u:object_r:ipa_dev:s0
-/dev/ipaNatTable                                u:object_r:ipa_dev:s0
-
-# dev socket nodes
-/dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
-
-# files in /vendor
-/vendor/bin/ipacm               u:object_r:hal_tetheroffload_default_exec:s0
-/vendor/bin/ipacm-diag          u:object_r:hal_tetheroffload_default_exec:s0
-/vendor/bin/init\.qcom\.ipastart\.sh                                 u:object_r:init-qcom-ipastart-sh_exec:s0
-
-# data files
-/data/vendor/ipa(/.*)?                 u:object_r:ipa_vendor_data_file:s0
