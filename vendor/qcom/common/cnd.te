@@ -5,3 +5,4 @@ file_type_auto_trans(cnd, socket_device, cnd_socket);
 
 # cnd is started by init, type transit from init domain to cnd domain
 init_daemon_domain(cnd)
+
