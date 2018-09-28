@@ -1,4 +1,4 @@
 typeattribute dpmd coredomain;
-type dpmd_exec, exec_type, file_type;
+type dpmd_exec, system_file_type, exec_type, file_type;
 
 init_daemon_domain(dpmd)
