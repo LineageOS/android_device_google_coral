@@ -18,8 +18,6 @@ type freq_prop, property_type;
 type vm_bms_prop, property_type; #To start vm_bms
 type vendor_dataqti_prop, property_type;
 type vendor_dataadpl_prop, property_type;
-type vendor_ipacm_prop, property_type;
-type vendor_ipacm-diag_prop, property_type;
 type cnd_vendor_prop, property_type;
 type sensors_prop, property_type;
 type slpi_prop, property_type;
