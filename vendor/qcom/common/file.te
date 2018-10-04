@@ -368,6 +368,9 @@ type hal_neuralnetworks_data_file, file_type, data_file_type;
 #mpss rfs files
 type mpss_rfs_data_file, data_file_type, file_type;
 
+# sysfs wlan
+type sysfs_msm_wlan, sysfs_type, fs_type;
+
 type sysfs_scsi_devices_0000, sysfs_type, fs_type;
 
 allow firmware_file self:filesystem associate;
