@@ -1,0 +1,19 @@
+# airbrush service
+type airbrush, domain;
+type airbrush_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(airbrush)
+
+hwbinder_use(airbrush)
+add_hwservice(airbrush, hal_airbrush_hwservice)
+get_prop(airbrush, hwservicemanager_prop)
+
+# TODO(b/118499879) Remove debugfs access.
+allow airbrush debugfs_airbrush:file rw_file_perms;
+allow airbrush airbrush_device:chr_file rw_file_perms;
+
+# TODO(vharron) Enable HAL/GCA to access the binder interface.
+# allow airbrush google_camera_app:binder call;
+# allow airbrush hal_camera_default:binder call;
+allow airbrush hal_graphics_allocator_default:fd use;
+allow airbrush ion_device:chr_file r_file_perms;
