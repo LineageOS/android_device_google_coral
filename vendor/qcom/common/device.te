@@ -48,6 +48,8 @@ type dip_device, dev_type;
 type mdtp_device, dev_type;
 type sd_device, dev_type;
 
+type ssd_block_device, dev_type;
+
 #ESOC device
 type esoc_device, dev_type;
 
