@@ -1,4 +1,5 @@
 # dev nodes
+/dev/abc-pcie-tpu_0                                                         u:object_r:abc_tpu_device:s0
 /dev/citadel0                                                               u:object_r:citadel_device:s0
 /dev/access-metadata                                                        u:object_r:ramoops_device:s0
 /dev/access-ramoops                                                         u:object_r:ramoops_device:s0
@@ -23,5 +24,5 @@
 /vendor/bin/hw/hardware\.google\.light@1\.0-service                         u:object_r:hal_light_default_exec:s0
 /system/bin/hw/hardware\.google\.pixelstats@1\.0-service                    u:object_r:pixelstats_system_exec:s0
 /vendor/bin/hw/android\.hardware\.health@2\.0-service\.coral                u:object_r:hal_health_default_exec:s0
-/vendor/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-noronha-reference-oem   u:object_r:hal_neuralnetworks_darwinn_exec:s0
+/vendor/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-noronha-oem   u:object_r:hal_neuralnetworks_darwinn_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.pixel          u:object_r:hal_power_stats_default_exec:s0
