@@ -1,0 +1,9 @@
+allow tee self:capability { chown setgid setuid sys_admin sys_rawio };
+
+allow tee device:dir r_dir_perms;
+
+set_prop(tee, vendor_tee_listener_prop)
+vndbinder_use(tee)
+allow tee block_device:dir { getattr search };
+allow tee ssd_block_device:blk_file rw_file_perms;
+allow tee sg_device:chr_file { rw_file_perms setattr };
