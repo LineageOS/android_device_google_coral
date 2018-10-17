@@ -21,3 +21,4 @@
 /vendor/bin/init\.insmod\.sh                                                u:object_r:init-insmod-sh_exec:s0
 /vendor/bin/hw/hardware\.google\.light@1\.0-service                         u:object_r:hal_light_default_exec:s0
 /system/bin/hw/hardware\.google\.pixelstats@1\.0-service                    u:object_r:pixelstats_system_exec:s0
+/vendor/bin/hw/android\.hardware\.health@2\.0-service\.coral                u:object_r:hal_health_default_exec:s0
