@@ -35,6 +35,8 @@ type chre_socket, file_type;
 #Define the timeout for platform specific transports
 type sysfs_hsic_modem_wait, sysfs_type, fs_type;
 type sysfs_smd_open_timeout, sysfs_type, fs_type;
+type sysfs_soc, sysfs_type, fs_type;
+type sysfs_msm_subsys, sysfs_type, fs_type;
 
 #Define the files written during the operation of netmgrd and qmuxd
 type netmgrd_data_file, file_type, data_file_type;

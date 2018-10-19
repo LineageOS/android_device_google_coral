@@ -241,7 +241,6 @@
 
 # same-process HAL files and their dependencies
 #
-/vendor/lib(64)?/hw/gralloc\.msm8998\.so   u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/hw/android\.hardware\.graphics\.mapper@2\.0-impl-qti-display\.so   u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.qti\.hardware\.display\.mapper@1\.0\.so   u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libqdMetaData\.so         u:object_r:same_process_hal_file:s0
@@ -250,7 +249,6 @@
 /vendor/lib(64)?/libadreno_utils\.so       u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgsl\.so                u:object_r:same_process_hal_file:s0
 
-/vendor/lib(64)?/hw/vulkan\.msm8998\.so    u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libEGL_adreno\.so         u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libGLESv1_CM_adreno\.so   u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libGLESv2_adreno\.so      u:object_r:same_process_hal_file:s0
@@ -342,6 +340,7 @@
 /dev/dri/card0                                  u:object_r:graphics_device:s0
 /dev/adsprpc-smd                                u:object_r:qdsp_device:s0
 /dev/adsprpc-smd-secure                         u:object_r:qdsp_device:s0
+/dev/kgsl-3d0                                   u:object_r:gpu_device:s0
 
 # dev socket nodes
 /dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
