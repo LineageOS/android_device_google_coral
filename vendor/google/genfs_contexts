@@ -1,1 +1,2 @@
 genfscon proc /sys/kernel/sched_boost                 u:object_r:proc_sysctl_schedboost:s0
+genfscon sysfs /devices/soc0                          u:object_r:sysfs_soc:s0
