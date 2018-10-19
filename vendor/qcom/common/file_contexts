@@ -340,6 +340,8 @@
 /dev/v4l-subdev.*                               u:object_r:video_device:s0
 /dev/jpeg[0-9]*                                 u:object_r:video_device:s0
 /dev/dri/card0                                  u:object_r:graphics_device:s0
+/dev/adsprpc-smd                                u:object_r:qdsp_device:s0
+/dev/adsprpc-smd-secure                         u:object_r:qdsp_device:s0
 
 # dev socket nodes
 /dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
