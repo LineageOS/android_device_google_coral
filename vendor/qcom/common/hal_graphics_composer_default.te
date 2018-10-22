@@ -1,0 +1,3 @@
+vndbinder_use(hal_graphics_composer_default)
+allow hal_graphics_composer_default fwk_sensor_hwservice:hwservice_manager find;
+allow hal_graphics_composer_default qdisplay_service:service_manager { add find };

@@ -5,4 +5,6 @@ type vendor_per_mgr, domain;
 type vendor_per_mgr_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(vendor_per_mgr);
 
+vndbinder_use(vendor_per_mgr)
+binder_call(vendor_per_mgr, vendor_per_mgr)
 set_prop(vendor_per_mgr, vendor_per_mgr_state_prop)
