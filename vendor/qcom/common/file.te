@@ -1,4 +1,4 @@
-# Default type for anything under /firmware.
+# Default type for anything under /vendor/firmware_mnt.
 type firmware_file, file_type, contextmount_type, vendor_file_type;
 
 # All files under /vendor/firmware
