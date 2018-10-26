@@ -7,6 +7,7 @@ persist.camera.                                 u:object_r:camera_prop:s0
 persist.vendor.net.doxlat                       u:object_r:vendor_xlat_prop:s0
 persist.vendor.radio.adb_log_on                 u:object_r:vendor_radio_prop:s0
 persist.vendor.radio.ril_payload_on             u:object_r:vendor_radio_prop:s0
+persist.vendor.radio.sap_silent_pin             u:object_r:vendor_radio_prop:s0
 
 ro.qc.sdk.audio.fluencetype                     u:object_r:vendor_audio_prop:s0
 ro.vendor.ril.                                  u:object_r:vendor_radio_prop:s0
