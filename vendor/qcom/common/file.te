@@ -287,7 +287,7 @@ type qdma_socket, file_type;
 type qti_debugfs, fs_type, debugfs_type;
 
 # vendor radio files
-type vendor_radio_data_file, file_type, data_file_type;
+type vendor_radio_data_file, file_type, data_file_type, mlstrustedobject;
 
 # vendor MBN files
 type vendor_mbn_data_file, file_type, data_file_type;
@@ -389,6 +389,9 @@ type debugfs_wlan, debugfs_type, fs_type;
 
 # debugfs icnss
 type debugfs_icnss, debugfs_type, fs_type;
+
+# CNSS file
+type cnss_vendor_data_file, file_type, data_file_type, mlstrustedobject;
 
 # modem factory data reset file
 type modem_fdr_file, file_type, data_file_type;

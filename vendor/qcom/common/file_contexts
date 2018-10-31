@@ -74,6 +74,7 @@
 /(vendor|system/vendor)/bin/spdaemon            u:object_r:spdaemon_exec:s0
 /(vendor|system/vendor)/bin/sec_nvm             u:object_r:sec_nvm_exec:s0
 /(vendor|system/vendor)/bin/cnss-daemon         u:object_r:wcnss_service_exec:s0
+/(vendor|system/vendor)/bin/cnss_diag           u:object_r:wcnss_service_exec:s0
 /(vendor|system/vendor)/bin/hostapd_cli         u:object_r:hostapd_exec:s0
 /(vendor|system/vendor)/bin/adsprpcd            u:object_r:adsprpcd_exec:s0
 /(vendor|system/vendor)/bin/cdsprpcd            u:object_r:cdsprpcd_exec:s0
@@ -354,3 +355,6 @@
 # spdaemon and sec_nvm files
 /dev/spdaemon_ssr                               u:object_r:spdaemon_ssr_device:s0
 /dev/sec_nvm_.*                                 u:object_r:sec_nvm_device:s0
+
+# cnss_diag files
+/data/vendor/wifi/cnss_diag(/.*)?               u:object_r:cnss_vendor_data_file:s0

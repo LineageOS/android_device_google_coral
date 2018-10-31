@@ -7,3 +7,13 @@ net_domain(wcnss_service)
 # TODO(b/121988932): investigate wcnss_service behavior
 allow wcnss_service self:qipcrtr_socket create_socket_perms_no_ioctl;
 allow wcnss_service self:netlink_generic_socket create_socket_perms_no_ioctl;
+
+allow wcnss_service self:netlink_socket create_socket_perms_no_ioctl;
+
+allow wcnss_service cnss_vendor_data_file:dir create_dir_perms;
+allow wcnss_service cnss_vendor_data_file:file create_file_perms;
+
+# pkt logging for cnss_diag
+userdebug_or_eng(`
+  r_dir_file(wcnss_service, proc_wifi_dbg)
+')

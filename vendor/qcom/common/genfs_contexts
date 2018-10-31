@@ -15,3 +15,4 @@ genfscon debugfs /icnss                                                         
 genfscon sysfs /module/tcp_cubic/parameters                                       u:object_r:sysfs_net:s0
 genfscon sysfs /devices/virtual/net                                               u:object_r:sysfs_net:s0
 genfscon sysfs /module/diagchar                                                   u:object_r:sysfs_diag:s0
+genfscon proc /ath_pktlog/cld                                                     u:object_r:proc_wifi_dbg:s0
