@@ -37,3 +37,5 @@
 # Vendor libs that are exposed to apps (those listed in /vendor/etc/public.libraries.txt
 # and their dependencies)
 /vendor/lib(64)?/libairbrush\.so                                                      u:object_r:same_process_hal_file:s0
+
+/mnt/vendor/persist/battery(/.*)?                                                     u:object_r:persist_battery_file:s0
