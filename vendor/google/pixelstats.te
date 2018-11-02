@@ -9,3 +9,5 @@ init_daemon_domain(pixelstats_system)
 type pixelstats_system_exec, exec_type, file_type, system_file_type;
 
 add_hwservice(pixelstats_system, hal_pixelstats_hwservice)
+
+unix_socket_send(pixelstats_system, statsdw, statsd)
