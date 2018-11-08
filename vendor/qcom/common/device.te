@@ -157,9 +157,6 @@ type gpt_block_device, dev_type;
 type modem_block_device, dev_type;
 type uefi_block_device, dev_type;
 
-#define bgcom char device
-type bg_daemon_device, dev_type;
-
 type persist_block_device, dev_type;
 
 #Define npu device
