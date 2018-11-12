@@ -7,3 +7,13 @@ init_daemon_domain(hal_dumpstate_impl)
 # Execute dump scripts from vendor partition
 allow hal_dumpstate_impl vendor_shell_exec:file rx_file_perms;
 allow hal_dumpstate_impl vendor_toolbox_exec:file rx_file_perms;
+allow hal_dumpstate_impl debugfs_f2fs:dir r_dir_perms;
+allow hal_dumpstate_impl debugfs_f2fs:file r_file_perms;
+allow hal_dumpstate_impl debugfs_ufs:dir r_dir_perms;
+allow hal_dumpstate_impl debugfs_ufs:file r_file_perms;
+allow hal_dumpstate_impl proc_f2fs:dir r_dir_perms;
+allow hal_dumpstate_impl proc_f2fs:file r_file_perms;
+
+# Access to UFS info
+allow hal_dumpstate_impl sysfs_scsi_devices_0000:dir r_dir_perms;
+allow hal_dumpstate_impl sysfs_scsi_devices_0000:file r_file_perms;
