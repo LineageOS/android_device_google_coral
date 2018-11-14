@@ -5,3 +5,7 @@ type ims_exec, exec_type, vendor_file_type, file_type;
 # Started by init
 init_daemon_domain(ims)
 
+#SSD_RIL+
+allow ims vendor_radio_data_file:dir rw_dir_perms;
+allow ims vendor_radio_data_file:file create_file_perms;
+#SSD_RIL-
