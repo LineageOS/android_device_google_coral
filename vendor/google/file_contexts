@@ -33,6 +33,7 @@
 /vendor/bin/init\.insmod\.sh                                                          u:object_r:init-insmod-sh_exec:s0
 /vendor/bin/init\.ramoops\.sh                                                         u:object_r:ramoops_exec:s0
 /vendor/bin/ramoops                                                                   u:object_r:ramoops_exec:s0
+/vendor/bin/hw/android\.hardware\.dumpstate@1\.0-service\.coral                       u:object_r:hal_dumpstate_impl_exec:s0
 
 # Vendor libs that are exposed to apps (those listed in /vendor/etc/public.libraries.txt
 # and their dependencies)
