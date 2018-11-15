@@ -1,0 +1,3 @@
+type vendor_scve, domain;
+type vendor_scve_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_scve)
