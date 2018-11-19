@@ -17,3 +17,9 @@ allow hal_dumpstate_impl proc_f2fs:file r_file_perms;
 # Access to UFS info
 allow hal_dumpstate_impl sysfs_scsi_devices_0000:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_scsi_devices_0000:file r_file_perms;
+
+# Access to thermal debug data
+r_dir_file(hal_dumpstate_impl, sysfs_thermal)
+
+# Access to files for dumping
+allow hal_dumpstate_impl sysfs:dir r_dir_perms;
