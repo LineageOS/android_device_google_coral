@@ -1,5 +1,6 @@
 type debugfs_airbrush, debugfs_type, fs_type;
 type persist_battery_file, file_type;
+type sysfs_touch, sysfs_type, fs_type;
 
 #f2fs file
 type debugfs_f2fs, debugfs_type, fs_type;
