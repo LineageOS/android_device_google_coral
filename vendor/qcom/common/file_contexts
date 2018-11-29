@@ -342,6 +342,7 @@
 
 # dev socket nodes
 /dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
+/dev/socket/location(/.*)?                      u:object_r:location_socket:s0
 
 # files in /vendor
 /vendor/bin/ipacm               u:object_r:hal_tetheroffload_default_exec:s0
