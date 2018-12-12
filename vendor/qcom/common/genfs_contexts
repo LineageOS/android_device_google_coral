@@ -1,0 +1,1 @@
+genfscon sysfs /kernel/wifi/wlan                                                 u:object_r:sysfs_msm_wlan:s0

@@ -144,3 +144,6 @@ type mm_video_prop, property_type;
 
 #rmt_storage
 type ctl_vendor_rmt_storage_prop, property_type;
+
+# Wifi version recorder
+type vendor_wifi_version, property_type;

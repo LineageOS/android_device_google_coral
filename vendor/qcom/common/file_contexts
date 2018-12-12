@@ -349,6 +349,7 @@
 # files in /vendor
 /vendor/bin/ipacm               u:object_r:hal_tetheroffload_default_exec:s0
 /vendor/bin/ipacm-diag          u:object_r:hal_tetheroffload_default_exec:s0
+/vendor/bin/init\.qcom\.wlan\.sh                                     u:object_r:init-qcom-wlan-sh_exec:s0
 
 # data files
 /data/vendor/ipa(/.*)?                 u:object_r:ipa_vendor_data_file:s0
