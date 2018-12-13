@@ -1,2 +1,5 @@
 #thermal HAL
 type vendor_thermal_prop, property_type;
+
+# PowerHal
+type power_prop, property_type;
