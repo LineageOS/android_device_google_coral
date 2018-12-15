@@ -171,6 +171,9 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.sensorscalibrate@1\.0-service u:object_r:hal_sensorscalibrate_qti_default_exec:s0
 /(vendor|system/vendor)/bin/power_off_alarm        u:object_r:power_off_alarm_exec:s0
 
+# dev socket nodes
+/dev/socket/chre                                u:object_r:chre_socket:s0
+
 ###################################
 # persist files
 #
