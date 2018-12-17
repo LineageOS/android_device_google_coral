@@ -14,3 +14,7 @@ genfscon proc /irq                                    u:object_r:proc_irq:s0
 
 # Touch
 genfscon sysfs /devices/platform/soc/890000.spi/spi_master/spi1/spi1.0		u:object_r:sysfs_touch:s0
+
+# Display
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight                          u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight/panel0-backlight/vr_mode u:object_r:sysfs_lights:s0

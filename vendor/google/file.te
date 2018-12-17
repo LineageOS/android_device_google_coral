@@ -8,3 +8,6 @@ type proc_f2fs, proc_type, fs_type;
 
 #ufs files
 type debugfs_ufs, debugfs_type, fs_type;
+
+#lights file
+type sysfs_lights, sysfs_type, fs_type;
