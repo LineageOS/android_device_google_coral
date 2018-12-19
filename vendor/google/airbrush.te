@@ -8,12 +8,7 @@ hwbinder_use(airbrush)
 add_hwservice(airbrush, hal_airbrush_hwservice)
 get_prop(airbrush, hwservicemanager_prop)
 
-# TODO(b/118499879) Remove debugfs access.
-allow airbrush debugfs_airbrush:file rw_file_perms;
-allow airbrush airbrush_device:chr_file rw_file_perms;
-# Force whitelisting of ioctls
-# Start with a safe set and add to this as we need more ioctls.
-allowxperm airbrush airbrush_device:chr_file ioctl { FIOCLEX FIONCLEX };
+allow airbrush airbrush_sm_device:chr_file { rw_file_perms };
 
 # TODO(vharron) Enable HAL/GCA to access the binder interface.
 # allow airbrush google_camera_app:binder call;
