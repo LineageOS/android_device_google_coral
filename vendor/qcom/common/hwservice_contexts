@@ -14,6 +14,8 @@ vendor.qti.hardware.radio.lpa::IUimLpa                                  u:object
 vendor.qti.hardware.radio.qcrilhook::IQtiOemHook                        u:object_r:hal_telephony_hwservice:s0
 vendor.qti.hardware.radio.qtiradio::IQtiRadio                           u:object_r:hal_telephony_hwservice:s0
 vendor.qti.hardware.radio.uim_remote_client::IUimRemoteServiceClient    u:object_r:hal_telephony_hwservice:s0
+vendor.qti.hardware.radio.uim::IUim                                     u:object_r:hal_telephony_hwservice:s0
+vendor.qti.hardware.radio.ims::IImsRadio                                u:object_r:hal_telephony_hwservice:s0
 vendor.qti.hardware.sensorscalibrate::ISensorsCalibrate                 u:object_r:hal_sensorscalibrate_qti_hwservice:s0
 vendor.qti.hardware.soter::ISoter                                       u:object_r:hal_soter_hwservice:s0
 vendor.qti.hardware.tui_comm::ITuiComm                                  u:object_r:hal_tui_comm_hwservice:s0

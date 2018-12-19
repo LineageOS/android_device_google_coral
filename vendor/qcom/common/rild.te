@@ -1,1 +1,2 @@
 vndbinder_use(rild)
+allow rild self:qipcrtr_socket { create getattr read setopt write };
