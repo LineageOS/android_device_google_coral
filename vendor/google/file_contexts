@@ -14,6 +14,7 @@
 
 # vendor binaries
 /vendor/bin/hw/android\.hardware\.authsecret@1\.0-service\.citadel                    u:object_r:hal_authsecret_citadel_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.face@1\.0-service\.google               u:object_r:hal_face_default_exec:s0
 /vendor/bin/hw/android\.hardware\.health@2\.0-service\.coral                          u:object_r:hal_health_default_exec:s0
 /vendor/bin/hw/android\.hardware\.keymaster@4\.0-service\.citadel                     u:object_r:hal_keymaster_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-noronha                 u:object_r:hal_neuralnetworks_darwinn_exec:s0
