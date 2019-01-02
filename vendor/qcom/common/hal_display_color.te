@@ -7,4 +7,9 @@ allow hal_display_color qdisplay_service:service_manager find;
 vndbinder_use(hal_display_color);
 binder_call(hal_display_color, hal_graphics_composer)
 
-
+# Allow hal_display_color_default access hw service
+add_hwservice(hal_display_color_default, hal_display_color_hwservice)
+add_hwservice(hal_display_color_default, hal_display_postproc_hwservice)
+vndbinder_use(hal_display_color_default);
+get_prop(hal_display_color_default, hwservicemanager_prop)
+hwbinder_use(hal_display_color_default);
