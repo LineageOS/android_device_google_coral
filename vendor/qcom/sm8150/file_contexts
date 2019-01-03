@@ -40,6 +40,7 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/modemst[12]     u:object_r:modem_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/fsc             u:object_r:modem_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/fsg             u:object_r:modem_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/frp             u:object_r:frp_block_device:s0
 
 # /dev/block/bootdevice setup script - temporary
 /(vendor|system/vendor)/bin/init\.qti\.getbootdevice\.sh            u:object_r:vendor_init_exec:s0

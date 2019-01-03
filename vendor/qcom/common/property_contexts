@@ -18,5 +18,6 @@ vendor.usb.                                     u:object_r:vendor_usb_prop:s0
 vendor.wlan.driver.version                      u:object_r:vendor_wifi_version:s0
 vendor.wlan.firmware.version                    u:object_r:vendor_wifi_version:s0
 vendor.radio                                    u:object_r:vendor_radio_prop:s0
+vendor.spcom.                                   u:object_r:spcomlib_prop:s0
 
 ctl.vendor.rmt_storage     u:object_r:ctl_vendor_rmt_storage_prop:s0
