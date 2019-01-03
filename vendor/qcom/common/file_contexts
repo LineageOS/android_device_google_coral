@@ -358,6 +358,7 @@
 
 # data files
 /data/vendor/ipa(/.*)?                 u:object_r:ipa_vendor_data_file:s0
+/data/vendor/sensors(/.*)?             u:object_r:sensors_vendor_data_file:s0
 /data/vendor/rfs/mpss(/.*)?            u:object_r:mpss_rfs_data_file:s0
 /data/vendor/radio(/.*)?               u:object_r:vendor_radio_data_file:s0
 
