@@ -346,6 +346,10 @@
 /dev/smem_log                                   u:object_r:smem_log_device:s0
 /dev/subsys_modem                               u:object_r:modem_ssr_device:s0
 /dev/diag                                       u:object_r:diag_device:s0
+/dev/sp_kernel                                  u:object_r:skp_device:s0
+/dev/qsee_ipc_irq_spss                          u:object_r:qsee_ipc_irq_spss_device:s0
+/dev/spcom                                      u:object_r:spcom_device:s0
+/dev/sp_ssr                                     u:object_r:sp_ssr_device:s0
 
 # dev socket nodes
 /dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
