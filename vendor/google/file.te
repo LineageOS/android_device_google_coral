@@ -5,6 +5,7 @@ type modem_stat_data_file, file_type, data_file_type;
 #sysfs files
 type sysfs_display, sysfs_type, fs_type;
 type sysfs_touch, sysfs_type, fs_type;
+type sysfs_power_stats, sysfs_type, fs_type;
 
 #f2fs file
 type debugfs_f2fs, debugfs_type, fs_type;

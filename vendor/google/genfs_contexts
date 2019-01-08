@@ -28,6 +28,13 @@ genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-l3-lat/devfreq           
 genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-l3-lat/devfreq           u:object_r:sysfs_msm_subsys:s0
 genfscon debugfs /sched_features                      u:object_r:debugfs_sched_features:s0
 
+# PowerStatsHal
+genfscon sysfs /power/system_sleep/stats           u:object_r:sysfs_power_stats:s0
+genfscon sysfs /power/rpmh_stats/master_stats      u:object_r:sysfs_power_stats:s0
+genfscon sysfs /kernel/wlan/power_stats            u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/soc/soc:abc-sm/state_stats
+u:object_r:sysfs_power_stats:s0
+
 # Display
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight                          u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight/panel0-backlight/vr_mode u:object_r:sysfs_lights:s0
