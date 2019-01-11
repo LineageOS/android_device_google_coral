@@ -384,3 +384,5 @@ type sysfs_scsi_devices_0000, sysfs_type, fs_type;
 type debugfs_sched_features, debugfs_type, fs_type;
 
 allow firmware_file self:filesystem associate;
+
+type debugfs_wlan, debugfs_type, fs_type;
