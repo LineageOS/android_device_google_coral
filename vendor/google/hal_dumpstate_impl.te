@@ -28,7 +28,6 @@ r_dir_file(hal_dumpstate_impl, sysfs_thermal)
 
 # Access to files for dumping
 allow hal_dumpstate_impl sysfs:dir r_dir_perms;
-allow hal_dumpstate_impl modem_stat_data_file:file r_file_perms;
 
 allow hal_dumpstate_impl debugfs_wlan:dir r_dir_perms;
 allow hal_dumpstate_impl debugfs_wlan:file r_file_perms;
@@ -41,3 +40,14 @@ allow hal_dumpstate_impl debugfs_icnss:file r_file_perms;
 # Vibrator
 r_dir_file(hal_dumpstate_impl, sysfs_vibrator)
 allow hal_dumpstate_impl sysfs_leds:dir search;
+
+# Access to modem files
+userdebug_or_eng(`
+  allow hal_dumpstate_impl modem_dump_file:dir create_dir_perms;
+  allow hal_dumpstate_impl modem_dump_file:file create_file_perms;
+  allow hal_dumpstate_impl vendor_radio_data_file:dir r_dir_perms;
+  allow hal_dumpstate_impl vendor_radio_data_file:file r_file_perms;
+
+  set_prop(hal_dumpstate_impl, vendor_modem_diag_prop)
+')
+allow hal_dumpstate_impl modem_stat_data_file:file r_file_perms;

@@ -147,3 +147,6 @@ type ctl_vendor_rmt_storage_prop, property_type;
 
 # Wifi version recorder
 type vendor_wifi_version, property_type;
+
+# diag mdlog
+type vendor_modem_diag_prop, property_type;
