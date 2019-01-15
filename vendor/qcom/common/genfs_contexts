@@ -11,3 +11,4 @@ genfscon sysfs /bus/esoc                                                        
 genfscon sysfs /bus/msm_subsys                                                    u:object_r:sysfs_msm_subsys:s0
 genfscon debugfs /wlan                                                            u:object_r:debugfs_wlan:s0
 genfscon debugfs /wlan0                                                           u:object_r:debugfs_wlan:s0
+genfscon debugfs /icnss                                                           u:object_r:debugfs_icnss:s0
