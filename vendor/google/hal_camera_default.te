@@ -1,1 +1,4 @@
 vndbinder_use(hal_camera_default);
+allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
+allow hal_camera_default sysfs_soc:dir search;
+allow hal_camera_default sysfs_soc:file r_file_perms;
