@@ -38,6 +38,7 @@
 /vendor/bin/ramoops                                                                   u:object_r:ramoops_exec:s0
 /vendor/bin/hw/android\.hardware\.dumpstate@1\.0-service\.coral                       u:object_r:hal_dumpstate_impl_exec:s0
 /vendor/bin/ramdump                                                                   u:object_r:ramdump_exec:s0
+/vendor/bin/rlsservice                                                                u:object_r:rlsservice_exec:s0
 /vendor/bin/init\.radio\.sh                                                           u:object_r:init_radio_exec:s0
 
 # Vendor libs that are exposed to apps (those listed in /vendor/etc/public.libraries.txt
