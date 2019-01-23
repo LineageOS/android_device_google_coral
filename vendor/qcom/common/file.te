@@ -390,3 +390,6 @@ type debugfs_wlan, debugfs_type, fs_type;
 
 # debugfs icnss
 type debugfs_icnss, debugfs_type, fs_type;
+
+# modem factory data reset file
+type modem_fdr_file, file_type, data_file_type;
