@@ -20,3 +20,6 @@ type debugfs_ufs, debugfs_type, fs_type;
 
 #lights file
 type sysfs_lights, sysfs_type, fs_type;
+
+#eSIM status
+type sysfs_esim, sysfs_type, fs_type;

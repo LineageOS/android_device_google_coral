@@ -45,3 +45,6 @@ genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-3/3-0043                    
 
 # Camera
 genfscon sysfs /devices/platform/soc/ac4b000.qcom,cci                           u:object_r:sysfs_camera:s0
+
+# eSIM status
+genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/esim                   u:object_r:sysfs_esim:s0
