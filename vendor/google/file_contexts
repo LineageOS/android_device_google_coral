@@ -51,3 +51,4 @@
 
 # data files
 /data/vendor/modem_stat/debug\.txt                                                    u:object_r:modem_stat_data_file:s0
+/data/vendor/modem_dump(/.*)?                                                         u:object_r:modem_dump_file:s0

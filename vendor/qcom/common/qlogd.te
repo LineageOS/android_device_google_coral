@@ -5,3 +5,11 @@ type qlogd_exec, exec_type, vendor_file_type, file_type;
 # make transition from init to its domain
 init_daemon_domain(qlogd)
 
+userdebug_or_eng(`
+  allow qlogd diag_device:chr_file rw_file_perms;
+
+  allow qlogd vendor_radio_data_file:file create_file_perms;
+  allow qlogd vendor_radio_data_file:dir create_dir_perms;
+
+  set_prop(qlogd, vendor_modem_diag_prop)
+')

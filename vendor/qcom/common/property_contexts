@@ -6,6 +6,7 @@ persist.audio.fluence.voicerec                  u:object_r:vendor_audio_prop:s0
 persist.camera.                                 u:object_r:camera_prop:s0
 persist.vendor.net.doxlat                       u:object_r:vendor_xlat_prop:s0
 persist.vendor.radio                            u:object_r:vendor_radio_prop:s0
+persist.vendor.sys.modem.diag.                  u:object_r:vendor_modem_diag_prop:s0
 
 ro.qc.sdk.audio.fluencetype                     u:object_r:vendor_audio_prop:s0
 ro.vendor.ril.                                  u:object_r:vendor_radio_prop:s0
@@ -19,5 +20,6 @@ vendor.wlan.driver.version                      u:object_r:vendor_wifi_version:s
 vendor.wlan.firmware.version                    u:object_r:vendor_wifi_version:s0
 vendor.radio                                    u:object_r:vendor_radio_prop:s0
 vendor.spcom.                                   u:object_r:spcomlib_prop:s0
+vendor.sys.modem.diag.                          u:object_r:vendor_modem_diag_prop:s0
 
 ctl.vendor.rmt_storage     u:object_r:ctl_vendor_rmt_storage_prop:s0
