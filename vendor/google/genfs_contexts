@@ -42,3 +42,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/panel_info    
 
 # Vibrator
 genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-3/3-0043                    u:object_r:sysfs_vibrator:s0
+
+# Camera
+genfscon sysfs /devices/platform/soc/ac4b000.qcom,cci                           u:object_r:sysfs_camera:s0
