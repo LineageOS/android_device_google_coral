@@ -1,3 +1,5 @@
 android.hardware.citadel.ICitadeld      u:object_r:citadeld_service:s0
 rlsservice                              u:object_r:rls_service:s0
 darwinn_manager                         u:object_r:darwinn_service:s0
+power.stats-vendor                      u:object_r:power_stats_service:s0
+
