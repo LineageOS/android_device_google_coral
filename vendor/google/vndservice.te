@@ -1,2 +1,3 @@
 type citadeld_service,             vndservice_manager_type;
 type rls_service,                  vndservice_manager_type;
+type darwinn_service,              vndservice_manager_type;
