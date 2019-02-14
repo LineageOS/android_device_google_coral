@@ -2,4 +2,7 @@ type vendor_subsystem_ramdump, domain;
 type vendor_subsystem_ramdump_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(vendor_subsystem_ramdump);
 
-
+userdebug_or_eng(`
+  allow vendor_subsystem_ramdump proc_sysrq:file w_file_perms;
+  get_prop(vendor_subsystem_ramdump, vendor_ramdump_prop);
+')

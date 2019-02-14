@@ -150,3 +150,6 @@ type vendor_wifi_version, property_type;
 
 # diag mdlog
 type vendor_modem_diag_prop, property_type;
+
+# Ramdump properties
+type vendor_ramdump_prop, property_type;

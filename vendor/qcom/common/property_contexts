@@ -12,6 +12,7 @@ ro.qc.sdk.audio.fluencetype                     u:object_r:vendor_audio_prop:s0
 ro.vendor.ril.                                  u:object_r:vendor_radio_prop:s0
 
 vendor.debug.egl.swapinterval                   u:object_r:public_vendor_default_prop:s0
+vendor.debug.ramdump.                           u:object_r:vendor_ramdump_prop:s0
 vendor.ims.                                     u:object_r:qcom_ims_prop:s0
 vendor.peripheral.                              u:object_r:vendor_per_mgr_state_prop:s0
 vendor.sys.listeners.registered                 u:object_r:vendor_tee_listener_prop:s0
