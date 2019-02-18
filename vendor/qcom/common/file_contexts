@@ -329,6 +329,9 @@
 /dev/spcom                                      u:object_r:spcom_device:s0
 /dev/sp_ssr                                     u:object_r:sp_ssr_device:s0
 /dev/sp_keymaster                               u:object_r:sp_keymaster_device:s0
+/dev/block/sda                                  u:object_r:gpt_block_device:s0
+/dev/block/sd[bc]1?                             u:object_r:xbl_block_device:s0
+/dev/block/sde                                  u:object_r:boot_block_device:s0
 
 # dev socket nodes
 /dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
