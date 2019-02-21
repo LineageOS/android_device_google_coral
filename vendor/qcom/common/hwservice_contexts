@@ -28,3 +28,4 @@ vendor.qti.hardware.data.latency::ILinkLatency                          u:object
 vendor.qti.data.factory::IFactory                                       u:object_r:hal_datafactory_hwservice:s0
 vendor.qti.imsrtpservice::IRTPService                                   u:object_r:hal_imsrtp_hwservice:s0
 hardware.google.media.c2::IConfigurable                                 u:object_r:hal_codec2_hwservice:s0
+vendor.qti.hardware.data.connection::IDataConnection                    u:object_r:hal_dataconnection_hwservice:s0

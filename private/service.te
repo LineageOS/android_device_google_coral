@@ -10,3 +10,4 @@ type wigigp2p_service,            app_api_service, system_server_service, servic
 type wigig_service,               app_api_service, system_server_service, service_manager_type;
 type vendor_perf_service,         app_api_service, system_server_service, service_manager_type;
 type wfdservice_service,          service_manager_type;
+type qchook_service,              service_manager_type;

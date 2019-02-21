@@ -4,6 +4,9 @@ persist.audio.fluence.speaker                   u:object_r:vendor_audio_prop:s0
 persist.audio.fluence.voicecall                 u:object_r:vendor_audio_prop:s0
 persist.audio.fluence.voicerec                  u:object_r:vendor_audio_prop:s0
 persist.camera.                                 u:object_r:camera_prop:s0
+persist.vendor.cnd.wqe                          u:object_r:cnd_vendor_prop:s0
+persist.vendor.cne.feature                      u:object_r:cnd_vendor_prop:s0
+persist.vendor.cne.logging.qxdm                 u:object_r:cnd_vendor_prop:s0
 persist.vendor.net.doxlat                       u:object_r:vendor_xlat_prop:s0
 persist.vendor.radio                            u:object_r:vendor_radio_prop:s0
 persist.vendor.sys.modem.diag.                  u:object_r:vendor_modem_diag_prop:s0
