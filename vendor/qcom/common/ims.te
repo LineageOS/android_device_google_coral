@@ -4,6 +4,32 @@ type ims_exec, exec_type, vendor_file_type, file_type;
 
 # Started by init
 init_daemon_domain(ims)
+net_domain(ims)
+
+# Use generic netlink socket
+allow ims self:{
+    netlink_generic_socket
+    qipcrtr_socket
+} create_socket_perms_no_ioctl;
+
+set_prop(ims, qcom_ims_prop)
+
+#Allow access to netmgrd socket
+allow ims netmgrd_socket:dir r_dir_perms;
+unix_socket_connect(ims, netmgrd, netmgrd)
+allow ims netmgrd_socket:sock_file rw_file_perms;
+
+hwbinder_use(ims)
+get_prop(ims, hwservicemanager_prop)
+
+r_dir_file(ims, sysfs_msm_subsys)
+
+allow ims sysfs_soc:dir search;
+allow ims sysfs_soc:file r_file_perms;
+
+get_prop(ims, cnd_vendor_prop)
+
+allow ims hal_datafactory_hwservice:hwservice_manager find;
 
 #SSD_RIL+
 allow ims vendor_radio_data_file:dir rw_dir_perms;

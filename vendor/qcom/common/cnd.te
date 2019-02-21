@@ -6,3 +6,9 @@ file_type_auto_trans(cnd, socket_device, cnd_socket);
 # cnd is started by init, type transit from init domain to cnd domain
 init_daemon_domain(cnd)
 
+hwbinder_use(cnd)
+add_hwservice(cnd, hal_datafactory_hwservice)
+allow cnd self:qipcrtr_socket create_socket_perms_no_ioctl;
+get_prop(cnd, hwservicemanager_prop)
+set_prop(cnd, cnd_vendor_prop)
+binder_call(cnd, dataservice_app)
