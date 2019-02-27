@@ -4,3 +4,5 @@ allow hal_sensors_default chre_socket:sock_file write;
 
 allow hal_sensors_default sensors_vendor_data_file:dir create_dir_perms;
 allow hal_sensors_default sensors_vendor_data_file:file create_file_perms;
+
+vndbinder_use(hal_sensors_default);
