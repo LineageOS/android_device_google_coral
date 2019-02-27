@@ -39,6 +39,7 @@
 /vendor/bin/hw/wait_for_strongbox                                                     u:object_r:wait_for_strongbox_exec:s0
 /vendor/bin/init\.firstboot\.sh                                                       u:object_r:init-firstboot_exec:s0
 /vendor/bin/init\.insmod\.sh                                                          u:object_r:init-insmod-sh_exec:s0
+/vendor/bin/init\.native_display_primaries\.sh                                        u:object_r:init-native_display_primaries-sh_exec:s0
 /vendor/bin/init\.ramoops\.sh                                                         u:object_r:ramoops_exec:s0
 /vendor/bin/ramoops                                                                   u:object_r:ramoops_exec:s0
 /vendor/bin/hw/android\.hardware\.dumpstate@1\.0-service\.coral                       u:object_r:hal_dumpstate_impl_exec:s0

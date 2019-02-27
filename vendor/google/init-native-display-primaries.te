@@ -1,0 +1,21 @@
+type init-native_display_primaries-sh, domain;
+type init-native_display_primaries-sh_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(init-native_display_primaries-sh)
+
+# Allow running grep
+allow init-native_display_primaries-sh vendor_toolbox_exec:file rx_file_perms;
+# Allow running cut, tr, awk
+allow init-native_display_primaries-sh vendor_file:file rx_file_perms;
+
+# Allow reading files from /persist/display
+r_dir_file(init-native_display_primaries-sh, persist_display_file)
+allow init-native_display_primaries-sh persist_default_file:dir search;
+allow init-native_display_primaries-sh persist_file:dir search;
+allow init-native_display_primaries-sh mnt_vendor_file:dir search;
+allow init-native_display_primaries-sh mnt_vendor_file:file r_file_perms;
+
+# Set the vendor.display.native_display_primaries_ready property
+set_prop(init-native_display_primaries-sh, vendor_display_prop)
+# Read the ro.hardware property
+get_prop(init-native_display_primaries-sh, vendor_default_prop)
