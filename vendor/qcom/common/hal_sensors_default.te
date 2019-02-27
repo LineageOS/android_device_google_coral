@@ -6,3 +6,5 @@ allow hal_sensors_default sensors_vendor_data_file:dir create_dir_perms;
 allow hal_sensors_default sensors_vendor_data_file:file create_file_perms;
 
 vndbinder_use(hal_sensors_default);
+allow hal_sensors_default rls_service:service_manager find;
+binder_call(hal_sensors_default, rlsservice)
