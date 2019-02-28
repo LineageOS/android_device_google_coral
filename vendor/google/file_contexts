@@ -45,6 +45,7 @@
 /vendor/bin/ramdump                                                                   u:object_r:ramdump_exec:s0
 /vendor/bin/rlsservice                                                                u:object_r:rlsservice_exec:s0
 /vendor/bin/init\.radio\.sh                                                           u:object_r:init_radio_exec:s0
+/vendor/bin/hw/vendor\.google\.wifi_ext@1\.0-service-vendor                           u:object_r:hal_wifi_ext_exec:s0
 
 # Vendor libs that are exposed to apps (those listed in /vendor/etc/public.libraries.txt
 # and their dependencies)
