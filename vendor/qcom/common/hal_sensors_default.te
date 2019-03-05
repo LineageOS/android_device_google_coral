@@ -1,10 +1,29 @@
-# Needed for elmyra_raw.cpp
-allow hal_sensors_default chre:unix_stream_socket connectto;
-allow hal_sensors_default chre_socket:sock_file write;
-
+# Read and write factory calibration and sensor configuration data
+allow hal_sensors_default mnt_vendor_file:dir search;
+r_dir_file(hal_sensors_default, sensors_persist_file)
 allow hal_sensors_default sensors_vendor_data_file:dir create_dir_perms;
 allow hal_sensors_default sensors_vendor_data_file:file create_file_perms;
+
+# Interact with the sensors low power island (SLPI) CPU
+allow hal_sensors_default self:qipcrtr_socket create_socket_perms_no_ioctl;
+allowxperm hal_sensors_default self:socket ioctl msm_sock_ipc_ioctls;
+
+# sysfs needed for HW version info
+r_dir_file(hal_sensors_default, sysfs_msm_subsys);
+
+allow hal_sensors_default qdsp_device:chr_file r_file_perms;
 
 vndbinder_use(hal_sensors_default);
 allow hal_sensors_default rls_service:service_manager find;
 binder_call(hal_sensors_default, rlsservice)
+
+# Needed by elmyra_raw.cpp
+allow hal_sensors_default chre:unix_stream_socket connectto;
+allow hal_sensors_default chre_socket:sock_file write;
+
+# Allow to read /sys/class/power_supply/usb/input_current_now
+r_dir_file(hal_sensors_default, sysfs_batteryinfo)
+
+r_dir_file(hal_sensors_default, adsprpcd_file)
+
+dontaudit hal_sensors_default kernel:system module_request;
