@@ -1,1 +1,5 @@
 get_prop(vendor_init, vendor_display_prop)
+userdebug_or_eng(`
+  # Allow vendor_init to write vendor_tcpdump_log_prop on userdebug or eng ROM
+  set_prop(vendor_init, vendor_tcpdump_log_prop)
+')
