@@ -6,8 +6,13 @@ type hal_gnss_qti_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_gnss_qti)
 vndbinder_use(hal_gnss_qti)
 
-allow hal_gnss_qti sysfs_soc:dir r_dir_perms;
-allow hal_gnss_qti sysfs_soc:file r_file_perms;
+#files in /sys
+r_dir_file(hal_gnss_qti, sysfs_soc)
+r_dir_file(hal_gnss_qti, sysfs_esoc)
+r_dir_file(hal_gnss_qti, sysfs_msm_subsys)
+r_dir_file(hal_gnss_qti, sysfs_ssr)
+dontaudit hal_gnss_qti sysfs_faceauth:dir r_dir_perms;
+dontaudit hal_gnss_qti sysfs_faceauth:file r_file_perms;
 
 binder_call(hal_gnss_qti, vendor_per_mgr)
 allow hal_gnss_qti vendor_per_mgr_service:service_manager find;

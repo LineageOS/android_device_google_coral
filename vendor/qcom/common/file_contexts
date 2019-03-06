@@ -112,11 +112,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.scve\.panorama@1\.0-service    u:object_r:vendor_scve_exec:s0
 /(vendor|system/vendor)/bin/loc_launcher        u:object_r:location_exec:s0
 /(vendor|system/vendor)/bin/lowi-server         u:object_r:location_exec:s0
-/(vendor|system/vendor)/bin/xtwifi-inet-agent   u:object_r:location_exec:s0
-/(vendor|system/vendor)/bin/xtwifi-client       u:object_r:location_exec:s0
-/(vendor|system/vendor)/bin/garden_app          u:object_r:location_exec:s0
-/(vendor|system/vendor)/bin/DR_AP_Service       u:object_r:location_exec:s0
-/(vendor|system/vendor)/bin/slim_daemon         u:object_r:location_exec:s0
 /(vendor|system/vendor)/bin/xtra-daemon         u:object_r:location_exec:s0
 /(vendor|system/vendor)/bin/energy-awareness    u:object_r:energyawareness_exec:s0
 /(vendor|system/vendor)/bin/fidodaemon          u:object_r:fidodaemon_exec:s0
@@ -361,6 +356,7 @@
 /data/vendor/ramdump(/.*)?             u:object_r:ramdump_vendor_data_file:s0
 /data/vendor/ssrdump(/.*)?             u:object_r:ramdump_vendor_data_file:s0
 /data/vendor/camera(/.*)?              u:object_r:camera_vendor_data_file:s0
+/data/vendor/location(/.*)?            u:object_r:location_data_file:s0
 
 # spdaemon and sec_nvm files
 /dev/spdaemon_ssr                               u:object_r:spdaemon_ssr_device:s0
