@@ -22,4 +22,7 @@ allow airbrush darwinn_service:service_manager find;
 binder_call(airbrush, hal_neuralnetworks_darwinn)
 binder_call(hal_neuralnetworks_darwinn, airbrush)
 
+# Allow Airbrush to access the TPU device.
+allow airbrush abc_tpu_device:chr_file getattr;
+
 vndbinder_use(airbrush)
