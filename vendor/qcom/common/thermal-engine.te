@@ -7,6 +7,8 @@ init_daemon_domain(thermal-engine)
 
 allow thermal-engine sysfs_thermal:dir r_dir_perms;
 allow thermal-engine sysfs_thermal:file rw_file_perms;
+allow thermal-engine sysfs_msm_subsys:dir r_dir_perms;
+allow thermal-engine sysfs_msm_subsys:file r_file_perms;
 
 allow thermal-engine self:netlink_kobject_uevent_socket { create setopt bind read };
 
