@@ -70,3 +70,6 @@
 # TODO(b/124047077) Remove the debug files and policy.
 /sys/kernel/debug/airbrush/allow_el1_dma                                              u:object_r:debugfs_airbrush:s0
 /sys/kernel/debug/faceauth/hypx_enable                                                u:object_r:debugfs_airbrush:s0
+
+# dev socket node
+/dev/socket/diag_router                                                               u:object_r:diag_socket:s0

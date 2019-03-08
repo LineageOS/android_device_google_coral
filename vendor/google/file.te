@@ -28,3 +28,6 @@ type sysfs_esim, sysfs_type, fs_type;
 
 # Directory used by Widevine HIDL service.
 type mediadrm_vendor_data_file, file_type, data_file_type;
+
+#diag cmd socket
+type diag_socket, file_type, mlstrustedobject;
