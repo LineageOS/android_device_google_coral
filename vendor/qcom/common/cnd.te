@@ -12,3 +12,6 @@ allow cnd self:qipcrtr_socket create_socket_perms_no_ioctl;
 get_prop(cnd, hwservicemanager_prop)
 set_prop(cnd, cnd_vendor_prop)
 binder_call(cnd, dataservice_app)
+
+#for video call
+binder_call(cnd, ims)

@@ -5,3 +5,17 @@ type hal_imsrtp_exec, exec_type, vendor_file_type, file_type;
 # Started by init
 init_daemon_domain(hal_imsrtp)
 
+#for video call+
+hwbinder_use(hal_imsrtp)
+net_domain(hal_imsrtp)
+
+allow hal_imsrtp ion_device:chr_file r_file_perms;
+allow hal_imsrtp self:qipcrtr_socket create_socket_perms_no_ioctl;
+
+add_hwservice(hal_imsrtp, hal_imsrtp_hwservice)
+binder_call(hal_imsrtp, radio)
+unix_socket_connect(hal_imsrtp, ims, ims)
+
+get_prop(hal_imsrtp, hwservicemanager_prop)
+get_prop(hal_imsrtp, qcom_ims_prop)
+#for video call-

@@ -6,5 +6,8 @@ add_service(dataservice_app, cne_service)
 
 allow dataservice_app app_api_service:service_manager find;
 
+#for video call
+allow dataservice_app radio_service:service_manager find;
+
 #TODO(b/126137625): moving dataservice app from system to radio process
 allow dataservice_app system_app_data_file:dir create_dir_perms;
