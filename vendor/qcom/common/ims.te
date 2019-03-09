@@ -31,6 +31,9 @@ get_prop(ims, cnd_vendor_prop)
 
 allow ims hal_datafactory_hwservice:hwservice_manager find;
 
+# for video call
+binder_call(ims, cnd)
+
 #SSD_RIL+
 allow ims vendor_radio_data_file:dir rw_dir_perms;
 allow ims vendor_radio_data_file:file create_file_perms;
