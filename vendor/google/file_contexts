@@ -52,6 +52,7 @@
 /vendor/bin/rlsservice                                                                u:object_r:rlsservice_exec:s0
 /vendor/bin/init\.radio\.sh                                                           u:object_r:init_radio_exec:s0
 /vendor/bin/hw/vendor\.google\.wifi_ext@1\.0-service-vendor                           u:object_r:hal_wifi_ext_exec:s0
+/vendor/bin/tcpdump_logger                                                            u:object_r:tcpdump_logger_exec:s0
 
 # Vendor libs that are exposed to apps (those listed in /vendor/etc/public.libraries.txt
 # and their dependencies)
@@ -63,7 +64,7 @@
 # data files
 /data/vendor/modem_stat/debug\.txt                                                    u:object_r:modem_stat_data_file:s0
 /data/vendor/modem_dump(/.*)?                                                         u:object_r:modem_dump_file:s0
-
+/data/vendor/tcpdump_logger(/.*)?                                                     u:object_r:tcpdump_vendor_data_file:s0
 # debug files
 # TODO(b/124047077) Remove the debug files and policy.
 /sys/kernel/debug/airbrush/allow_el1_dma                                              u:object_r:debugfs_airbrush:s0
