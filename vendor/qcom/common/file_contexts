@@ -101,7 +101,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.scve\.objecttracker@1\.0-service    u:object_r:vendor_scve_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@.*-service-qti u:object_r:hal_gnss_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.gnss@.*-service u:object_r:hal_gnss_qti_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.0-service-qti  u:object_r:hal_bluetooth_qti_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.0-service-qti  u:object_r:hal_bluetooth_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.display\.color@1\.0-service            u:object_r:hal_display_color_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.perf@1\.0-service       u:object_r:hal_perf_default_exec:s0
 /(vendor|system/vendor)/bin/ssgqmigd            u:object_r:ssgqmigd_exec:s0
@@ -336,6 +336,8 @@
 /dev/spcom                                      u:object_r:spcom_device:s0
 /dev/sp_ssr                                     u:object_r:sp_ssr_device:s0
 /dev/sp_keymaster                               u:object_r:sp_keymaster_device:s0
+/dev/btpower                                    u:object_r:hci_attach_dev:s0
+/dev/ttyHS0                                     u:object_r:hci_attach_dev:s0
 /dev/block/sda                                  u:object_r:gpt_block_device:s0
 /dev/block/sd[bc]1?                             u:object_r:xbl_block_device:s0
 /dev/block/sde                                  u:object_r:boot_block_device:s0
@@ -356,6 +358,8 @@
 /data/vendor/radio(/.*)?               u:object_r:vendor_radio_data_file:s0
 /data/vendor/modem_fdr(/.*)?           u:object_r:modem_fdr_file:s0
 /data/vendor/mediadrm(/.*)?            u:object_r:mediadrm_vendor_data_file:s0
+/data/vendor/ramdump(/.*)?             u:object_r:ramdump_vendor_data_file:s0
+/data/vendor/ssrdump(/.*)?             u:object_r:ramdump_vendor_data_file:s0
 
 # spdaemon and sec_nvm files
 /dev/spdaemon_ssr                               u:object_r:spdaemon_ssr_device:s0

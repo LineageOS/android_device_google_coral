@@ -388,6 +388,9 @@ allow firmware_file self:filesystem associate;
 # debugfs wlan
 type debugfs_wlan, debugfs_type, fs_type;
 
+# debugfs bt
+type debugfs_ipc, debugfs_type, fs_type;
+
 # debugfs icnss
 type debugfs_icnss, debugfs_type, fs_type;
 
