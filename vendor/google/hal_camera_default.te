@@ -6,3 +6,19 @@ allow hal_camera_default airbrush_device:chr_file rw_file_perms;
 allow hal_camera_default ipu_device:chr_file rw_file_perms;
 allow hal_camera_default airbrush_sm_device:chr_file getattr;
 allow hal_camera_default gpu_device:chr_file rw_file_perms;
+
+# For camera hal to use laser ioctl and sysfs
+allow hal_camera_default laser_device:chr_file rw_file_perms;
+allow hal_camera_default sysfs_camera:dir search;
+allow hal_camera_default sysfs_camera:file rw_file_perms;
+
+# For camera hal to use factory calibration data
+allow hal_camera_default persist_default_file:dir search;
+allow hal_camera_default persist_default_file:lnk_file read;
+allow hal_camera_default persist_camera_file:dir search;
+allow hal_camera_default persist_camera_file:file r_file_perms;
+allow hal_camera_default mnt_vendor_file:dir search;
+
+# For camera hal to use system property
+set_prop(hal_camera_default, camera_prop)
+get_prop(hal_camera_default, serialno_prop)
