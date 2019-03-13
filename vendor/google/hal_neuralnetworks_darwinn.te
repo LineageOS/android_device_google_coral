@@ -12,6 +12,7 @@ allow hal_neuralnetworks_darwinn abc_tpu_device:chr_file { getattr ioctl map ope
 
 allow hal_neuralnetworks_darwinn hal_airbrush_hwservice:hwservice_manager find;
 
+allow hal_neuralnetworks_darwinn airbrush_tpu_service:service_manager find;
 binder_call(hal_neuralnetworks_darwinn, airbrush)
 add_service(hal_neuralnetworks_darwinn, darwinn_service)
 vndbinder_use(hal_neuralnetworks_darwinn)
