@@ -57,3 +57,6 @@ genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/esim                   
 
 # Battery
 genfscon sysfs /devices/platform/soc/soc:google,battery/power_supply/battery    u:object_r:sysfs_batteryinfo:s0
+
+# init_citadel might need to read this
+genfscon sysfs /firmware/devicetree/base/qcom,board-id                     u:object_r:sysfs_msm_boardid:s0
