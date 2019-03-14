@@ -13,3 +13,5 @@ allow sec_nvm ion_device:chr_file rw_file_perms;
 allow sec_nvm skp_device:chr_file rw_file_perms;
 allow sec_nvm spcom_device:chr_file rw_file_perms;
 allow sec_nvm sec_nvm_device:chr_file rw_file_perms;
+
+set_prop(sec_nvm, spcomlib_prop)
