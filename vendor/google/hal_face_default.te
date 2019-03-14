@@ -30,3 +30,8 @@ allow hal_face_default airbrush_faceauth_service:service_manager find;
 
 r_dir_file(hal_face_default, persist_camera_file)
 allow hal_face_default persist_default_file:dir search;
+allow hal_face_default mnt_vendor_file:dir search;
+
+get_prop(hal_face_default, camera_prop)
+
+hwbinder_use(hal_face_default);
