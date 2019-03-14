@@ -25,3 +25,6 @@ type sysfs_lights, sysfs_type, fs_type;
 
 #eSIM status
 type sysfs_esim, sysfs_type, fs_type;
+
+# Directory used by Widevine HIDL service.
+type mediadrm_vendor_data_file, file_type, data_file_type;
