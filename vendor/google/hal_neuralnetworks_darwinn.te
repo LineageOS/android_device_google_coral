@@ -10,6 +10,9 @@ allow hal_neuralnetworks_darwinn sysfs:dir { open read };
 # And opens the device at /dev/abc-pcie-tpu_0.
 allow hal_neuralnetworks_darwinn abc_tpu_device:chr_file { getattr ioctl map open read write };
 
+# Allow opening airbrush devices (DRAM and DMA drivers).
+allow hal_neuralnetworks_darwinn airbrush_device:chr_file rw_file_perms;
+
 allow hal_neuralnetworks_darwinn hal_airbrush_hwservice:hwservice_manager find;
 
 allow hal_neuralnetworks_darwinn airbrush_tpu_service:service_manager find;
