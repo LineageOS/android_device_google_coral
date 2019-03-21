@@ -6,3 +6,6 @@ type power_prop, property_type;
 
 # Tcpdump_logger
 type vendor_tcpdump_log_prop, property_type;
+
+#face HAL
+type vendor_faceauth_prop, property_type;
