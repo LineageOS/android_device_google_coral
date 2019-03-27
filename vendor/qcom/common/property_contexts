@@ -1,8 +1,15 @@
+# vendor_audio_prop
 audio.snd_card.open.retries                     u:object_r:vendor_audio_prop:s0
-
+audio.volume.listener.dump                      u:object_r:vendor_audio_prop:s0
+audio.volume.headset.gain.depcal                u:object_r:vendor_audio_prop:s0
+audio_hal.in_period_size                        u:object_r:vendor_audio_prop:s0
+audio_hal.period_multiplier                     u:object_r:vendor_audio_prop:s0
+audio_hal.period_size                           u:object_r:vendor_audio_prop:s0
+persist.audio.dualmic.config                    u:object_r:vendor_audio_prop:s0
 persist.audio.fluence.speaker                   u:object_r:vendor_audio_prop:s0
 persist.audio.fluence.voicecall                 u:object_r:vendor_audio_prop:s0
 persist.audio.fluence.voicerec                  u:object_r:vendor_audio_prop:s0
+
 persist.camera.                                 u:object_r:camera_prop:s0
 vendor.debug.camera.                            u:object_r:camera_prop:s0
 persist.vendor.camera.                          u:object_r:camera_prop:s0
