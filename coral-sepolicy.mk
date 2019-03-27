@@ -1,5 +1,5 @@
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR := device/google/coral-sepolicy/public
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR := device/google/coral-sepolicy/private
+PRODUCT_PUBLIC_SEPOLICY_DIRS := device/google/coral-sepolicy/public
+PRODUCT_PRIVATE_SEPOLICY_DIRS := device/google/coral-sepolicy/private
 
 # vendors
 BOARD_SEPOLICY_DIRS += device/google/coral-sepolicy/vendor/google
