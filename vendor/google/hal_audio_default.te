@@ -1,2 +1,5 @@
 vndbinder_use(hal_audio_default)
 allow hal_audio_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+# For interfacing with PowerHAL
+hal_client_domain(hal_audio_default, hal_power)
