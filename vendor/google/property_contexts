@@ -34,3 +34,16 @@ persist.vendor.tcpdump.log.alwayson             u:object_r:vendor_tcpdump_log_pr
 vendor.tcpdump.log.ondemand                     u:object_r:vendor_tcpdump_log_prop:s0
 vendor.tcpdump.log.alwayson                     u:object_r:vendor_tcpdump_log_prop:s0
 vendor.tcpdump.output.dir                       u:object_r:vendor_tcpdump_log_prop:s0
+
+#face HAL
+vendor.faceauth.use_el2                         u:object_r:vendor_faceauth_prop:s0
+vendor.faceauth.enable_skin                     u:object_r:vendor_faceauth_prop:s0
+
+persist.faceauth.run_autocal                    u:object_r:vendor_faceauth_prop:s0
+persist.faceauth.pose_buckets                   u:object_r:vendor_faceauth_prop:s0
+
+#TODO: Remove: b/129059609
+persist.camera.laser.mfg.combo                  u:object_r:vendor_faceauth_prop:s0
+
+#TODO: zacharyi@: Re-name to vendor.faceauth.debug ?
+faceauth.debug                                  u:object_r:vendor_faceauth_prop:s0
