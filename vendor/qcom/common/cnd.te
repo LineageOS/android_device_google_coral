@@ -15,3 +15,5 @@ binder_call(cnd, dataservice_app)
 
 #for video call
 binder_call(cnd, ims)
+
+binder_call(cnd, location)

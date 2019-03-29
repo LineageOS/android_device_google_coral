@@ -152,7 +152,6 @@ type ssgtzd_socket, file_type, mlstrustedobject;
 #location file types
 type location_data_file, file_type, data_file_type;
 type location_socket, file_type, data_file_type;
-type location_app_data_file, file_type, data_file_type;
 
 #File types required by mdm-helper
 type sysfs_esoc, sysfs_type, fs_type;
@@ -177,6 +176,9 @@ type persist_display_file, file_type, vendor_persist_type;
 # IPA file types
 type ipacm_socket, file_type;
 type ipa_vendor_data_file, file_type, data_file_type;
+
+# Camera file types
+type camera_vendor_data_file, file_type, data_file_type;
 
 # vendor audio data file
 type vendor_audio_data_file, file_type, data_file_type;
