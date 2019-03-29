@@ -108,7 +108,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.iop@1\.0-service        u:object_r:hal_iop_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.iop@2\.0-service        u:object_r:hal_iop_default_exec:s0
 /(vendor|system/vendor)/bin/mlid                u:object_r:mlid_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.qti\.esepowermanager@1\.0-service u:object_r:hal_esepowermanager_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.scve\.panorama@1\.0-service    u:object_r:vendor_scve_exec:s0
 /(vendor|system/vendor)/bin/loc_launcher        u:object_r:location_exec:s0
 /(vendor|system/vendor)/bin/lowi-server         u:object_r:location_exec:s0
@@ -161,7 +160,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.factory@1\.0-service      u:object_r:vendor_hal_factory_qti_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.display\.allocator@1\.0-service   u:object_r:hal_graphics_allocator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.tui_comm@1\.0-service-qti u:object_r:hal_tui_comm_qti_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.soter@1\.0-service u:object_r:hal_soter_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.qdutils_disp@1\.0-service-qti u:object_r:hal_qdutils_disp_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.sensorscalibrate@1\.0-service u:object_r:hal_sensorscalibrate_qti_default_exec:s0
 /(vendor|system/vendor)/bin/power_off_alarm        u:object_r:power_off_alarm_exec:s0
