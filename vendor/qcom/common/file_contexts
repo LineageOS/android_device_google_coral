@@ -199,6 +199,7 @@
 /mnt/vendor/persist/secnvm(/.*)?                                               u:object_r:persist_secnvm_file:s0
 /mnt/vendor/persist/FTM_AP(/.*)?                                               u:object_r:vendor_persist_mmi_file:s0
 /mnt/vendor/persist/hvdcp_opti(/.*)?                                           u:object_r:persist_hvdcp_file:s0
+/mnt/vendor/persist/audio(/.*)?                                                u:object_r:persist_audio_file:s0
 
 ###################################
 # etc files
@@ -336,6 +337,7 @@
 /dev/block/sda                                  u:object_r:gpt_block_device:s0
 /dev/block/sd[bc]1?                             u:object_r:xbl_block_device:s0
 /dev/block/sde                                  u:object_r:boot_block_device:s0
+/dev/msm_.*                                     u:object_r:audio_device:s0
 
 # dev socket nodes
 /dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
