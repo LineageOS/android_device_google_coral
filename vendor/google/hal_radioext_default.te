@@ -15,6 +15,7 @@ allow hal_radioext_default qmuxd_socket:dir w_dir_perms;
 allow hal_radioext_default qmuxd_socket:sock_file create_file_perms;
 allow hal_radioext_default sysfs_soc:dir search;
 allow hal_radioext_default sysfs_soc:file r_file_perms;
+allow hal_radioext_default self:qipcrtr_socket create_socket_perms_no_ioctl;
 allowxperm hal_radioext_default self:socket ioctl msm_sock_ipc_ioctls;
 
 allow hal_radioext_default hal_wifi_ext_hwservice:hwservice_manager find;
