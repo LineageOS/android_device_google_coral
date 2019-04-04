@@ -108,15 +108,9 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.iop@1\.0-service        u:object_r:hal_iop_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.iop@2\.0-service        u:object_r:hal_iop_default_exec:s0
 /(vendor|system/vendor)/bin/mlid                u:object_r:mlid_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.qti\.esepowermanager@1\.0-service u:object_r:hal_esepowermanager_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.scve\.panorama@1\.0-service    u:object_r:vendor_scve_exec:s0
 /(vendor|system/vendor)/bin/loc_launcher        u:object_r:location_exec:s0
 /(vendor|system/vendor)/bin/lowi-server         u:object_r:location_exec:s0
-/(vendor|system/vendor)/bin/xtwifi-inet-agent   u:object_r:location_exec:s0
-/(vendor|system/vendor)/bin/xtwifi-client       u:object_r:location_exec:s0
-/(vendor|system/vendor)/bin/garden_app          u:object_r:location_exec:s0
-/(vendor|system/vendor)/bin/DR_AP_Service       u:object_r:location_exec:s0
-/(vendor|system/vendor)/bin/slim_daemon         u:object_r:location_exec:s0
 /(vendor|system/vendor)/bin/xtra-daemon         u:object_r:location_exec:s0
 /(vendor|system/vendor)/bin/energy-awareness    u:object_r:energyawareness_exec:s0
 /(vendor|system/vendor)/bin/fidodaemon          u:object_r:fidodaemon_exec:s0
@@ -154,7 +148,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service-qti u:object_r:hal_keymaster_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-strongbox-service-qti u:object_r:hal_keymaster_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service-qti u:object_r:hal_gatekeeper_qti_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.1-service\.st     u:object_r:hal_nfc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service\.st     u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/qdmastatsd          u:object_r:qdmastatsd_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.alarm@1\.0-service      u:object_r:hal_alarm_qti_default_exec:s0
 /(vendor|system/vendor)/bin/imsrcsd             u:object_r:hal_rcsservice_exec:s0
@@ -166,7 +160,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.factory@1\.0-service      u:object_r:vendor_hal_factory_qti_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.display\.allocator@1\.0-service   u:object_r:hal_graphics_allocator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.tui_comm@1\.0-service-qti u:object_r:hal_tui_comm_qti_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.soter@1\.0-service u:object_r:hal_soter_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.qdutils_disp@1\.0-service-qti u:object_r:hal_qdutils_disp_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.sensorscalibrate@1\.0-service u:object_r:hal_sensorscalibrate_qti_default_exec:s0
 /(vendor|system/vendor)/bin/power_off_alarm        u:object_r:power_off_alarm_exec:s0
@@ -204,6 +197,7 @@
 /mnt/vendor/persist/secnvm(/.*)?                                               u:object_r:persist_secnvm_file:s0
 /mnt/vendor/persist/FTM_AP(/.*)?                                               u:object_r:vendor_persist_mmi_file:s0
 /mnt/vendor/persist/hvdcp_opti(/.*)?                                           u:object_r:persist_hvdcp_file:s0
+/mnt/vendor/persist/audio(/.*)?                                                u:object_r:persist_audio_file:s0
 
 ###################################
 # etc files
@@ -341,6 +335,7 @@
 /dev/block/sda                                  u:object_r:gpt_block_device:s0
 /dev/block/sd[bc]1?                             u:object_r:xbl_block_device:s0
 /dev/block/sde                                  u:object_r:boot_block_device:s0
+/dev/msm_.*                                     u:object_r:audio_device:s0
 
 # dev socket nodes
 /dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
@@ -360,6 +355,8 @@
 /data/vendor/mediadrm(/.*)?            u:object_r:mediadrm_vendor_data_file:s0
 /data/vendor/ramdump(/.*)?             u:object_r:ramdump_vendor_data_file:s0
 /data/vendor/ssrdump(/.*)?             u:object_r:ramdump_vendor_data_file:s0
+/data/vendor/camera(/.*)?              u:object_r:camera_vendor_data_file:s0
+/data/vendor/location(/.*)?            u:object_r:location_data_file:s0
 
 # spdaemon and sec_nvm files
 /dev/spdaemon_ssr                               u:object_r:spdaemon_ssr_device:s0

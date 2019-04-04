@@ -6,3 +6,6 @@ type time_data_file, file_type, data_file_type;
 # Make transition to its own time_daemon domain from init
 init_daemon_domain(time_daemon)
 
+userdebug_or_eng(`
+  permissive time_daemon;
+')
