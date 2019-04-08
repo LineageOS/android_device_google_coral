@@ -7,6 +7,7 @@ allow modem_svc self:capability net_bind_service;
 allow modem_svc self:qipcrtr_socket create_socket_perms_no_ioctl;
 
 set_prop(modem_svc, vendor_modem_diag_prop)
+get_prop(modem_svc, vendor_build_type_prop)
 get_prop(modem_svc, exported2_default_prop)
 get_prop(modem_svc, exported3_radio_prop)
 
