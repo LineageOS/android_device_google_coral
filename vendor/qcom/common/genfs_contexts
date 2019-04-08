@@ -9,6 +9,7 @@ genfscon sysfs /devices/platform/soc/soc:qcom,spss_utils                        
 genfscon sysfs /devices/platform/soc/soc:qcom,faceauth_fws                        u:object_r:sysfs_faceauth:s0
 genfscon sysfs /bus/esoc                                                          u:object_r:sysfs_esoc:s0
 genfscon sysfs /bus/msm_subsys                                                    u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/red  u:object_r:sysfs_lights:s0
 genfscon debugfs /wlan                                                            u:object_r:debugfs_wlan:s0
 genfscon debugfs /wlan0                                                           u:object_r:debugfs_wlan:s0
 genfscon debugfs /icnss                                                           u:object_r:debugfs_icnss:s0
