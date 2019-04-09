@@ -47,3 +47,5 @@ persist.camera.laser.mfg.combo                  u:object_r:vendor_faceauth_prop:
 
 #TODO: zacharyi@: Re-name to vendor.faceauth.debug ?
 faceauth.debug                                  u:object_r:vendor_faceauth_prop:s0
+
+ro.vendor.build.type                            u:object_r:vendor_build_type_prop:s0
