@@ -6,3 +6,7 @@ type hal_usb_impl_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_usb_impl)
 
 allow hal_usb_impl configfs:file create_file_perms;
+
+allow hal_usb_impl sysfs_batteryinfo:dir search;
+allow hal_usb_impl sysfs_batteryinfo:file r_file_perms;
+get_prop(hal_usb_impl, vendor_usb_prop)
