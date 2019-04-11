@@ -20,3 +20,17 @@ allow wcnss_service cnss_vendor_data_file:file create_file_perms;
 userdebug_or_eng(`
   r_dir_file(wcnss_service, proc_wifi_dbg)
 ')
+
+# For Peripheral Manager in cnss-daemon
+binder_call(wcnss_service, vendor_per_mgr)
+allow wcnss_service vendor_per_mgr_service:service_manager find;
+
+vndbinder_use(wcnss_service)
+
+# files in /sys
+r_dir_file(wcnss_service, sysfs_msm_subsys)
+r_dir_file(wcnss_service, sysfs_soc)
+r_dir_file(wcnss_service, sysfs_ssr)
+r_dir_file(wcnss_service, sysfs_esoc)
+dontaudit wcnss_service sysfs_faceauth:dir search;
+dontaudit wcnss_service sysfs_faceauth:file { open read };
