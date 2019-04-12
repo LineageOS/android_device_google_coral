@@ -35,6 +35,7 @@ persist.vendor.bt.soc.scram_freqs               u:object_r:vendor_bluetooth_prop
 ro.qc.sdk.audio.fluencetype                     u:object_r:vendor_audio_prop:s0
 ro.vendor.ril.                                  u:object_r:vendor_radio_prop:s0
 ro.vendor.graphics.memory                       u:object_r:vendor_display_prop:s0
+ro.boot.ramdump                                 u:object_r:vendor_ramdump_prop:s0
 
 vendor.gralloc.disable_ahardware_buffer         u:object_r:vendor_display_prop:s0
 vendor.gralloc.use_system_heap_for_sensors      u:object_r:vendor_display_prop:s0
@@ -53,8 +54,10 @@ vendor.wlan.firmware.version                    u:object_r:vendor_wifi_version:s
 vendor.radio                                    u:object_r:vendor_radio_prop:s0
 vendor.spcom.                                   u:object_r:spcomlib_prop:s0
 vendor.sys.modem.diag.                          u:object_r:vendor_modem_diag_prop:s0
+vendor.debug.ssrdump                            u:object_r:vendor_ssr_prop:s0
 
 persist.vendor.sys.cnss.                        u:object_r:vendor_cnss_diag_prop:s0
+persist.vendor.sys.ssr.                         u:object_r:vendor_ssr_prop:s0
 
 ctl.vendor.rmt_storage                          u:object_r:ctl_vendor_rmt_storage_prop:s0
 
