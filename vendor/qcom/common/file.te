@@ -147,9 +147,10 @@ type ssgtzd_socket, file_type, mlstrustedobject;
 type location_data_file, file_type, data_file_type;
 type location_socket, file_type, data_file_type;
 
-#File types required by mdm-helper
+#File types required by mdm-helper, subsystem_ramdump and ssr_setup
 type sysfs_esoc, sysfs_type, fs_type;
 type sysfs_ssr,  sysfs_type, fs_type;
+type sysfs_ssr_writable, sysfs_type, fs_type;
 type sysfs_ssr_toggle,  sysfs_type, fs_type;
 type sysfs_hsic, sysfs_type, fs_type;
 type sysfs_hsic_host_rdy, sysfs_type, fs_type;
@@ -361,6 +362,9 @@ type sysfs_npu, fs_type, sysfs_type;
 # subsystem_ramdump files
 type vendor_ramdump_data_file, file_type, data_file_type;
 type vendor_mdmhelperdata_data_file, file_type, data_file_type;
+
+# subsystem ssr log file
+type ssr_log_file, file_type, data_file_type;
 
 #for mount of /persist
 typeattribute mnt_vendor_file vendor_persist_type;
