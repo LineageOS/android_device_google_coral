@@ -42,6 +42,14 @@ u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-2/2-0010/iio:device4
 u:object_r:sysfs_power_stats:s0
 
+# Not used by PowerStatsHal
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:vadc@3100/iio:device0
+u:object_r:sysfs_power_stats_ignore:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1
+u:object_r:sysfs_power_stats_ignore:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.qcom,spmi:qcom,pm8150l@4:vadc@3100/iio:device2
+u:object_r:sysfs_power_stats_ignore:s0
+
 # Display
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight                          u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight/panel0-backlight/vr_mode u:object_r:sysfs_lights:s0
