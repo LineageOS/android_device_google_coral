@@ -12,6 +12,7 @@
 /dev/maxfg_history                                                                    u:object_r:maxfg_device:s0
 /dev/vd6281                                                                           u:object_r:rls_device:s0
 /dev/sensor_tunnel                                                                    u:object_r:rls_device:s0
+/dev/st54j_se                                                                         u:object_r:secure_element_device:s0
 /dev/iaxxx-odsp-celldrv                                                               u:object_r:audio_device:s0
 /dev/tunnel0                                                                          u:object_r:audio_device:s0
 /dev/subsys_faceauth                                                                  u:object_r:faceauth_device:s0
@@ -32,7 +33,7 @@
 /vendor/bin/hw/android\.hardware\.oemlock@1\.0-service\.citadel                       u:object_r:hal_oemlock_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.pixel                    u:object_r:hal_power_stats_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power@1\.3-service\.pixel-libperfmgr                u:object_r:hal_power_default_exec:s0
-/vendor/bin/hw/android\.hardware\.secure_element@1\.0-service-disabled                u:object_r:hal_secure_element_default_exec:s0
+/vendor/bin/hw/android\.hardware\.secure_element@1\.0-service\.st                     u:object_r:hal_secure_element_default_exec:s0
 /vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.pixel                         u:object_r:hal_thermal_default_exec:s0
 /vendor/bin/hw/android\.hardware\.usb@1\.2-service\.coral                             u:object_r:hal_usb_impl_exec:s0
 /vendor/bin/hw/android\.hardware\.vibrator@1\.3-service\.coral                        u:object_r:hal_vibrator_default_exec:s0
@@ -57,7 +58,7 @@
 /vendor/bin/hw/vendor\.google\.wifi_ext@1\.0-service-vendor                           u:object_r:hal_wifi_ext_exec:s0
 /vendor/bin/tcpdump_logger                                                            u:object_r:tcpdump_logger_exec:s0
 /vendor/bin/hw/vendor\.google\.wireless_charger@1\.0-service-vendor                   u:object_r:hal_wlc_exec:s0
-
+/data/vendor/ese(/.*)?                                                                u:object_r:ese_vendor_data_file:s0
 
 # Vendor libs that are exposed to apps (those listed in /vendor/etc/public.libraries.txt
 # and their dependencies)

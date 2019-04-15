@@ -10,3 +10,5 @@ allow rild vendor_radio_data_file:file create_file_perms;
 
 #Allow set property persist.vendo.radio.adb_log_on
 set_prop(rild, vendor_radio_prop)
+
+hal_server_domain(rild, hal_secure_element)
