@@ -33,3 +33,6 @@ type mediadrm_vendor_data_file, file_type, data_file_type;
 
 #diag cmd socket
 type diag_socket, file_type, mlstrustedobject;
+
+#eSE file
+type ese_vendor_data_file, file_type, data_file_type;
