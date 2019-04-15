@@ -10,3 +10,6 @@ user=_app seinfo=platform name=com.google.mds domain=modem_diagnostic_app type=a
 
 # Domain for Pixel Logger
 user=_app seinfo=platform name=com.android.pixellogger domain=logger_app type=app_data_file levelFrom=all
+
+# Domain for Oslo
+user=_app seinfo=platform name=com.google.oslo domain=oslo_app type=app_data_file levelFrom=all
