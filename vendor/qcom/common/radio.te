@@ -1,3 +1,7 @@
 #for video call
 binder_call(radio, hal_imsrtp)
 allow radio hal_imsrtp_hwservice:hwservice_manager find;
+
+userdebug_or_eng(`
+  permissive radio;
+')
