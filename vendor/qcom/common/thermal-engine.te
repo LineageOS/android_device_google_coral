@@ -12,6 +12,9 @@ allow thermal-engine sysfs_msm_subsys:file r_file_perms;
 
 allow thermal-engine self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 
+# for modem throttling
+allow thermal-engine self:qipcrtr_socket create_socket_perms_no_ioctl;
+
 allow thermal-engine self:socket create_socket_perms;
 allowxperm thermal-engine self:socket ioctl msm_sock_ipc_ioctls;
 
