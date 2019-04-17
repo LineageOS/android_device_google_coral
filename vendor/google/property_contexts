@@ -49,3 +49,5 @@ persist.camera.laser.mfg.combo                  u:object_r:vendor_faceauth_prop:
 faceauth.debug                                  u:object_r:vendor_faceauth_prop:s0
 
 ro.vendor.build.type                            u:object_r:vendor_build_type_prop:s0
+
+ro.vendor.aware_available                       u:object_r:vendor_aware_available_prop:s0
