@@ -331,6 +331,7 @@
 /dev/sp_keymaster                               u:object_r:sp_keymaster_device:s0
 /dev/btpower                                    u:object_r:hci_attach_dev:s0
 /dev/ttyHS0                                     u:object_r:hci_attach_dev:s0
+/dev/ttyMSM0                                    u:object_r:tty_device:s0
 /dev/block/sda                                  u:object_r:gpt_block_device:s0
 /dev/block/sd[bc]1?                             u:object_r:xbl_block_device:s0
 /dev/block/sde                                  u:object_r:boot_block_device:s0
