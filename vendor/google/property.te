@@ -12,3 +12,6 @@ type vendor_faceauth_prop, property_type;
 
 # Vendor build type
 type vendor_build_type_prop, property_type;
+
+# Vendor aware available type
+type vendor_aware_available_prop, property_type;
