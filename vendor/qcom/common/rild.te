@@ -1,6 +1,8 @@
 vndbinder_use(rild)
 allow rild self:qipcrtr_socket { create getattr read setopt write };
 
+binder_call(rild, vendor_per_mgr)
+
 #Allow access to netmgrd socket
 allow rild netmgrd_socket:dir r_dir_perms;
 unix_socket_connect(rild, netmgrd, netmgrd)
