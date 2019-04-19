@@ -8,7 +8,8 @@ wakelock_use(rmt_storage)
 
 r_dir_file(rmt_storage, sysfs_uio)
 # TODO(b/121989672): remove setting uid, gid, r/w block device permission
-allow rmt_storage self:capability { setgid setuid };
+allow rmt_storage self:capability { setgid setuid setpcap};
+allow rmt_storage kmsg_device:chr_file w_file_perms;
 allow rmt_storage modem_block_device:blk_file rw_file_perms;
 allow rmt_storage uio_device:chr_file rw_file_perms;
 allow rmt_storage block_device:dir search;
