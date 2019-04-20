@@ -10,8 +10,21 @@ allow hardware_info_app app_api_service:service_manager find;
 
 # Shell
 allow hardware_info_app shell_data_file:dir search;
-allow hardware_info_app shell_data_file:file { open read };
+allow hardware_info_app shell_data_file:file r_file_perms;
 
-# SysFS
+# SysFS display
 allow hardware_info_app sysfs_display:dir search;
-allow hardware_info_app sysfs_display:file { getattr open read };
+allow hardware_info_app sysfs_display:file r_file_perms;
+
+# SoC
+allow hardware_info_app sysfs_soc:dir search;
+allow hardware_info_app sysfs_soc:file r_file_perms;
+
+# Battery info
+allow hardware_info_app sysfs_batteryinfo:dir search;
+allow hardware_info_app sysfs_batteryinfo:file r_file_perms;
+allow hardware_info_app debugfs_batteryinfo:dir search;
+allow hardware_info_app debugfs_batteryinfo:file r_file_perms;
+allow hardware_info_app maxfg_device:chr_file r_file_perms;
+allow hardware_info_app sysfs_scsi_devices_0000:dir search;
+allow hardware_info_app sysfs_scsi_devices_0000:file r_file_perms;
