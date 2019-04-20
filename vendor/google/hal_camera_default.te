@@ -21,6 +21,9 @@ allow hal_camera_default hal_airbrush_hwservice:hwservice_manager find;
 binder_call(hal_camera_default, airbrush)
 binder_call(airbrush, hal_camera_default)
 
+#For camera hal to talk with gralloc
+hal_client_domain(hal_camera_default, hal_graphics_allocator)
+
 # For camera hal to use factory calibration data
 allow hal_camera_default persist_default_file:dir search;
 allow hal_camera_default persist_default_file:lnk_file read;
