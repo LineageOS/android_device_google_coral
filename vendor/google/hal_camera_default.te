@@ -16,6 +16,14 @@ allow hal_camera_default sysfs_camera:file rw_file_perms;
 allow hal_camera_default eco_service:service_manager { find };
 binder_call(hal_camera_default, mediacodec)
 
+#For camera hal to talk with Airbrush service
+allow hal_camera_default hal_airbrush_hwservice:hwservice_manager find;
+binder_call(hal_camera_default, airbrush)
+binder_call(airbrush, hal_camera_default)
+
+#For camera hal to talk with gralloc
+hal_client_domain(hal_camera_default, hal_graphics_allocator)
+
 # For camera hal to use factory calibration data
 allow hal_camera_default persist_default_file:dir search;
 allow hal_camera_default persist_default_file:lnk_file read;
@@ -27,6 +35,8 @@ allow hal_camera_default mnt_vendor_file:dir search;
 set_prop(hal_camera_default, camera_prop)
 set_prop(hal_camera_default, vendor_faceauth_prop)
 get_prop(hal_camera_default, serialno_prop)
+
+hal_client_domain(hal_camera_default, hal_graphics_composer)
 
 # For camera debugging
 userdebug_or_eng(`

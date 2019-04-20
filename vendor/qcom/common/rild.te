@@ -1,6 +1,8 @@
 vndbinder_use(rild)
 allow rild self:qipcrtr_socket { create getattr read setopt write };
 
+binder_call(rild, vendor_per_mgr)
+
 #Allow access to netmgrd socket
 allow rild netmgrd_socket:dir r_dir_perms;
 unix_socket_connect(rild, netmgrd, netmgrd)
@@ -10,3 +12,5 @@ allow rild vendor_radio_data_file:file create_file_perms;
 
 #Allow set property persist.vendo.radio.adb_log_on
 set_prop(rild, vendor_radio_prop)
+
+hal_server_domain(rild, hal_secure_element)

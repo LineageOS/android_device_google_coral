@@ -4,6 +4,9 @@ hal_server_domain(hal_neuralnetworks_darwinn, hal_neuralnetworks)
 type hal_neuralnetworks_darwinn_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_neuralnetworks_darwinn)
 
+# DarwiNN Hidl service.
+add_hwservice(hal_neuralnetworks_darwinn, hal_darwinn_hwservice)
+
 # The TPU HAL looks for TPU instance in /sys/class/abc-pcie-tpu/.
 allow hal_neuralnetworks_darwinn sysfs:dir { open read };
 
