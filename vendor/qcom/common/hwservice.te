@@ -1,4 +1,5 @@
 type hal_display_color_hwservice, hwservice_manager_type;
+type hal_iwlan_hwservice, hwservice_manager_type;
 type hal_display_config_hwservice, hwservice_manager_type;
 type hal_display_postproc_hwservice, hwservice_manager_type;
 type hal_hbtp_hwservice, hwservice_manager_type;
