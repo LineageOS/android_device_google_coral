@@ -4,3 +4,5 @@ type hal_qteeconnector_qti, domain;
 #allow the service to be started by init
 type hal_qteeconnector_qti_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(hal_qteeconnector_qti)
+
+get_prop(hal_qteeconnector_qti, hwservicemanager_prop)
