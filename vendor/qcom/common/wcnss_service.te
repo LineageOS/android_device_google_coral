@@ -3,6 +3,7 @@ type wcnss_service_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(wcnss_service)
 net_domain(wcnss_service)
+vndbinder_use(wcnss_service)
 
 binder_call(wcnss_service, vendor_per_mgr)
 
