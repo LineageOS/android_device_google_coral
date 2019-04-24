@@ -97,7 +97,6 @@
 /(vendor|system/vendor)/bin/hw/qcrild           u:object_r:rild_exec:s0
 /vendor/bin/hw/android\.hardware\.drm@1\.2-service\.clearkey    u:object_r:hal_drm_clearkey_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.widevine    u:object_r:hal_drm_widevine_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.scve\.objecttracker@1\.0-service    u:object_r:vendor_scve_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@.*-service-qti u:object_r:hal_gnss_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.gnss@.*-service u:object_r:hal_gnss_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.0-service-qti  u:object_r:hal_bluetooth_default_exec:s0
@@ -107,7 +106,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.iop@1\.0-service        u:object_r:hal_iop_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.iop@2\.0-service        u:object_r:hal_iop_default_exec:s0
 /(vendor|system/vendor)/bin/mlid                u:object_r:mlid_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.scve\.panorama@1\.0-service    u:object_r:vendor_scve_exec:s0
 /(vendor|system/vendor)/bin/loc_launcher        u:object_r:location_exec:s0
 /(vendor|system/vendor)/bin/lowi-server         u:object_r:location_exec:s0
 /(vendor|system/vendor)/bin/xtra-daemon         u:object_r:location_exec:s0
