@@ -27,4 +27,7 @@ binder_call(hal_neuralnetworks_darwinn, airbrush)
 allow airbrush abc_tpu_device:chr_file getattr;
 allow airbrush ipu_device:chr_file getattr;
 
+allow airbrush sysfs_airbrush:file rw_file_perms;
+allow airbrush sysfs_airbrush:dir r_dir_perms;
+
 vndbinder_use(airbrush)
