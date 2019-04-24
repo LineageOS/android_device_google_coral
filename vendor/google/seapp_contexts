@@ -13,3 +13,6 @@ user=_app seinfo=platform name=com.android.pixellogger domain=logger_app type=ap
 
 # Domain for Oslo
 user=_app seinfo=platform name=com.google.oslo domain=oslo_app type=app_data_file levelFrom=all
+
+# Domain for FaceDebugService
+user=_app seinfo=platform name=com.google.android.facedebug domain=face_debug type=app_data_file levelFrom=all
