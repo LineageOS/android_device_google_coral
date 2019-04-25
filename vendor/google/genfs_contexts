@@ -91,3 +91,6 @@ genfscon sysfs /devices/platform/soc/soc:abc-sm                            u:obj
 # Dumpstate hal
 genfscon debugfs /dma_buf/bufinfo                     u:object_r:debugfs_dma_buf:s0
 genfscon debugfs /dma_buf/dmaprocs                    u:object_r:debugfs_dma_buf:s0
+
+# Power
+genfscon debugfs /clk/debug_suspend                   u:object_r:debugfs_clk:s0

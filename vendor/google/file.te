@@ -46,3 +46,6 @@ type ese_vendor_data_file, file_type, data_file_type;
 
 # Dumpstats dmabuf info
 type debugfs_dma_buf, debugfs_type, fs_type;
+
+# for clk/debug_suspend
+type debugfs_clk, debugfs_type, fs_type;
