@@ -21,11 +21,6 @@ allow hal_face_default fwk_camera_hwservice:hwservice_manager find;
 binder_call(hal_face_default, camera_service_server)
 binder_call(camera_service_server, hal_face_default)
 
-# TODO(b/124047077) Remove the debug files and policy.
-userdebug_or_eng(`
-allow hal_face_default debugfs_airbrush:file { open write };
-')
-
 vndbinder_use(hal_face_default)
 
 allow hal_face_default airbrush_faceauth_service:service_manager find;
