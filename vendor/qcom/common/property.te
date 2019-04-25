@@ -14,6 +14,9 @@ type ctl_LKCore_prop, property_type;
 # properties for usf daemons
 type usf_prop, property_type;
 
+# property for FactoryOTA
+type factory_ota_prop, property_type;
+
 type freq_prop, property_type;
 type vm_bms_prop, property_type; #To start vm_bms
 type vendor_dataqti_prop, property_type;
