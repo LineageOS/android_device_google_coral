@@ -36,7 +36,6 @@ vendor.tcpdump.log.alwayson                     u:object_r:vendor_tcpdump_log_pr
 vendor.tcpdump.output.dir                       u:object_r:vendor_tcpdump_log_prop:s0
 
 #face HAL
-vendor.faceauth.use_el2                         u:object_r:vendor_faceauth_prop:s0
 vendor.faceauth.enable_depth                    u:object_r:vendor_faceauth_prop:s0
 vendor.faceauth.enable_flood_rectification      u:object_r:vendor_faceauth_prop:s0
 vendor.faceauth.enable_skin                     u:object_r:vendor_faceauth_prop:s0
