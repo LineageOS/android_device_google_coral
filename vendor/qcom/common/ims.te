@@ -13,7 +13,7 @@ allow ims self:{
 } create_socket_perms_no_ioctl;
 
 set_prop(ims, qcom_ims_prop)
-
+unix_socket_connect(ims, cnd, cnd)
 #Allow access to netmgrd socket
 allow ims netmgrd_socket:dir r_dir_perms;
 unix_socket_connect(ims, netmgrd, netmgrd)
