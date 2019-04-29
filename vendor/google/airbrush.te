@@ -12,9 +12,6 @@ get_prop(airbrush, hwservicemanager_prop)
 
 allow airbrush airbrush_sm_device:chr_file { rw_file_perms };
 
-# TODO(vharron) Enable HAL/GCA to access the binder interface.
-# allow airbrush google_camera_app:binder call;
-# allow airbrush hal_camera_default:binder call;
 allow airbrush hal_graphics_allocator_default:fd use;
 allow airbrush ion_device:chr_file r_file_perms;
 
