@@ -42,6 +42,7 @@ vendor.faceauth.enable_skin                     u:object_r:vendor_faceauth_prop:
 vendor.faceauth.debug                           u:object_r:vendor_faceauth_prop:s0
 vendor.faceauth.use_fake_camera                 u:object_r:vendor_faceauth_prop:s0
 vendor.faceauth.use_secure_camera               u:object_r:vendor_faceauth_prop:s0
+vendor.faceauth.trace                           u:object_r:vendor_faceauth_prop:s0
 
 persist.vendor.faceauth.enable_depth            u:object_r:vendor_faceauth_prop:s0
 persist.vendor.faceauth.enable_flood_rectification  u:object_r:vendor_faceauth_prop:s0
