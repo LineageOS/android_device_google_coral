@@ -30,6 +30,8 @@ allow hal_face_default face_vendor_data_file:dir create_dir_perms;
 r_dir_file(hal_face_default, persist_camera_file)
 allow hal_face_default persist_default_file:dir search;
 allow hal_face_default mnt_vendor_file:dir search;
+allow hal_face_default system_app:fd use;
+
 
 get_prop(hal_face_default, camera_prop)
 get_prop(hal_face_default, vendor_faceauth_prop)
