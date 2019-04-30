@@ -22,3 +22,7 @@ allow ssr_detector_app sysfs:lnk_file r_file_perms;
 r_dir_file(ssr_detector_app, sysfs_msm_subsys)
 
 allow ssr_detector_app cgroup:file w_file_perms;
+r_dir_file(ssr_detector_app, sysfs_ssr)
+# set dontaudit for ssr_detector app to access faceauth subsys.
+dontaudit ssr_detector_app sysfs_faceauth:dir r_dir_perms;
+dontaudit ssr_detector_app sysfs_faceauth:{ file lnk_file } r_file_perms;
