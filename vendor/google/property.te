@@ -18,3 +18,6 @@ type vendor_aware_available_prop, property_type;
 
 # Modem property
 type vendor_modem_prop, property_type;
+
+# Camera read only property
+type camera_ro_prop, property_type;
