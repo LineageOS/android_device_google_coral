@@ -35,6 +35,7 @@ allow hal_camera_default mnt_vendor_file:dir search;
 set_prop(hal_camera_default, camera_prop)
 set_prop(hal_camera_default, vendor_faceauth_prop)
 get_prop(hal_camera_default, serialno_prop)
+get_prop(hal_camera_default, camera_ro_prop)
 
 hal_client_domain(hal_camera_default, hal_graphics_composer)
 
