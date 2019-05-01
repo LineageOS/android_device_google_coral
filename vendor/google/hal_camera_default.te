@@ -21,6 +21,9 @@ allow hal_camera_default hal_airbrush_hwservice:hwservice_manager find;
 binder_call(hal_camera_default, airbrush)
 binder_call(airbrush, hal_camera_default)
 
+# For camera hal to talk with system server (for sensor access)
+binder_call(hal_camera_default, sensor_service_server)
+
 #For camera hal to talk with gralloc
 hal_client_domain(hal_camera_default, hal_graphics_allocator)
 
