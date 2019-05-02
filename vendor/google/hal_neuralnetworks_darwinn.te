@@ -18,6 +18,9 @@ allow hal_neuralnetworks_darwinn airbrush_device:chr_file rw_file_perms;
 
 allow hal_neuralnetworks_darwinn hal_airbrush_hwservice:hwservice_manager find;
 
+# Allow DawrinNN service to use a client-provided fd residing in /vendor/etc/.
+allow hal_neuralnetworks_darwinn vendor_configs_file:file { read getattr map };
+
 allow hal_neuralnetworks_darwinn airbrush_tpu_service:service_manager find;
 binder_call(hal_neuralnetworks_darwinn, airbrush)
 vndbinder_use(hal_neuralnetworks_darwinn)
