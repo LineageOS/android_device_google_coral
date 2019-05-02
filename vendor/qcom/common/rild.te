@@ -16,3 +16,6 @@ set_prop(rild, vendor_radio_prop)
 
 hal_server_domain(rild, hal_secure_element)
 add_hwservice(rild, hal_iwlan_hwservice)
+
+#Fix no service problem
+binder_call(rild, qtidataservices_app)
