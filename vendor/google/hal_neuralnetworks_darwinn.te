@@ -20,7 +20,6 @@ allow hal_neuralnetworks_darwinn hal_airbrush_hwservice:hwservice_manager find;
 
 allow hal_neuralnetworks_darwinn airbrush_tpu_service:service_manager find;
 binder_call(hal_neuralnetworks_darwinn, airbrush)
-add_service(hal_neuralnetworks_darwinn, darwinn_service)
 vndbinder_use(hal_neuralnetworks_darwinn)
 
 # Allows DarwiNN HAL to talk to Power HAL.
