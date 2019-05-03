@@ -33,10 +33,13 @@ allow hal_face_default mnt_vendor_file:dir search;
 allow hal_face_default system_app:fd use;
 
 
-# Grant incidentd access to the face HAL debug images
+# Grant incidentd and FaceDebugService access to the face HAL debug images
 userdebug_or_eng(`
   allow hal_face_default incidentd:fd use;
   allow hal_face_default incidentd:fifo_file write;
+
+  allow hal_face_default face_debug:fd use;
+  allow hal_face_default face_debug:fifo_file write;
 ')
 
 get_prop(hal_face_default, camera_prop)
