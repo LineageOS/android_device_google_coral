@@ -13,3 +13,4 @@ allow rlsservice sysfs_camera:file rw_file_perms;
 allow rlsservice rls_device:chr_file rw_file_perms;
 
 allow rlsservice hal_sensors_default:binder call;
+allow rlsservice hal_camera_default:binder call;
