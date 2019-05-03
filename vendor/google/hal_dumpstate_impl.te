@@ -40,10 +40,6 @@ allow hal_dumpstate_impl debugfs_icnss:file r_file_perms;
 # For dma_buf/ion dump
 allow hal_dumpstate_impl debugfs_dma_buf:file r_file_perms;
 
-# Vibrator
-r_dir_file(hal_dumpstate_impl, sysfs_vibrator)
-allow hal_dumpstate_impl sysfs_leds:dir search;
-
 # USB logs
 allow hal_dumpstate_impl debugfs_usb:file r_file_perms;
 
