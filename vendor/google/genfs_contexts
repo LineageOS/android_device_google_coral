@@ -57,7 +57,10 @@ genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight/pane
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/panel_info                         u:object_r:sysfs_display:s0
 
 # Vibrator
+# EVT 1.0 and older
 genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-3/3-0043                    u:object_r:sysfs_vibrator:s0
+# EVT 1.1 and newer
+genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-4/4-0043                    u:object_r:sysfs_vibrator:s0
 
 # Camera
 genfscon sysfs /devices/platform/soc/ac4a000.qcom,cci                           u:object_r:sysfs_camera:s0
