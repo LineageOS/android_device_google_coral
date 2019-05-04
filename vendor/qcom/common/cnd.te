@@ -61,3 +61,6 @@ binder_call(cnd, location)
 userdebug_or_eng(`
   binder_call(cnd, radio)
 ')
+
+# For WFC call(RAT change into IWLAN)
+binder_call(cnd, qtidataservices_app)
