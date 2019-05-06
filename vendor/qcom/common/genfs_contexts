@@ -21,3 +21,7 @@ genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-0061                    
 genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-0061/power_supply                                                              u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_rotator                                                                         u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/net                                                                           u:object_r:sysfs_net:s0
+genfscon sysfs /module/diagchar/parameters/timestamp_switch                                                                            u:object_r:sysfs_timestamp_switch:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws@1e08000                                                                          u:object_r:sysfs_data:s0
+genfscon sysfs /devices/virtual/xt_hardidletimer/timers                                                                                u:object_r:sysfs_data:s0
+genfscon sysfs /devices/virtual/xt_idletimer/timers                                                                                    u:object_r:sysfs_data:s0
