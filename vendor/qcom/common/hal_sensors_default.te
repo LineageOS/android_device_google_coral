@@ -26,4 +26,12 @@ r_dir_file(hal_sensors_default, sysfs_batteryinfo)
 
 r_dir_file(hal_sensors_default, adsprpcd_file)
 
+# For QCOM diag port access
+userdebug_or_eng(`
+  allow hal_sensors_default diag_device:chr_file rw_file_perms;
+')
+
+allow hal_sensors_default persist_default_file:dir search;
+allow hal_sensors_default persist_default_file:lnk_file read;
+
 dontaudit hal_sensors_default kernel:system module_request;
