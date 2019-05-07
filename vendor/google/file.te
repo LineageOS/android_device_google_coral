@@ -20,6 +20,7 @@ type sysfs_msm_boardid, fs_type, sysfs_type;
 type sysfs_iio_devices, fs_type, sysfs_type;
 type sysfs_pixelstats, fs_type, sysfs_type;
 type sysfs_airbrush, sysfs_type, fs_type;
+type sysfs_wlc, sysfs_type, fs_type;
 type sysfs_pstore, sysfs_type, fs_type;
 
 #f2fs file
