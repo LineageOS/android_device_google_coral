@@ -42,6 +42,10 @@ allow hal_camera_default mnt_vendor_file:dir search;
 allow hal_camera_default rls_service:service_manager find;
 binder_call(hal_camera_default, rlsservice)
 
+# For camera hal to talk with statsd
+allow hal_camera_default fwk_stats_hwservice:hwservice_manager find;
+binder_call(hal_camera_default, stats_service_server)
+
 # For camera hal to use system property
 set_prop(hal_camera_default, camera_prop)
 set_prop(hal_camera_default, vendor_faceauth_prop)
