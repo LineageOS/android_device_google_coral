@@ -1,0 +1,8 @@
+userdebug_or_eng(`
+  allow dumpstate debugfs_dma_buf:file r_file_perms;
+')
+
+# For collecting bugreports.
+allow dumpstate sysfs_scsi_devices_0000:file r_file_perms;
+
+dontaudit dumpstate debugfs_dma_buf:file r_file_perms;
