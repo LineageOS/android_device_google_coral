@@ -21,3 +21,6 @@ type vendor_modem_prop, property_type;
 
 # Camera read only property
 type camera_ro_prop, property_type;
+
+#ramoops
+type vendor_ramoops_prop, property_type;
