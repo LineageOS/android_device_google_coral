@@ -15,6 +15,7 @@ genfscon debugfs /wlan0                                                         
 genfscon debugfs /icnss                                                                                                                u:object_r:debugfs_icnss:s0
 genfscon debugfs /ipc_logging                                                                                                          u:object_r:debugfs_ipc:s0
 genfscon sysfs /module/diagchar                                                                                                        u:object_r:sysfs_diag:s0
+genfscon proc /debugdriver/driverdump                                                                                                  u:object_r:proc_wifi_dbg:s0
 genfscon proc /ath_pktlog/cld                                                                                                          u:object_r:proc_wifi_dbg:s0
 genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-000c/a88000.i2c:qcom,smb1355@c:qcom,smb1355-charger@1000/power_supply          u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-0061                                                                           u:object_r:sysfs_wlc:s0
