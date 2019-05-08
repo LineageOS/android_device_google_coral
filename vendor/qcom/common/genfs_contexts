@@ -19,6 +19,5 @@ genfscon proc /ath_pktlog/cld                                                   
 genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-000c/a88000.i2c:qcom,smb1355@c:qcom,smb1355-charger@1000/power_supply          u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-0061                                                                           u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-0061/power_supply                                                              u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/red        u:object_r:sysfs_lights:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_rotator                                                                         u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/net                                                                           u:object_r:sysfs_net:s0
