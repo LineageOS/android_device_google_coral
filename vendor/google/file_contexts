@@ -72,6 +72,7 @@
 /data/vendor/modem_stat/debug\.txt                                                    u:object_r:modem_stat_data_file:s0
 /data/vendor/modem_dump(/.*)?                                                         u:object_r:modem_dump_file:s0
 /data/vendor/tcpdump_logger(/.*)?                                                     u:object_r:tcpdump_vendor_data_file:s0
+/data/vendor_ce/[0-9]+/ramoops(/.*)?                                                  u:object_r:ramoops_vendor_data_file:s0
 
 # dev socket node
 /dev/socket/diag_router                                                               u:object_r:diag_socket:s0
