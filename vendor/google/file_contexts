@@ -13,8 +13,6 @@
 /dev/vd6281                                                                           u:object_r:rls_device:s0
 /dev/sensor_tunnel                                                                    u:object_r:rls_device:s0
 /dev/st54j_se                                                                         u:object_r:secure_element_device:s0
-/dev/iaxxx-odsp-celldrv                                                               u:object_r:audio_device:s0
-/dev/tunnel0                                                                          u:object_r:audio_device:s0
 /dev/subsys_faceauth                                                                  u:object_r:faceauth_device:s0
 /dev/lm36011_flood                                                                    u:object_r:laser_device:s0
 /dev/lm36011_dot                                                                      u:object_r:laser_device:s0
