@@ -21,5 +21,15 @@ get_prop(hal_imsrtp, qcom_ims_prop)
 #for video call-
 
 userdebug_or_eng(`
-  permissive hal_imsrtp;
+  r_dir_file(hal_imsrtp, sysfs_diag)
+  allow hal_imsrtp diag_device:chr_file rw_file_perms;
 ')
+allow hal_imsrtp self:capability net_bind_service;
+allow hal_imsrtp sysfs_data:file r_file_perms;
+allow hal_imsrtp sysfs_ssr:file r_file_perms;
+allow hal_imsrtp sysfs_timestamp_switch:file r_file_perms;
+r_dir_file(hal_imsrtp, sysfs_esoc)
+r_dir_file(hal_imsrtp, sysfs_msm_subsys)
+
+dontaudit hal_imsrtp sysfs_faceauth:dir r_dir_perms;
+dontaudit hal_imsrtp sysfs_faceauth:file r_file_perms;
