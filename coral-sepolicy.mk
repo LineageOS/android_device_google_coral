@@ -5,3 +5,4 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS := device/google/coral-sepolicy/private
 BOARD_SEPOLICY_DIRS += device/google/coral-sepolicy/vendor/google
 BOARD_SEPOLICY_DIRS += device/google/coral-sepolicy/vendor/qcom/common
 BOARD_SEPOLICY_DIRS += device/google/coral-sepolicy/vendor/qcom/sm8150
+BOARD_SEPOLICY_DIRS += device/google/coral-sepolicy/vendor/knowles/common
