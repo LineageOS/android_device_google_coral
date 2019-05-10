@@ -24,6 +24,10 @@ binder_call(camera_service_server, hal_face_default)
 vndbinder_use(hal_face_default)
 
 allow hal_face_default airbrush_faceauth_service:service_manager find;
+# Allow the face HAL to communicate with keymaster. This is required
+# to verify authorization timestamps with citadel.
+# The face HAL *can only* use the verifyAuthorization API on keymaster
+hal_client_domain(hal_face_default, hal_keymaster)
 
 # Create subdirectories within the face vendor file directory.
 allow hal_face_default face_vendor_data_file:dir create_dir_perms;
