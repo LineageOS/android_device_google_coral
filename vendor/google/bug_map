@@ -25,6 +25,7 @@ qtidataservices_app vendor_default_prop file 131141470
 radio vendor_default_prop file 129455852
 radio vendor_radio_prop file 129455852
 rild default_prop file 129438948
+rild vendor_xlat_prop property_service 129438948
 thermal-engine socket_device dir 124250714
 thermal-engine sysfs dir 124250714
 thermal-engine sysfs_batteryinfo dir 124250714
@@ -47,3 +48,16 @@ time_daemon sysfs_soc file 128869480
 time_daemon sysfs_ssr file 128869480
 vendor_pd_mapper sysfs_esoc dir 129744410
 vendor_pd_mapper sysfs_msm_subsys dir 129744410
+hal_sensors_default sysfs_esoc dir 129437033
+hal_sensors_default sysfs_ssr file 129437033
+sensors diag_device chr_file 129437033
+sensors self qipcrtr_socket 129437033
+sensors sysfs_esoc dir 129437033
+sensors sysfs_ssr file 129437033
+netd self capability 129670638
+tee persist_default_file lnk_file 132393475
+tee time_daemon unix_stream_socket 132393475
+vendor_init device file 126796415
+init super_block_device lnk_file 124410201
+init kernel system 132409186
+init socket_device sock_file 132412558
