@@ -14,3 +14,6 @@ allow rlsservice rls_device:chr_file rw_file_perms;
 
 allow rlsservice hal_sensors_default:binder call;
 allow rlsservice hal_camera_default:binder call;
+
+# For rlsservice to read debug property
+get_prop(rlsservice, camera_prop)
