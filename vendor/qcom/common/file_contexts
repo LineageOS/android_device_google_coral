@@ -163,6 +163,7 @@
 
 # dev socket nodes
 /dev/socket/chre                                u:object_r:chre_socket:s0
+/dev/socket/msm_irqbalance                      u:object_r:irqbalance_socket:s0
 /dev/socket/qmux_radio(/.*)?                    u:object_r:qmuxd_socket:s0
 /dev/socket/netmgr(/.*)?                        u:object_r:netmgrd_socket:s0
 /dev/socket/ims_qmid                            u:object_r:ims_socket:s0
