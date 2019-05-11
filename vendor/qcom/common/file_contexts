@@ -164,6 +164,7 @@
 
 # dev socket nodes
 /dev/socket/chre                                u:object_r:chre_socket:s0
+/dev/socket/msm_irqbalance                      u:object_r:irqbalance_socket:s0
 /dev/socket/qmux_radio(/.*)?                    u:object_r:qmuxd_socket:s0
 /dev/socket/netmgr(/.*)?                        u:object_r:netmgrd_socket:s0
 /dev/socket/ims_qmid                            u:object_r:ims_socket:s0
@@ -363,6 +364,7 @@
 /data/vendor/location(/.*)?            u:object_r:location_data_file:s0
 /data/vendor/tombstones/rfs(/.*)?      u:object_r:rfs_tombstone_data_file:s0
 /data/vendor/audio(/.*)?               u:object_r:audio_vendor_data_file:s0
+/data/vendor/display(/.*)?             u:object_r:display_vendor_data_file:s0
 
 # spdaemon and sec_nvm files
 /dev/spdaemon_ssr                               u:object_r:spdaemon_ssr_device:s0
