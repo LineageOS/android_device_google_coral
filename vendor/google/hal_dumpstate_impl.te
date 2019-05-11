@@ -11,6 +11,7 @@ allow hal_dumpstate_impl vendor_toolbox_exec:file rx_file_perms;
 # Touch sysfs interface
 allow hal_dumpstate_impl sysfs_touch:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_touch:file rw_file_perms;
+allow hal_dumpstate_impl proc_touch:file rw_file_perms;
 
 allow hal_dumpstate_impl debugfs_f2fs:dir r_dir_perms;
 allow hal_dumpstate_impl debugfs_f2fs:file r_file_perms;
@@ -73,3 +74,7 @@ domain_auto_trans(hal_dumpstate_impl, modem_svc_exec, modem_svc)
 allow hal_dumpstate_impl modem_stat_data_file:file r_file_perms;
 
 get_prop(hal_dumpstate_impl, vendor_radio_prop)
+
+# Access to WLC firmware info
+allow hal_dumpstate_impl sysfs_wlc:dir r_dir_perms;
+allow hal_dumpstate_impl sysfs_wlc:file r_file_perms;

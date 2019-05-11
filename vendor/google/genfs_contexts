@@ -14,6 +14,7 @@ genfscon sysfs /bus/iio/devices                       u:object_r:sysfs_iio_devic
 
 # Touch
 genfscon sysfs /devices/platform/soc/890000.spi/spi_master/spi1/spi1.0		u:object_r:sysfs_touch:s0
+genfscon proc  /fts/driver_test                                                 u:object_r:proc_touch:s0
 
 # PowerHal
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp                      u:object_r:sysfs_msm_subsys:s0
@@ -72,6 +73,8 @@ genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/esim                   
 # Battery
 genfscon sysfs /devices/platform/soc/soc:google,battery/power_supply/battery    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0036/power_supply/maxfg u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061                    u:object_r:sysfs_wlc:s0
+genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply       u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply/wireless    u:object_r:sysfs_batteryinfo:s0
 genfscon debugfs /regmap/1-0036/                                                u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /regmap/1-000b/                                                u:object_r:debugfs_batteryinfo:s0
