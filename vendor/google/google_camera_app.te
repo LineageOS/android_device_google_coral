@@ -97,3 +97,10 @@ allow google_camera_app qdsp_device:chr_file r_file_perms;
 # Read adsp files, for Hexagon access
 allow google_camera_app adsprpcd_file:lnk_file r_file_perms;
 
+# Allow read camera prop
+get_prop(google_camera_app, camera_prop)
+get_prop(google_camera_app, camera_ro_prop)
+
+# Allow read vendor display prop
+get_prop(google_camera_app, vendor_display_prop)
+
