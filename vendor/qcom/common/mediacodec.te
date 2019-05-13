@@ -1,2 +1,3 @@
 add_service(mediacodec, eco_service)
 allow mediacodec hal_capabilityconfigstore_qti_hwservice:hwservice_manager find;
+get_prop(mediacodec, vendor_display_prop)
