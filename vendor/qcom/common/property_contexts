@@ -73,3 +73,5 @@ persist.vendor.sys.ssr.                         u:object_r:vendor_ssr_prop:s0
 ctl.vendor.rmt_storage                          u:object_r:ctl_vendor_rmt_storage_prop:s0
 
 sys.slpi.firmware.version                       u:object_r:public_vendor_system_prop:s0
+
+media.ecoservice.log.                           u:object_r:ecoservice_prop:s0
