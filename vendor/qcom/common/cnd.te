@@ -31,7 +31,6 @@ r_dir_file(cnd, sysfs_diag)
 r_dir_file(cnd, sysfs_soc)
 r_dir_file(cnd, sysfs_ssr)
 r_dir_file(cnd, sysfs_esoc)
-#TODO(b/129523597): investigate the relationship between cnd and sysfs_faceauth with QCT.
 dontaudit cnd sysfs_faceauth:dir search;
 dontaudit cnd sysfs_faceauth:file { open read };
 
@@ -60,6 +59,7 @@ binder_call(cnd, ims)
 binder_call(cnd, location)
 userdebug_or_eng(`
   binder_call(cnd, radio)
+  allow cnd diag_device:chr_file rw_file_perms;
 ')
 
 # For WFC call(RAT change into IWLAN)
