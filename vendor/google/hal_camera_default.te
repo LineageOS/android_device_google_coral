@@ -64,3 +64,10 @@ userdebug_or_eng(`
   allow hal_camera_default camera_vendor_data_file:file create_file_perms;
 ')
 
+# For camera hal to talk with GPU and dontaudit unnecessary files in /sys
+hal_client_domain(hal_camera_default, hal_configstore)
+allow hal_camera_default self:qipcrtr_socket create_socket_perms_no_ioctl;
+dontaudit hal_camera_default sysfs_msm_subsys:dir search;
+dontaudit hal_camera_default sysfs_ssr:file r_file_perms;
+dontaudit hal_camera_default sysfs_esoc:dir search;
+dontaudit hal_camera_default sysfs_faceauth:dir search;
