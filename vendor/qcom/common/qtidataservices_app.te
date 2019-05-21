@@ -6,6 +6,7 @@ add_hwservice(qtidataservices_app, hal_cacert_hwservice)
 hwbinder_use(qtidataservices_app)
 
 get_prop(qtidataservices_app, hwservicemanager_prop)
+get_prop(qtidataservices_app, vendor_default_prop)
 
 allow qtidataservices_app hal_datafactory_hwservice:hwservice_manager find;
 allow qtidataservices_app hal_iwlan_hwservice:hwservice_manager find;
@@ -17,4 +18,3 @@ allow qtidataservices_app radio_data_file:dir r_dir_perms;
 
 binder_call(qtidataservices_app, cnd)
 binder_call(qtidataservices_app, rild)
-
