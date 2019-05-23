@@ -58,3 +58,6 @@ type debugfs_clk, debugfs_type, fs_type;
 
 # Airbrush debug
 type debugfs_airbrush, debugfs_type, fs_type;
+
+# pmic_vote
+type debugfs_pmic, debugfs_type, fs_type;
