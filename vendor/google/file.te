@@ -61,3 +61,6 @@ type debugfs_airbrush, debugfs_type, fs_type;
 
 # pmic_vote
 type debugfs_pmic, debugfs_type, fs_type;
+
+# USB contaminant detction
+type sysfs_contaminant, sysfs_type, fs_type;
