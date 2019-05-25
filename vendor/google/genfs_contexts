@@ -81,9 +81,13 @@ genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply/wirele
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:google,bms/power_supply/charger u:object_r:sysfs_batteryinfo:s0
 genfscon debugfs /regmap/1-0036/                                                u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /regmap/1-000b/                                                u:object_r:debugfs_batteryinfo:s0
+genfscon debugfs /regmap/2-0036/                                                u:object_r:debugfs_batteryinfo:s0
+genfscon debugfs /regmap/2-000b/                                                u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /logbuffer/ssoc                                                u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /logbuffer/batt_ce                                             u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /logbuffer/wireless                                            u:object_r:debugfs_batteryinfo:s0
+genfscon debugfs /google_charger                                                u:object_r:debugfs_batteryinfo:s0
+genfscon debugfs /google_battery                                                u:object_r:debugfs_batteryinfo:s0
 
 # Pixelstats
 genfscon sysfs /devices/virtual/misc/msm_cirrus_playback/resistance_left_right    u:object_r:sysfs_pixelstats:s0
@@ -100,7 +104,9 @@ genfscon debugfs /logbuffer/pps			      u:object_r:debugfs_usb:s0
 
 # Airbrush
 genfscon sysfs /devices/platform/soc/soc:abc-sm                            u:object_r:sysfs_airbrush:s0
+genfscon sysfs /devices/platform/soc/c84000.i2c/i2c-4/4-0066           u:object_r:sysfs_airbrush_dumpstate:s0
 genfscon debugfs /faceauth                                                 u:object_r:debugfs_airbrush:s0
+genfscon debugfs /airbrush                                                 u:object_r:debugfs_airbrush:s0
 
 # Dumpstate hal
 genfscon debugfs /dma_buf/bufinfo                     u:object_r:debugfs_dma_buf:s0
@@ -114,3 +120,10 @@ genfscon sysfs /devices/virtual/ramoops/pstore/aes_key                          
 genfscon sysfs /devices/virtual/ramoops/pstore/aes_key_iv                       u:object_r:sysfs_pstore:s0
 genfscon sysfs /devices/virtual/ramoops/pstore/aes_key_tag                      u:object_r:sysfs_pstore:s0
 genfscon sysfs /devices/virtual/ramoops/pstore/use_alt                          u:object_r:sysfs_pstore:s0
+
+# pmic
+genfscon debugfs /pmic-votable                        u:object_r:debugfs_pmic:s0
+
+# USB contaminant detection
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/usb/moisture_detected            u:object_r:sysfs_contaminant:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/usb/moisture_detection_enabled   u:object_r:sysfs_contaminant:s0

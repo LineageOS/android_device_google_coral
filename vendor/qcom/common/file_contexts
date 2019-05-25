@@ -344,6 +344,7 @@
 # dev socket nodes
 /dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
 /dev/socket/location(/.*)?                      u:object_r:location_socket:s0
+/dev/socket/wifihal(/.*)?                       u:object_r:wifihal_socket:s0
 /dev/socket/pps                                 u:object_r:pps_socket:s0
 
 # files in /vendor
