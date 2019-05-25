@@ -28,3 +28,7 @@ userdebug_or_eng(`
 #Allow qcrild to logging log into QXDM.
 allow rild diag_device:chr_file rw_file_perms;
 ')
+
+add_hwservice(rild, hal_dataconnection_hwservice)
+allow rild time_daemon:unix_stream_socket connectto;
+set_prop(rild, vendor_xlat_prop)
