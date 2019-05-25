@@ -7,6 +7,10 @@ allow hal_wifi_ext location:unix_stream_socket connectto;
 allow hal_wifi_ext location_socket:dir search;
 allow hal_wifi_ext location_socket:sock_file write;
 allow hal_wifi_ext location_data_file:{ file fifo_file } create_file_perms;
+allow hal_wifi_ext location:unix_dgram_socket sendto;
+
+allow hal_wifi_ext wifihal_socket:dir rw_dir_perms;
+allow hal_wifi_ext wifihal_socket:sock_file create_file_perms;
 
 # Write wlan driver/fw version into property
 set_prop(hal_wifi_ext, vendor_wifi_version)
