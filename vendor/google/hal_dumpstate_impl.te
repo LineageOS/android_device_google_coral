@@ -46,6 +46,10 @@ allow hal_dumpstate_impl debugfs_dma_buf:file r_file_perms;
 # Battery/Charger/Guage
 allow hal_dumpstate_impl debugfs_batteryinfo:file r_file_perms;
 
+# Dump PMIC data
+allow hal_dumpstate_impl debugfs_pmic:dir r_dir_perms;
+allow hal_dumpstate_impl debugfs_pmic:file r_file_perms;
+
 # USB logs
 allow hal_dumpstate_impl debugfs_usb:file r_file_perms;
 
@@ -81,3 +85,14 @@ get_prop(hal_dumpstate_impl, vendor_radio_prop)
 # Access to WLC firmware info
 allow hal_dumpstate_impl sysfs_wlc:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_wlc:file r_file_perms;
+
+#dump power supply stats
+allow hal_dumpstate_impl sysfs_batteryinfo:dir search;
+allow hal_dumpstate_impl sysfs_batteryinfo:file r_file_perms;
+
+#dump maxfg_history
+allow hal_dumpstate_impl maxfg_device:chr_file r_file_perms;
+
+# Access to airbrush related debug info
+r_dir_file(hal_dumpstate_impl, sysfs_airbrush_dumpstate)
+r_dir_file(hal_dumpstate_impl, debugfs_airbrush)
