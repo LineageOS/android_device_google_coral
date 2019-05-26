@@ -959,3 +959,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     device/google/coral/permissions/privapp-permissions-aosp-extended.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-aosp-extended.xml
+
+# Build necessary packages for vendor
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    libjson \
+    libtinyxml \
+    libwifi-hal-qcom
