@@ -14,6 +14,8 @@ genfscon debugfs /wlan                                                          
 genfscon debugfs /wlan0                                                                                                                u:object_r:debugfs_wlan:s0
 genfscon debugfs /icnss                                                                                                                u:object_r:debugfs_icnss:s0
 genfscon debugfs /ipc_logging                                                                                                          u:object_r:debugfs_ipc:s0
+genfscon debugfs /ion                                                                                                                  u:object_r:debugfs_ion:s0
+genfscon debugfs /tzdbg                                                                                                                u:object_r:debugfs_tzdbg:s0
 genfscon sysfs /module/diagchar                                                                                                        u:object_r:sysfs_diag:s0
 genfscon proc /debugdriver/driverdump                                                                                                  u:object_r:proc_wifi_dbg:s0
 genfscon proc /ath_pktlog/cld                                                                                                          u:object_r:proc_wifi_dbg:s0
