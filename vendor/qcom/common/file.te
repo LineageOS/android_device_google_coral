@@ -404,6 +404,12 @@ type debugfs_ipc, debugfs_type, fs_type;
 # debugfs icnss
 type debugfs_icnss, debugfs_type, fs_type;
 
+# debugfs ion
+type debugfs_ion, debugfs_type, fs_type;
+
+# debugfs tz
+type debugfs_tzdbg, debugfs_type, fs_type;
+
 # CNSS file
 type cnss_vendor_data_file, file_type, data_file_type, mlstrustedobject;
 
