@@ -12,7 +12,6 @@ hal_health_default sysfs file 132324546
 hal_sensors_default sysfs_esoc dir 129437033
 hal_sensors_default sysfs_ssr file 129437033
 ims sysfs_faceauth dir 129460752
-init firmware_file filesystem 132595418
 init-insmod-sh debugfs_ipc dir 132594872
 init-insmod-sh debugfs_wlan dir 132594872
 init-insmod-sh init-insmod-sh capability 132594872
