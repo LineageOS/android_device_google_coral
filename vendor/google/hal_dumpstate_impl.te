@@ -110,3 +110,10 @@ allow hal_dumpstate_impl maxfg_device:chr_file r_file_perms;
 # Access to airbrush related debug info
 r_dir_file(hal_dumpstate_impl, sysfs_airbrush_dumpstate)
 r_dir_file(hal_dumpstate_impl, debugfs_airbrush)
+
+# Access to Citadel is via citadeld
+vndbinder_use(hal_dumpstate_impl)
+binder_call(hal_dumpstate_impl, citadeld)
+allow hal_dumpstate_impl citadeld_service:service_manager find;
+allow hal_dumpstate_impl citadel_updater_exec:file execute_no_trans;
+allow hal_dumpstate_impl shell_data_file:file getattr;
