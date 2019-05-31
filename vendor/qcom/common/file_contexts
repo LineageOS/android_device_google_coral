@@ -339,7 +339,7 @@
 /dev/block/sde                                  u:object_r:boot_block_device:s0
 /dev/msm_.*                                     u:object_r:audio_device:s0
 /dev/ramdump_.*                                 u:object_r:ramdump_device:s0
-
+/dev/at_.*                                      u:object_r:at_device:s0
 
 # dev socket nodes
 /dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
