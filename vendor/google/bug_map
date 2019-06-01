@@ -18,7 +18,6 @@ init-insmod-sh init-insmod-sh capability 132594872
 init kernel system 132409186
 init socket_device sock_file 132412558
 init super_block_device lnk_file 124410201
-init tmpfs lnk_file 132595817
 irsc_util irsc_util socket 130587338
 kernel debugfs_ipc dir 132594872
 kernel debugfs_wlan dir 132594872
@@ -48,7 +47,6 @@ sensors sensors qipcrtr_socket 129437033
 sensors sysfs_esoc dir 129437033
 sensors sysfs_ssr file 129437033
 system_app vendor_display_prop file 131773821
-system_server sysfs file 132595817
 tee persist_default_file lnk_file 132393475
 tee time_daemon unix_stream_socket 132393475
 thermal-engine socket_device dir 124250714
@@ -71,7 +69,6 @@ time_daemon sysfs_soc file 128869480
 time_daemon sysfs_ssr file 128869480
 time_daemon time_daemon capability 128869480
 time_daemon time_daemon qipcrtr_socket 128869480
-ueventd tmpfs lnk_file 132595817
 ueventd ueventd capability 132595817
 untrusted_app vendor_display_prop file 131773821
 vendor_init device file 126796415
