@@ -19,3 +19,6 @@ allow init-insmod-sh sysfs_msm_boot:file w_file_perms;
 
 # modprobe need proc_modules
 allow init-insmod-sh proc_modules:file r_file_perms;
+
+allow init-insmod-sh debugfs_ipc:dir search;
+allow init-insmod-sh debugfs_wlan:dir search;
