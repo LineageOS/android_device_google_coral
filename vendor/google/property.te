@@ -27,3 +27,6 @@ type vendor_ramoops_prop, property_type;
 
 #ecoservice
 type ecoservice_prop, property_type;
+
+# hal_health
+type vendor_shutdown_prop, property_type;
