@@ -34,4 +34,9 @@ userdebug_or_eng(`
 allow hal_sensors_default persist_default_file:dir search;
 allow hal_sensors_default persist_default_file:lnk_file read;
 
+allow hal_sensors_default sysfs_ssr:file r_file_perms;
+
 dontaudit hal_sensors_default kernel:system module_request;
+dontaudit hal_sensors_default sysfs_esoc:dir r_dir_perms;
+dontaudit hal_sensors_default sysfs_faceauth:dir search;
+dontaudit hal_sensors_default sysfs_faceauth:file r_file_perms;
