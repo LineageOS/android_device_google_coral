@@ -7,7 +7,7 @@
 
 /dev/block/platform/soc/1d84000\.ufshc/by-name/abl_[ab]        u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/aop_[ab]        u:object_r:custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/apdp_[ab]       u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/apdp_[ab]       u:object_r:dp_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/bluetooth_[ab]  u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/boot_[ab]       u:object_r:boot_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/cmnlib64_[ab]   u:object_r:custom_ab_block_device:s0
