@@ -30,6 +30,7 @@ genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys7/restart_level    u
 genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys8/name            u:object_r:sysfs_ssr:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys8/restart_level   u:object_r:sysfs_ssr_writable:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,faceauth_fws/subsys9/restart_level u:object_r:sysfs_ssr_writable:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,faceauth_fws_b/subsys10/restart_level u:object_r:sysfs_ssr_writable:s0
 genfscon sysfs /devices/virtual/thermal                                        u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/health                      u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/version                     u:object_r:sysfs_scsi_devices_0000:s0
