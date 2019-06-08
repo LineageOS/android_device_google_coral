@@ -12,6 +12,9 @@ allow hal_camera_default laser_device:chr_file rw_file_perms;
 allow hal_camera_default sysfs_camera:dir search;
 allow hal_camera_default sysfs_camera:file rw_file_perms;
 
+# For accessing device config (device build)
+allow hal_camera_default sysfs_devcfg:file r_file_perms;
+
 #For camera hal to talk with ECOService.
 allow hal_camera_default eco_service:service_manager { find };
 binder_call(hal_camera_default, mediacodec)
