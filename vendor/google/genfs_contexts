@@ -43,7 +43,13 @@ genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0011/iio:device3
 u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-2/2-0010/iio:device4
 u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/soc/89c000.i2c/i2c-2/2-0011/iio:device3
+u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-3/3-0010/iio:device4
+u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-2/2-0008/power_stats
+u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-3/3-0008/power_stats
 u:object_r:sysfs_power_stats:s0
 
 # Not used by PowerStatsHal
@@ -75,6 +81,7 @@ genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/esim                   
 # Battery
 genfscon sysfs /devices/platform/soc/soc:google,battery/power_supply/battery    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0036/power_supply/maxfg u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/89c000.i2c/i2c-2/2-0036/power_supply/maxfg u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061                    u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply       u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply/wireless    u:object_r:sysfs_batteryinfo:s0
