@@ -71,3 +71,6 @@ dontaudit hal_camera_default sysfs_msm_subsys:dir search;
 dontaudit hal_camera_default sysfs_ssr:file r_file_perms;
 dontaudit hal_camera_default sysfs_esoc:dir search;
 dontaudit hal_camera_default sysfs_faceauth:dir search;
+
+# Access to Hexagon DSP
+allow hal_camera_default qdsp_device:chr_file r_file_perms;
