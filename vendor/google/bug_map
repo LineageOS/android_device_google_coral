@@ -43,3 +43,5 @@ ueventd ueventd capability 132595817
 vendor_misc_writer sysfs_dt_firmware_android dir 134122603
 vendor_pd_mapper sysfs_esoc dir 129744410
 vendor_pd_mapper sysfs_msm_subsys dir 129744410
+hal_face_default config_prop file 134894179
+untrusted_app_27 camera_ro_prop file 134899434
