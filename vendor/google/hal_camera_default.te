@@ -77,3 +77,7 @@ dontaudit hal_camera_default sysfs_faceauth:dir search;
 
 # Access to Hexagon DSP
 allow hal_camera_default qdsp_device:chr_file r_file_perms;
+
+# Allow Camera HAL full access to its shared files with DarwiNN HAL.
+allow hal_camera_default hal_neuralnetworks_darwinn_hal_camera_data_file:file create_file_perms;
+allow hal_camera_default hal_neuralnetworks_darwinn_hal_camera_data_file:dir rw_dir_perms;
