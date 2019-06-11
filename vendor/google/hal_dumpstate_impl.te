@@ -109,6 +109,7 @@ allow hal_dumpstate_impl maxfg_device:chr_file r_file_perms;
 
 # Access to airbrush related debug info
 r_dir_file(hal_dumpstate_impl, sysfs_airbrush_dumpstate)
+r_dir_file(hal_dumpstate_impl, sysfs_airbrush)
 r_dir_file(hal_dumpstate_impl, debugfs_airbrush)
 
 # Access to Citadel is via citadeld
