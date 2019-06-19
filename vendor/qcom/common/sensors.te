@@ -25,6 +25,14 @@ allow sensors ion_device:chr_file r_file_perms;
 # ALlow for sensor direct report mode
 allow sensors qdsp_device:chr_file r_file_perms;
 
+allow sensors sysfs_ssr:file r_file_perms;
+allow sensors self:qipcrtr_socket create;
+
+# For QCOM diag port access
+userdebug_or_eng(`
+  allow sensors diag_device:chr_file rw_file_perms;
+')
+
 # Allow to getprop persist.vendor.sys.modem.diag.mdlog
 get_prop(sensors, vendor_modem_diag_prop)
 
@@ -35,3 +43,6 @@ r_dir_file(sensors, sysfs_batteryinfo)
 r_dir_file(sensors, adsprpcd_file)
 
 dontaudit sensors kernel:system module_request;
+dontaudit sensors sysfs_esoc:dir r_dir_perms;
+dontaudit sensors sysfs_faceauth:dir search;
+dontaudit sensors sysfs_faceauth:file r_file_perms;
