@@ -69,3 +69,6 @@ type sysfs_contaminant, sysfs_type, fs_type;
 
 # Darwinn HAL shared files.
 type hal_neuralnetworks_darwinn_hal_camera_data_file, file_type, data_file_type;
+
+# Dumpstate knowles framework info
+type sysfs_knowles_info, fs_type, sysfs_type;
