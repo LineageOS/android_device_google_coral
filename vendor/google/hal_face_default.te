@@ -54,3 +54,7 @@ hwbinder_use(hal_face_default);
 # Allow the face HAL to communicate with IStats.
 allow hal_face_default fwk_stats_hwservice:hwservice_manager find;
 binder_call(hal_face_default, stats_service_server)
+
+# Allow writing new camera calibrations
+allow hal_face camera_calibration_vendor_data_file:dir rw_dir_perms;
+allow hal_face camera_calibration_vendor_data_file:file create_file_perms;
