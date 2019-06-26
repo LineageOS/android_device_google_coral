@@ -11,6 +11,11 @@ add_service(rlsservice, rls_service)
 allow rlsservice sysfs_camera:dir search;
 allow rlsservice sysfs_camera:file rw_file_perms;
 allow rlsservice rls_device:chr_file rw_file_perms;
+allow rlsservice persist_default_file:dir search;
+allow rlsservice persist_default_file:lnk_file read;
+allow rlsservice persist_camera_file:dir search;
+allow rlsservice persist_camera_file:file r_file_perms;
+allow rlsservice mnt_vendor_file:dir search;
 
 allow rlsservice hal_sensors_default:binder call;
 allow rlsservice hal_camera_default:binder call;
