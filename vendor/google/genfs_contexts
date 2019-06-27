@@ -65,6 +65,11 @@ genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight     
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight/panel0-backlight/vr_mode u:object_r:sysfs_lights:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/panel_info                         u:object_r:sysfs_display:s0
 
+# PMIC
+genfscon debugfs /regmap/spmi0-05/address                                       u:object_r:debugfs_pmic:s0
+genfscon debugfs /regmap/spmi0-05/count                                         u:object_r:debugfs_pmic:s0
+genfscon debugfs /regmap/spmi0-05/data                                          u:object_r:debugfs_pmic:s0
+
 # Vibrator
 # EVT 1.0 and older
 genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-3/3-0043                    u:object_r:sysfs_vibrator:s0
