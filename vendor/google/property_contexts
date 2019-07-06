@@ -52,6 +52,7 @@ persist.vendor.faceauth.enable_skin             u:object_r:vendor_faceauth_prop:
 persist.faceauth.use_disk_cache                 u:object_r:vendor_faceauth_prop:s0
 persist.faceauth.require_calibration            u:object_r:vendor_faceauth_prop:s0
 persist.faceauth.run_autocal                    u:object_r:vendor_faceauth_prop:s0
+persist.faceauth.run_autocal_on_success         u:object_r:vendor_faceauth_prop:s0
 persist.faceauth.split_autocal                  u:object_r:vendor_faceauth_prop:s0
 persist.faceauth.pose_initial_radius            u:object_r:vendor_faceauth_prop:s0
 persist.faceauth.pose_final_radius              u:object_r:vendor_faceauth_prop:s0
