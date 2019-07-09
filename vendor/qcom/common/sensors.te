@@ -10,8 +10,8 @@ allowxperm sensors self:socket ioctl msm_sock_ipc_ioctls;
 # Read/write persist partition for sensors registry
 allow sensors sensors_persist_file:dir rw_dir_perms;
 allow sensors sensors_persist_file:file create_file_perms;
-allow sensors persist_default_file:dir search;
-allow sensors persist_default_file:lnk_file read;
+allow sensors persist_file:dir search;
+allow sensors persist_file:lnk_file read;
 allow sensors mnt_vendor_file:dir r_dir_perms;
 
 allow sensors sensors_device:chr_file rw_file_perms;
