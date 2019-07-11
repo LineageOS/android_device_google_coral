@@ -7,8 +7,8 @@ binder_call(hal_health_default, statsd)
 allow hal_health_default persist_file:dir search;
 allow hal_health_default persist_battery_file:file create_file_perms;
 allow hal_health_default persist_battery_file:dir rw_dir_perms;
-allow hal_health_default persist_default_file:lnk_file read;
-allow hal_health_default persist_default_file:dir search;
+allow hal_health_default persist_file:lnk_file read;
+allow hal_health_default persist_file:dir search;
 allow hal_health_default sysfs_batteryinfo:file rw_file_perms;
 allow hal_health_default self:capability2 wake_alarm;
 allow hal_health_default mnt_vendor_file:dir search;
