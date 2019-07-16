@@ -27,3 +27,6 @@ binder_call(tee, hal_tui_comm_qti)
 binder_call(tee, hal_graphics_composer_default)
 
 allow tee time_daemon:unix_stream_socket connectto;
+
+# allow tee access for secure UI to work
+allow tee graphics_device:chr_file rw_file_perms;
