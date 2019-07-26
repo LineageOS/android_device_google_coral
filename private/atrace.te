@@ -1,6 +1,0 @@
-# On debug builds, allow specific HALs to be notified that
-# trace-related system properties have changed.
-# TODO(b/135396507): Remove once b/78136428 is resolved.
-userdebug_or_eng(`
-  hal_client_domain(atrace, hal_vibrator)
-')
