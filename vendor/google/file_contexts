@@ -41,6 +41,7 @@
 /vendor/bin/hw/citadeld                                                               u:object_r:citadeld_exec:s0
 /vendor/bin/hw/init_citadel                                                           u:object_r:init_citadel_exec:s0
 /vendor/bin/hw/citadel_updater                                                        u:object_r:citadel_updater_exec:s0
+/vendor/bin/CitadelProvision                                                          u:object_r:citadel_provision_exec:s0
 /vendor/bin/hw/hardware\.google\.light@1\.0-service                                   u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/vendor\.google\.airbrush@1\.0-service                                  u:object_r:airbrush_exec:s0
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                                  u:object_r:hal_radioext_default_exec:s0
