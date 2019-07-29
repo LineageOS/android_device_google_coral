@@ -74,7 +74,8 @@ ro.vendor.build.type                            u:object_r:vendor_build_type_pro
 
 ro.vendor.aware_available                       u:object_r:vendor_aware_available_prop:s0
 
-persist.modem.                                  u:object_r:vendor_modem_prop:s0
+persist.vendor.modem.                           u:object_r:vendor_modem_prop:s0
+persist.vendor.mdm.                             u:object_r:vendor_modem_prop:s0
 
 # ramoops
 vendor.ramoops.                                 u:object_r:vendor_ramoops_prop:s0
