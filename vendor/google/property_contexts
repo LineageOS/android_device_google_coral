@@ -1,11 +1,12 @@
-persist.radio.RATE_ADAPT_ENABLE                 u:object_r:vendor_radio_prop:s0
-persist.radio.ROTATION_ENABLE                   u:object_r:vendor_radio_prop:s0
-persist.radio.VT_ENABLE                         u:object_r:vendor_radio_prop:s0
-persist.radio.VT_HYBRID_ENABLE                  u:object_r:vendor_radio_prop:s0
-persist.radio.videopause.mode                   u:object_r:vendor_radio_prop:s0
+persist.vendor.radio.RATE_ADAPT_ENABLE          u:object_r:vendor_radio_prop:s0
+persist.vendor.radio.ROTATION_ENABLE            u:object_r:vendor_radio_prop:s0
+persist.vendor.radio.VT_ENABLE                  u:object_r:vendor_radio_prop:s0
+persist.vendor.radio.VT_HYBRID_ENABLE           u:object_r:vendor_radio_prop:s0
+persist.vendor.radio.videopause.mode            u:object_r:vendor_radio_prop:s0
+persist.vendor.radio.smlog_switch               u:object_r:vendor_radio_prop:s0
 
-ro.radio.log_loc                                u:object_r:vendor_radio_prop:s0
-ro.radio.log_prefix                             u:object_r:vendor_radio_prop:s0
+ro.vendor.radio.log_loc                         u:object_r:vendor_radio_prop:s0
+ro.vendor.radio.log_prefix                      u:object_r:vendor_radio_prop:s0
 
 persist.audio.fluence.voicecomm                 u:object_r:vendor_audio_prop:s0
 audio.adm.buffering.ms                          u:object_r:vendor_audio_prop:s0
