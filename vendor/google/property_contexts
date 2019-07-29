@@ -7,9 +7,6 @@ persist.radio.videopause.mode                   u:object_r:vendor_radio_prop:s0
 ro.radio.log_loc                                u:object_r:vendor_radio_prop:s0
 ro.radio.log_prefix                             u:object_r:vendor_radio_prop:s0
 
-persist.audio.fluence.voicecomm                 u:object_r:vendor_audio_prop:s0
-audio.adm.buffering.ms                          u:object_r:vendor_audio_prop:s0
-
 vendor.all.modules.ready                        u:object_r:vendor_device_prop:s0
 vendor.all.devices.ready                        u:object_r:vendor_device_prop:s0
 vendor.thermal.config                           u:object_r:vendor_thermal_prop:s0
