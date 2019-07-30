@@ -94,3 +94,6 @@ allow hal_camera_default camera_calibration_vendor_data_file:file r_file_perms;
 
 # Allow the Camera HAL to communicate with the thermal HAL.
 hal_client_domain(hal_camera_default, hal_thermal)
+
+# For camera hal to control priority of current process
+allow hal_camera_default self:capability sys_nice;
