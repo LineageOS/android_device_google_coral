@@ -76,7 +76,6 @@ ctl.vendor.rmt_storage                          u:object_r:ctl_vendor_rmt_storag
 sys.slpi.firmware.version                       u:object_r:public_vendor_system_prop:s0
 
 media.ecoservice.log.                           u:object_r:ecoservice_prop:s0
-ro.build.software.version                       u:object_r:qcom_ims_prop:s0
 
 persist.data.netmgr.log_to_file                 u:object_r:vendor_default_prop:s0
 persist.vendor.ims.                             u:object_r:qcom_ims_prop:s0
