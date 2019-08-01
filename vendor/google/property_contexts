@@ -67,8 +67,8 @@ persist.camera.laser.mfg.combo                  u:object_r:vendor_faceauth_prop:
 
 # Google camera hal read only props
 ro.vendor.camera.                               u:object_r:camera_ro_prop:s0
-ro.camera.res.fmq.size                          u:object_r:camera_ro_prop:s0
-ro.camera.req.fmq.size                          u:object_r:camera_ro_prop:s0
+ro.vendor.camera.res.fmq.size                   u:object_r:camera_ro_prop:s0
+ro.vendor.camera.req.fmq.size                   u:object_r:camera_ro_prop:s0
 
 ro.vendor.build.type                            u:object_r:vendor_build_type_prop:s0
 
