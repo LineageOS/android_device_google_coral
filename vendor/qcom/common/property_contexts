@@ -2,8 +2,8 @@
 audio.snd_card.open.retries                     u:object_r:vendor_audio_prop:s0
 
 ro.boot.sota                                    u:object_r:factory_ota_prop:s0
-persist.factoryota.reboot                       u:object_r:exported_system_prop:s0
-persist.radio.bootwithlpm                       u:object_r:exported_system_prop:s0
+persist.vendor.factoryota.reboot                u:object_r:exported_system_prop:s0
+persist.vendor.radio.bootwithlpm                u:object_r:exported_system_prop:s0
 
 audio.volume.listener.dump                      u:object_r:vendor_audio_prop:s0
 audio.volume.headset.gain.depcal                u:object_r:vendor_audio_prop:s0
@@ -77,6 +77,6 @@ vendor.sys.slpi.firmware.version                       u:object_r:public_vendor_
 
 media.ecoservice.log.                           u:object_r:ecoservice_prop:s0
 
-persist.data.netmgr.log_to_file                 u:object_r:vendor_default_prop:s0
+persist.vendor.data.netmgr.log_to_file          u:object_r:vendor_default_prop:s0
 persist.vendor.ims.                             u:object_r:qcom_ims_prop:s0
 persist.vendor.qti.telephony.vt_cam_interface   u:object_r:public_vendor_default_prop:s0
