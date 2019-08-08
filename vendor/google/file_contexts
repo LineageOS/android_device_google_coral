@@ -69,6 +69,7 @@
 
 /mnt/vendor/persist/battery(/.*)?                                                     u:object_r:persist_battery_file:s0
 /mnt/vendor/persist/haptics(/.*)?                                                     u:object_r:persist_haptics_file:s0
+/mnt/vendor/persist/oslo(/.*)?                                                        u:object_r:persist_oslo_file:s0
 
 # data files
 /data/vendor/hardware/airbrush/manager(/.*)?                                          u:object_r:airbrush_data_file:s0
