@@ -1,20 +1,22 @@
 # vendor_audio_prop
-audio.snd_card.open.retries                     u:object_r:vendor_audio_prop:s0
+vendor.audio.adm.buffering.ms                   u:object_r:vendor_audio_prop:s0
+vendor.audio.snd_card.open.retries              u:object_r:vendor_audio_prop:s0
 
 ro.boot.sota                                    u:object_r:factory_ota_prop:s0
 persist.vendor.factoryota.reboot                u:object_r:exported_system_prop:s0
 persist.vendor.radio.bootwithlpm                u:object_r:exported_system_prop:s0
 
-audio.volume.listener.dump                      u:object_r:vendor_audio_prop:s0
-audio.volume.headset.gain.depcal                u:object_r:vendor_audio_prop:s0
-audio_hal.in_period_size                        u:object_r:vendor_audio_prop:s0
-audio_hal.period_multiplier                     u:object_r:vendor_audio_prop:s0
-audio_hal.period_size                           u:object_r:vendor_audio_prop:s0
-persist.audio.dualmic.config                    u:object_r:vendor_audio_prop:s0
+vendor.audio.volume.listener.dump               u:object_r:vendor_audio_prop:s0
+vendor.audio.volume.headset.gain.depcal         u:object_r:vendor_audio_prop:s0
+vendor.audio_hal.in_period_size                 u:object_r:vendor_audio_prop:s0
+vendor.audio_hal.period_multiplier              u:object_r:vendor_audio_prop:s0
+vendor.audio_hal.period_size                    u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.dualmic.config             u:object_r:vendor_audio_prop:s0
 
-persist.audio.fluence.speaker                   u:object_r:vendor_audio_prop:s0
-persist.audio.fluence.voicecall                 u:object_r:vendor_audio_prop:s0
-persist.audio.fluence.voicerec                  u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.fluence.speaker            u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.fluence.voicecall          u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.fluence.voicecomm          u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.fluence.voicerec           u:object_r:vendor_audio_prop:s0
 
 persist.camera.                                 u:object_r:camera_prop:s0
 vendor.debug.camera.                            u:object_r:camera_prop:s0
@@ -39,7 +41,7 @@ ro.vendor.bluetooth.emb_wp_mode                 u:object_r:vendor_bluetooth_prop
 ro.vendor.bluetooth.wipower                     u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bt.soc.scram_freqs               u:object_r:vendor_bluetooth_prop:s0
 
-ro.qc.sdk.audio.fluencetype                     u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.sdk.fluencetype                 u:object_r:vendor_audio_prop:s0
 ro.vendor.ril.                                  u:object_r:vendor_radio_prop:s0
 ro.boot.ramdump                                 u:object_r:vendor_ramdump_prop:s0
 
