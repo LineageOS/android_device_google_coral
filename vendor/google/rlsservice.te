@@ -22,3 +22,10 @@ allow rlsservice hal_camera_default:binder call;
 
 # For rlsservice to read debug property
 get_prop(rlsservice, camera_prop)
+
+# For rlsservice to access display related sys file nodes
+allow rlsservice sysfs_leds:dir search;
+allow rlsservice sysfs_leds:file r_file_perms;
+allow rlsservice sysfs_msm_subsys:dir search;
+allow rlsservice sysfs_msm_subsys:file r_file_perms;
+
