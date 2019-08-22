@@ -5,6 +5,7 @@ userdebug_or_eng(`
 # Shell script exec (toolbox)
 allow init_dp vendor_toolbox_exec:file rx_file_perms;
 allow init_dp vendor_file:file rx_file_perms;
+allow init_dp proc_cmdline:file r_file_perms;
 
 # Find and write block device
 allow init_dp block_device:dir search;
