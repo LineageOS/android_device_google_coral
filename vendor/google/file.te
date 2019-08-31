@@ -74,3 +74,6 @@ type camera_calibration_vendor_data_file, file_type, data_file_type;
 
 # Dumpstate knowles framework info
 type sysfs_knowles_info, fs_type, sysfs_type;
+
+# Dumpstats IPA statistics
+type debugfs_ipa, debugfs_type, fs_type;
