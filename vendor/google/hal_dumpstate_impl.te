@@ -130,6 +130,12 @@ allow hal_dumpstate_impl shell_data_file:file getattr;
 # Access to knowles framework info
 allow hal_dumpstate_impl sysfs_knowles_info:file r_file_perms;
 
+#dump sensors log
+userdebug_or_eng(`
+  allow hal_dumpstate_impl sensors_vendor_data_file:dir r_dir_perms;
+  allow hal_dumpstate_impl sensors_vendor_data_file:file r_file_perms;
+')
+
 dontaudit hal_dumpstate_impl modem_dump_file:dir create_dir_perms;
 dontaudit hal_dumpstate_impl modem_dump_file:file create_file_perms;
 dontaudit hal_dumpstate_impl netmgrd_data_file:dir r_dir_perms;
@@ -144,3 +150,5 @@ dontaudit hal_dumpstate_impl mpss_rfs_data_file:dir r_dir_perms;
 dontaudit hal_dumpstate_impl mpss_rfs_data_file:file r_file_perms;
 dontaudit hal_dumpstate_impl vendor_modem_diag_prop:file r_file_perms;
 dontaudit hal_dumpstate_impl vendor_tcpdump_log_prop:file r_file_perms;
+dontaudit hal_dumpstate_impl sensors_vendor_data_file:dir r_dir_perms;
+dontaudit hal_dumpstate_impl sensors_vendor_data_file:file r_file_perms;
