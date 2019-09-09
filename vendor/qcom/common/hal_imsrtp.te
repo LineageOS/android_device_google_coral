@@ -29,6 +29,7 @@ allow hal_imsrtp sysfs_data:file r_file_perms;
 allow hal_imsrtp sysfs_ssr:file r_file_perms;
 allow hal_imsrtp sysfs_timestamp_switch:file r_file_perms;
 r_dir_file(hal_imsrtp, sysfs_esoc)
+r_dir_file(hal_imsrtp, sysfs_soc)
 r_dir_file(hal_imsrtp, sysfs_msm_subsys)
 
 dontaudit hal_imsrtp sysfs_faceauth:dir r_dir_perms;
