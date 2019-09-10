@@ -15,6 +15,9 @@ user=radio seinfo=platform name=.qtidataservices domain=qtidataservices_app type
 # Domain for connectivity monitor
 user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymonitor domain=con_monitor_app type=app_data_file levelFrom=all
 
+#Domain for omadm
+user=_app isPrivApp=true seinfo=platform name=com.android.omadm.service domain=omadm_app type=app_data_file levelFrom=all
+
 user=_app seinfo=platform name=com.qualcomm.qti.services.secureui* domain=secure_ui_service_app levelFrom=all
 
 # Use a custom domain for GoogleCamera, to allow for Hexagon DSP / Easel access
