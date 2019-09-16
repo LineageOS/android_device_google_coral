@@ -68,3 +68,6 @@ persist.vendor.mdm.                             u:object_r:vendor_modem_prop:s0
 
 # ramoops
 vendor.ramoops.                                 u:object_r:vendor_ramoops_prop:s0
+
+# SecureElement
+persist.vendor.se.                              u:object_r:vendor_secure_element_prop:s0
