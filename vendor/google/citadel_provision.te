@@ -21,4 +21,11 @@ allow citadel_provision ion_device:chr_file r_file_perms;
 allow citadel_provision tee_device:chr_file rw_file_perms;
 get_prop(citadel_provision, vendor_tee_listener_prop);
 
+dontaudit citadel_provision sysfs_esoc:dir r_dir_perms;
+dontaudit citadel_provision sysfs_esoc:file r_file_perms;
+dontaudit citadel_provision sysfs_msm_subsys:dir r_dir_perms;
+dontaudit citadel_provision sysfs_ssr:file r_file_perms;
+dontaudit citadel_provision sysfs:file r_file_perms;
+dontaudit citadel_provision sysfs_faceauth:dir r_dir_perms;
+dontaudit citadel_provision sysfs_faceauth:file r_file_perms;
 ')
