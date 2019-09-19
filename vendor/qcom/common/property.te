@@ -19,7 +19,6 @@ type usf_prop, property_type;
 type factory_ota_prop, property_type;
 
 type freq_prop, property_type;
-type vm_bms_prop, property_type; #To start vm_bms
 type vendor_dataqti_prop, property_type;
 type vendor_dataadpl_prop, property_type;
 type cnd_vendor_prop, property_type;
@@ -64,7 +63,6 @@ type vendor_coresight_prop, property_type;
 
 type public_vendor_default_prop, property_type;
 
-type ctl_hbtp_prop, property_type;
 type vendor_alarm_boot_prop, property_type;
 
 # DOLBY_START
@@ -103,9 +101,6 @@ type vendor_system_prop, property_type;
 
 # Bluetooth props
 type vendor_bluetooth_prop, property_type;
-
-# HBTP
-type ctl_vendor_hbtp_prop, property_type;
 
 # factory properties
 type ctl_vendor_mmid_prop, property_type;
