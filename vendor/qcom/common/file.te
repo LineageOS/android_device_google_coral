@@ -48,11 +48,8 @@ type vendor_persist_mmi_file, file_type, vendor_persist_type;
 type persist_misc_file, file_type , vendor_persist_type;
 type persist_bms_file, file_type , vendor_persist_type;
 type persist_secnvm_file, file_type , vendor_persist_type;
-type persist_hvdcp_file, file_type , vendor_persist_type;
 type persist_audio_file, file_type , vendor_persist_type;
 
-#file type for restricting proc read by audiod
-type proc_audiod, fs_type, proc_type;
 type proc_sysctl_schedboost, proc_type, fs_type;
 
 #msm irqbalance
@@ -89,9 +86,6 @@ type sysfs_vadc_dev, sysfs_type, fs_type;
 # sysfs spmi device for hvdcp/quickcharge
 type sysfs_spmi_dev, sysfs_type, fs_type;
 
-# sysfs qdss device for qcomsysd
-type sysfs_qdss_dev, sysfs_type, fs_type;
-
 # sysfs poweron_alarm is used in init.target.rc
 type sysfs_poweron_alarm, sysfs_type, fs_type;
 
@@ -120,7 +114,6 @@ type sysfs_msm_boot, fs_type, sysfs_type;
 type sysfs_timestamp_switch, sysfs_type, fs_type;
 
 #define the files writer during the operation of app state changes
-type gamed_socket, file_type;
 
 #define the files writter during the operatio of iop
 type iop_socket, file_type;
@@ -128,9 +121,6 @@ type iop_data_file, file_type, data_file_type;
 
 #Socket node needed by ims_data daemon
 type ims_socket, file_type;
-
-#mink-lowi-interface-daemon (mlid) socket
-type mlid_socket, file_type, mlstrustedobject;
 
 #ssg qmi gateway daemon socket
 type ssgqmig_socket, file_type, mlstrustedobject;
@@ -155,9 +145,6 @@ type sysfs_hsic_host_rdy, sysfs_type, fs_type;
 
 # Files accessed by qcom-system-daemon
 type sysfs_socinfo, fs_type, sysfs_type;
-
-#Define the sysfs files for usb_uicc_daemon
-type sysfs_usb_uicc, sysfs_type, fs_type;
 
 type qlogd_socket, file_type, mlstrustedobject;
 #Defines the files (configs, dumps, etc) used by display processes
@@ -189,34 +176,17 @@ type bt_firmware_file, file_type, contextmount_type, vendor_file_type;
 type  proc_dirty_ratio, fs_type, proc_type;
 
 #File types by mmi
-type vendor_mmi_socket, file_type;
 
-type persist_usf_file, file_type, vendor_persist_type;
 
 #rmt files
 type sysfs_rmtfs, sysfs_type, fs_type;
 
-#qsee_svc_app file types
-type qsee_svc_app_data_file, file_type, data_file_type;
 
-# imshelper_app file types
-type imshelper_app_data_file, file_type, data_file_type;
 
-# RIDL data files
-type RIDL_data_file, file_type, data_file_type;
-type RIDL_socket, file_type, data_file_type;
-
-# qti_logkit data files (privileged and public)
-type qti_logkit_priv_data_file, file_type, data_file_type;
-type qti_logkit_pub_data_file, file_type, data_file_type;
-type qti_logkit_priv_socket, file_type, data_file_type;
-type qti_logkit_pub_socket, file_type, mlstrustedobject, data_file_type;
 
 # used for /dsp files
 type adsprpcd_file, file_type, mlstrustedobject, vendor_file_type;
 
-#mdtp_svc_app file types
-type mdtp_svc_app_data_file, file_type, data_file_type;
 
 # Regionalization files
 type regionalization_file, file_type , vendor_persist_type;
@@ -231,8 +201,6 @@ type dynamic_nv_data_file, file_type, data_file_type;
 # Wifi Data file
 type wifi_vendor_data_file, file_type, data_file_type;
 type wifi_vendor_wpa_socket, file_type, data_file_type;
-type wifi_vendor_hostapd_socket, file_type, data_file_type;
-type hostapd_socket, file_type, data_file_type;
 
 #widevine data file
 type vendor_mediadrm_data_file, file_type, data_file_type;
@@ -266,8 +234,6 @@ type sysfs_diag, fs_type, sysfs_type;
 type sysfs_laser, fs_type, sysfs_type;
 
 # QDMA data files
-type vendor_qdma_data_file, file_type, data_file_type;
-type qdma_socket, file_type;
 
 # path to debugfs use this whic should be only used
 # in debug builds
@@ -299,8 +265,6 @@ type sysfs_bond0, fs_type, sysfs_type;
 type sysfs_wigig, fs_type, sysfs_type;
 type wigignpt_socket, file_type, data_file_type;
 
-# wigig_hostapd
-type wigig_hostapd_socket, file_type, data_file_type;
 
 # ea sysfs files
 type sysfs_ea, fs_type, sysfs_type;
@@ -324,7 +288,6 @@ type sysfs_boot_adsp, sysfs_type, fs_type;
 type data_tzstorage_file, file_type, data_file_type;
 
 #TLOC Files
-type tlocd_data_file, file_type, data_file_type;
 
 #DRM files
 type data_qsee_file, file_type, data_file_type;

@@ -1,7 +1,0 @@
-type seemp_health_daemon, domain;
-type seemp_health_daemon_exec, exec_type, vendor_file_type, file_type;
-
-#Allow for transition from init domain to seemp_health_daemon
-init_daemon_domain(seemp_health_daemon)
-
-

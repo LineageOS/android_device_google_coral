@@ -1,7 +1,0 @@
-# ssgqmigd - SSG QMI Gateway Daemon
-type ssgqmigd, domain, mlstrustedsubject;
-type ssgqmigd_exec, exec_type, vendor_file_type, file_type;
-
-init_daemon_domain(ssgqmigd)
-
-
