@@ -77,12 +77,6 @@ type rfs_shared_hlos_file, file_type, data_file_type;
 type persist_rfs_file, file_type, vendor_persist_type;
 type persist_rfs_shared_hlos_file, file_type, vendor_persist_type;
 
-#mm-pp-daemon file type for sysfs access
-#type sysfs_leds, fs_type, sysfs_type;
-
-#Define the files written during the operation of mm-pp-daemon
-type data_ad_calib_cfg, file_type, data_file_type;
-
 #SurfaceFlinger file type for sysfs access
 type sysfs_graphics, sysfs_type, fs_type;
 
@@ -197,19 +191,10 @@ type  proc_dirty_ratio, fs_type, proc_type;
 #File types by mmi
 type vendor_mmi_socket, file_type;
 
-# hbtp config file
-type hbtp_cfg_file, file_type, vendor_file_type;
-type hbtp_log_file, file_type, data_file_type;
-type hbtp_kernel_sysfs, fs_type, sysfs_type;
-
 type persist_usf_file, file_type, vendor_persist_type;
 
 #rmt files
 type sysfs_rmtfs, sysfs_type, fs_type;
-
-#qfp-daemon
-type qfp-daemon_data_file, file_type, data_file_type;
-type persist_qti_fp_file, file_type, vendor_persist_type;
 
 #qsee_svc_app file types
 type qsee_svc_app_data_file, file_type, data_file_type;
@@ -299,10 +284,6 @@ type sysfs_uio_file, fs_type, sysfs_type;
 
 #irq balance sysfs type
 type sysfs_irqbalance , sysfs_type, fs_type;
-
-# vpp files
-type vendor_vpp_data_file, file_type, data_file_type;
-type persist_vpp_file, file_type, vendor_persist_type;
 
 # vendor camera files
 type vendor_camera_data_file, file_type, data_file_type;

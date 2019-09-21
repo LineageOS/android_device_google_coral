@@ -30,3 +30,6 @@ type ecoservice_prop, property_type;
 
 # hal_health
 type vendor_shutdown_prop, property_type;
+
+# SecureElement property
+type vendor_secure_element_prop, property_type;

@@ -1,8 +1,0 @@
-#integrated process
-type vm_bms, domain;
-type vm_bms_exec, exec_type, vendor_file_type, file_type;
-
-#started by init
-init_daemon_domain(vm_bms)
-
-

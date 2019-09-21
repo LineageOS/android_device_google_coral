@@ -1,9 +1,0 @@
-#as the exec is defined in file_context  it is hitting build
-# error in user build  so moving out of the macro
-type qti-testscripts_exec, system_file_type, exec_type, file_type;
-
-userdebug_or_eng(`
-  typeattribute  qti-testscripts coredomain;
-  init_daemon_domain(qti-testscripts)
-
-')

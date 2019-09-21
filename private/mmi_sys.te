@@ -1,7 +1,0 @@
-typeattribute vendor_mmi_sys coredomain;
-type vendor_mmi_sys_exec, system_file_type, exec_type, file_type;
-
-#init
-init_daemon_domain(vendor_mmi_sys)
-
-
