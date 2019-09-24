@@ -1,7 +1,6 @@
 # property for uicc_daemon
 type uicc_prop, property_type;
 type qcom_ims_prop, property_type;
-type ctl_vendor_qmuxd_prop, property_type;
 type ctl_vendor_netmgrd_prop, property_type;
 type ctl_vendor_port-bridge_prop, property_type;
 type ctl_qcrild_prop, property_type;
@@ -12,15 +11,11 @@ type vendor_disable_spu_prop, property_type;
 # property for LKCore ctl start
 type ctl_LKCore_prop, property_type;
 
-# properties for usf daemons
-type usf_prop, property_type;
-
 # property for FactoryOTA
 type factory_ota_prop, property_type;
 
 type freq_prop, property_type;
 type vendor_dataqti_prop, property_type;
-type vendor_dataadpl_prop, property_type;
 type cnd_vendor_prop, property_type;
 type sensors_prop, property_type;
 type slpi_prop, property_type;
@@ -69,7 +64,6 @@ type vendor_alarm_boot_prop, property_type;
 type dolby_prop, property_type;
 # DOLBY_END
 
-type vendor_wifi_ftmd_prop, property_type;
 
 # WIGIG
 type wigig_prop, property_type;
@@ -102,11 +96,6 @@ type vendor_system_prop, property_type;
 # Bluetooth props
 type vendor_bluetooth_prop, property_type;
 
-# factory properties
-type ctl_vendor_mmid_prop, property_type;
-
-#qdma property
-type vendor_qdma_prop, property_type;
 
 #WiFi Display
 type wfd_service_prop, property_type;
@@ -114,9 +103,6 @@ type wfd_debug_prop, property_type;
 
 #imsrcsservice
 type ctl_vendor_imsrcsservice_prop, property_type;
-
-#mmi
-type vendor_mmi_prop, property_type;
 
 #time service
 type vendor_time_service_prop, property_type;
