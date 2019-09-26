@@ -59,10 +59,6 @@ allow google_camera_app runas_app:process sigchld;
 allow google_camera_app system_server:udp_socket {
         connect getattr read recvfrom sendto write getopt setopt };
 
-# Allow access to ashmemd to request /dev/ashmem fds.
-binder_call(google_camera_app, ashmemd)
-allow google_camera_app ashmem_device:chr_file { getattr read ioctl lock map append write };
-
 # Allow lldb/ndk-gdb/simpleperf to ptrace attach to debuggable app processes.
 allow runas_app google_camera_app:process { ptrace signal sigstop };
 allow runas_app google_camera_app:unix_stream_socket connectto;
