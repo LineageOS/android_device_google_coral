@@ -15,6 +15,9 @@ allow hal_wifi_ext wifihal_socket:sock_file create_file_perms;
 # Write wlan driver/fw version into property
 set_prop(hal_wifi_ext, vendor_wifi_version)
 
+# Allow wifi_ext to report callbacks to gril-service app
+allow hal_wifi_ext grilservice_app:binder call;
+
 userdebug_or_eng(`
 # debugfs entries are only needed in user-debug or eng builds
 
