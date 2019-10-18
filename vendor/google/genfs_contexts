@@ -163,3 +163,6 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.q
 
 # Dumpstats IPA statistics
 genfscon debugfs /ipa/ipa_statistics_msg                  u:object_r:debugfs_ipa:s0
+
+# wifi_sniffer
+genfscon sysfs /module/wlan/parameters/con_mode           u:object_r:sysfs_wifi_conmode:s0
