@@ -34,6 +34,13 @@ ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
 endif
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
+# Reserved Space
+ifneq ($(WITH_GMS),true)
+    BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 15728640
+    BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 629145600
+    BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 15728640
+endif
+
 # SELinux
 BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy-lineage/dynamic
 BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy-lineage/vendor
