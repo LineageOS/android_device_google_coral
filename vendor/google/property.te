@@ -33,3 +33,6 @@ type vendor_shutdown_prop, property_type;
 
 # SecureElement property
 type vendor_secure_element_prop, property_type;
+
+# wifi_sniffer
+type vendor_wifi_sniffer_prop, property_type;
