@@ -7,6 +7,7 @@ r_dir_file(hal_wlc, sysfs_batteryinfo)
 r_dir_file(hal_wlc, sysfs_wlc)
 
 allow hal_wlc sysfs_wlc:file rw_file_perms;
+allow hal_wlc self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 
 hwbinder_use(hal_wlc)
 add_hwservice(hal_wlc, hal_wlc_hwservice)
