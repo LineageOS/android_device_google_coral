@@ -88,9 +88,9 @@ allow hal_camera_default qdsp_device:chr_file r_file_perms;
 # Allow Camera to access Darwinn service.
 allow hal_camera_default hal_darwinn_hwservice:hwservice_manager find;
 
-# Allow reading camera calibrations
-allow hal_camera_default camera_calibration_vendor_data_file:dir search;
-allow hal_camera_default camera_calibration_vendor_data_file:file r_file_perms;
+# Allow reading and writing camera calibrations
+allow hal_camera_default camera_calibration_vendor_data_file:dir rw_dir_perms;
+allow hal_camera_default camera_calibration_vendor_data_file:file create_file_perms;
 
 # Allow the Camera HAL to communicate with the thermal HAL.
 hal_client_domain(hal_camera_default, hal_thermal)
