@@ -11,3 +11,5 @@ allow hal_wlc sysfs_wlc:file rw_file_perms;
 hwbinder_use(hal_wlc)
 add_hwservice(hal_wlc, hal_wlc_hwservice)
 get_prop(hal_wlc, hwservicemanager_prop)
+
+binder_call(hal_wlc, platform_app)
