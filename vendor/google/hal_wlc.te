@@ -12,3 +12,5 @@ allow hal_wlc self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 hwbinder_use(hal_wlc)
 add_hwservice(hal_wlc, hal_wlc_hwservice)
 get_prop(hal_wlc, hwservicemanager_prop)
+
+binder_call(hal_wlc, platform_app)
