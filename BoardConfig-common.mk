@@ -110,7 +110,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_ROOT_EXTRA_SYMLINKS := /mnt/vendor/persist:/persist
 
-include device/google/coral-sepolicy/coral-sepolicy.mk
+include device/google/coral/sepolicy/coral-sepolicy.mk
 
 TARGET_FS_CONFIG_GEN := device/google/coral/config.fs
 
