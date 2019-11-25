@@ -24,3 +24,5 @@ allow qtidataservices_app sysfs_ssr:file r_file_perms;
 
 binder_call(qtidataservices_app, cnd)
 binder_call(qtidataservices_app, rild)
+
+dontaudit qtidataservices_app sysfs_faceauth:dir search;
