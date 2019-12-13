@@ -7,8 +7,9 @@ vndbinder_use(wcnss_service)
 
 binder_call(wcnss_service, vendor_per_mgr)
 
-# TODO(b/121988932): investigate wcnss_service behavior
+# modem IPC router socket to communicate with QMI
 allow wcnss_service self:qipcrtr_socket create_socket_perms_no_ioctl;
+# the socket is used for event/data exchange between WLAN driver and wcnss_service
 allow wcnss_service self:netlink_generic_socket create_socket_perms_no_ioctl;
 
 allow wcnss_service self:netlink_socket create_socket_perms_no_ioctl;
