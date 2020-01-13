@@ -46,3 +46,6 @@ dontaudit sensors kernel:system module_request;
 dontaudit sensors sysfs_esoc:dir r_dir_perms;
 dontaudit sensors sysfs_faceauth:dir search;
 dontaudit sensors sysfs_faceauth:file r_file_perms;
+
+# Access to wakelock sysfs
+wakelock_use(sensors)
