@@ -66,3 +66,8 @@ allow hal_face_default sysfs_faceauth:file w_file_perms;
 
 # Allow the face HAL to communicate with the thermal HAL.
 hal_client_domain(hal_face_default, hal_thermal)
+
+# Allow the face HAL to talk to citadeld to verify the firmware version.
+allow hal_face_default citadeld_service:service_manager find;
+binder_call(hal_face_default, citadeld)
+
