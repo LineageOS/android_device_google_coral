@@ -56,6 +56,7 @@ allow location hal_gnss_qti:unix_dgram_socket sendto;
 
 allow location hal_datafactory_hwservice:hwservice_manager find;
 get_prop(location, hwservicemanager_prop)
+allow location hal_cacert_hwservice:hwservice_manager find;
 get_prop(location, cnd_vendor_prop)
 binder_call(location, cnd)
 
