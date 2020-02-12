@@ -7,6 +7,7 @@ type modem_dump_file, file_type, data_file_type;
 type tcpdump_vendor_data_file, file_type, data_file_type, mlstrustedobject;
 type ramoops_vendor_data_file, file_type, data_file_type, mlstrustedobject;
 type proc_touch, proc_type, fs_type, mlstrustedobject;
+type per_boot_file, file_type, data_file_type, core_data_file_type;
 
 # Battery-related files
 type debugfs_batteryinfo, debugfs_type, fs_type;
