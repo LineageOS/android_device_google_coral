@@ -81,5 +81,5 @@ persist.vendor.data.netmgr.log_to_file          u:object_r:vendor_default_prop:s
 persist.vendor.ims.                             u:object_r:qcom_ims_prop:s0
 persist.vendor.qti.telephony.vt_cam_interface   u:object_r:public_vendor_default_prop:s0
 
-# Vendor logging prop
-persist.vendor.logging_enabled                  u:object_r:vendor_logging_prop:s0
+# Vendor verbose logging prop
+persist.vendor.verbose_logging_enabled          u:object_r:vendor_logging_prop:s0
