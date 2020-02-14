@@ -1,0 +1,2 @@
+# b/130262158
+dontaudit wcnss_service kernel:system module_request;

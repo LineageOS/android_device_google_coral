@@ -1,0 +1,2 @@
+# b/149542343
+dontaudit init kernel:system module_request;
