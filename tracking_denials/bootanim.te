@@ -1,0 +1,2 @@
+# b/128958090
+dontaudit bootanim sysfs_msm_subsys:dir search;

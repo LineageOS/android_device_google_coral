@@ -1,0 +1,4 @@
+# b/149543390
+dontaudit gmscore_app firmware_file:filesystem getattr;
+dontaudit gmscore_app mnt_vendor_file:dir search;
+dontaudit gmscore_app sysfs_msm_subsys:file read;
