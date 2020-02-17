@@ -1,0 +1,2 @@
+# b/149543972
+dontaudit init-insmod-sh proc_cmdline:file read;

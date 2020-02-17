@@ -1,0 +1,2 @@
+# b/134894179
+dontaudit hal_face_default exported_camera_prop:file read;
