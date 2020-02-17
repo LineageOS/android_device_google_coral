@@ -65,3 +65,4 @@ r_dir_file(ims, sysfs_ssr)
 
 dontaudit hal_rcsservice sysfs_faceauth:dir r_dir_perms;
 dontaudit hal_rcsservice sysfs_faceauth:file r_file_perms;
+dontaudit ims sysfs_faceauth:dir search;
