@@ -2,6 +2,9 @@
 vendor.audio.adm.buffering.ms                   u:object_r:vendor_audio_prop:s0
 vendor.audio.snd_card.open.retries              u:object_r:vendor_audio_prop:s0
 
+ro.boot.sota                                    u:object_r:factory_ota_prop:s0
+persist.vendor.factoryota.reboot                u:object_r:exported_system_prop:s0
+
 vendor.audio.volume.listener.dump               u:object_r:vendor_audio_prop:s0
 vendor.audio.volume.headset.gain.depcal         u:object_r:vendor_audio_prop:s0
 vendor.audio_hal.in_period_size                 u:object_r:vendor_audio_prop:s0
