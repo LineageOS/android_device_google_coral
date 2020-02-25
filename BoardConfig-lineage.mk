@@ -15,3 +15,8 @@
 #
 
 -include vendor/google/coral/BoardConfigVendor.mk
+
+ifndef TARGET_KERNEL_SOURCE
+  TARGET_PREBUILT_KERNEL := device/google/coral-kernel/Image.lz4
+  BOARD_KERNEL_IMAGE_NAME := Image.lz4
+endif
