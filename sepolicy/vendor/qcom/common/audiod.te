@@ -1,0 +1,5 @@
+# audio daemon
+type audiod, domain;
+type audiod_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(audiod)
+
