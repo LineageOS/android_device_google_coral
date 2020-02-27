@@ -11,9 +11,6 @@ type vendor_disable_spu_prop, property_type;
 # property for LKCore ctl start
 type ctl_LKCore_prop, property_type;
 
-# property for FactoryOTA
-type factory_ota_prop, property_type;
-
 type freq_prop, property_type;
 type vendor_dataqti_prop, property_type;
 type cnd_vendor_prop, property_type;
@@ -142,3 +139,7 @@ type vendor_modem_diag_prop, property_type;
 
 # Ramdump properties
 type vendor_ramdump_prop, property_type;
+
+# vendor logging property
+type vendor_logging_prop, property_type;
+
