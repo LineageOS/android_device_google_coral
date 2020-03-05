@@ -228,12 +228,6 @@
 #
 /vendor/bt_firmware(/.*)?                                           u:object_r:bt_firmware_file:s0
 
-/(vendor|system/vendor)/bin/grep                                    u:object_r:vendor_toolbox_exec:s0
-##################################
-#vendor toolbox
-#
-/(vendor|system/vendor)/bin/toolbox_vendor                          u:object_r:vendor_toolbox_exec:s0
-
 /dev/st21nfc                                     u:object_r:nfc_device:s0
 /data/nfc(/.*)?                        u:object_r:nfc_data_file:s0
 #Android NN Driver
