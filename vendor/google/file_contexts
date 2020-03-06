@@ -47,7 +47,6 @@
 /vendor/bin/hw/vendor\.google\.airbrush@1\.0-service                                  u:object_r:airbrush_exec:s0
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                                  u:object_r:hal_radioext_default_exec:s0
 /vendor/bin/hw/wait_for_strongbox                                                     u:object_r:wait_for_strongbox_exec:s0
-/vendor/bin/init\.insmod\.sh                                                          u:object_r:init-insmod-sh_exec:s0
 /vendor/bin/thermal_logd                                                              u:object_r:init-thermal-logging-sh_exec:s0
 /vendor/bin/color_init                                                                u:object_r:color_init_exec:s0
 /vendor/bin/init\.ramoops\.sh                                                         u:object_r:ramoops_exec:s0
@@ -60,7 +59,7 @@
 /vendor/bin/hw/vendor\.google\.wifi_ext@1\.0-service-vendor                           u:object_r:hal_wifi_ext_exec:s0
 /vendor/bin/hw/vendor\.google\.wifi_ext@1\.0-service-vendor-lazy                      u:object_r:hal_wifi_ext_exec:s0
 /vendor/bin/tcpdump_logger                                                            u:object_r:tcpdump_logger_exec:s0
-/vendor/bin/hw/vendor\.google\.wireless_charger@1\.1-service-vendor                   u:object_r:hal_wlc_exec:s0
+/vendor/bin/hw/vendor\.google\.wireless_charger@1\.2-service-vendor                   u:object_r:hal_wlc_exec:s0
 /vendor/bin/hw/android\.hardware\.graphics\.composer@2\.4-service-sm8150              u:object_r:hal_graphics_composer_default_exec:s0
 /vendor/bin/hw/init_dp.sh                                                             u:object_r:init_dp_exec:s0
 /vendor/bin/wifi_sniffer                                                              u:object_r:wifi_sniffer_exec:s0
