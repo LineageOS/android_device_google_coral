@@ -72,6 +72,9 @@
 /mnt/vendor/persist/battery(/.*)?                                                     u:object_r:persist_battery_file:s0
 /mnt/vendor/persist/oslo(/.*)?                                                        u:object_r:persist_oslo_file:s0
 
+# Incremental file system driver
+/vendor/lib/modules/incrementalfs\.ko               u:object_r:vendor_incremental_module:s0
+
 # data files
 /data/vendor/hardware/airbrush/manager(/.*)?                                          u:object_r:airbrush_data_file:s0
 /data/vendor/modem_stat/debug\.txt                                                    u:object_r:modem_stat_data_file:s0
