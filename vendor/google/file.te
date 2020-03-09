@@ -82,3 +82,6 @@ type debugfs_ipa, debugfs_type, fs_type;
 
 # wifi_sniffer
 type sysfs_wifi_conmode, sysfs_type, fs_type;
+
+# Incremental file system driver
+type vendor_incremental_module, vendor_file_type, file_type;
