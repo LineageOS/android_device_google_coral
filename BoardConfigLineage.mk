@@ -27,6 +27,8 @@ TARGET_KERNEL_CONFIG := floral_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/coral
 TARGET_NEEDS_DTBOIMAGE := true
 
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor
