@@ -69,8 +69,44 @@
 /vendor/lib(64)?/libairbrush-pixel\.so                                                u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.google\.airbrush\.manager@1\.0\.so                           u:object_r:same_process_hal_file:s0
 
+# Vendor kernel modules
+/vendor/lib/modules/adsp_loader_dlkm.ko                                                       u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/apr_dlkm.ko                                                               u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/cs35l36_dlkm.ko                                                           u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/ftm5.ko                                                                   u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/heatmap.ko                                                                u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/lkdtm.ko                                                                  u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/machine_dlkm.ko                                                           u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/mbhc_dlkm.ko                                                              u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/msm_11ad_proxy.ko                                                         u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/native_dlkm.ko                                                            u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/pinctrl_wcd_dlkm.ko                                                       u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/platform_dlkm.ko                                                          u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/q6_dlkm.ko                                                                u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/q6_notifier_dlkm.ko                                                       u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/q6_pdr_dlkm.ko                                                            u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/softdog.ko                                                                u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/stub_dlkm.ko                                                              u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/swr_ctrl_dlkm.ko                                                          u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/swr_dlkm.ko                                                               u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/usf_dlkm.ko                                                               u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/videobuf2-memops.ko                                                       u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/videobuf2-vmalloc.ko                                                      u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/wcd934x_dlkm.ko                                                           u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/wcd9360_dlkm.ko                                                           u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/wcd9xxx_dlkm.ko                                                           u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/wcd_core_dlkm.ko                                                          u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/wcd_cpe_dlkm.ko                                                           u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/wcd_spi_dlkm.ko                                                           u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/wglink_dlkm.ko                                                            u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/wlan.ko                                                                   u:object_r:vendor_kernel_modules:s0
+/vendor/lib/modules/wsa881x_dlkm.ko                                                           u:object_r:vendor_kernel_modules:s0
+
 /mnt/vendor/persist/battery(/.*)?                                                     u:object_r:persist_battery_file:s0
 /mnt/vendor/persist/oslo(/.*)?                                                        u:object_r:persist_oslo_file:s0
+
+# Incremental file system driver
+/vendor/lib/modules/incrementalfs\.ko               u:object_r:vendor_incremental_module:s0
 
 # data files
 /data/vendor/hardware/airbrush/manager(/.*)?                                          u:object_r:airbrush_data_file:s0
