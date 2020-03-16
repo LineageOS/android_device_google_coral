@@ -30,6 +30,9 @@ allow hal_dumpstate_impl sysfs_display:file r_file_perms;
 allow hal_dumpstate_impl sysfs_scsi_devices_0000:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_scsi_devices_0000:file r_file_perms;
 
+# Access to prop
+get_prop(hal_dumpstate_impl, boottime_public_prop)
+
 # Access to thermal debug data
 r_dir_file(hal_dumpstate_impl, sysfs_thermal)
 
