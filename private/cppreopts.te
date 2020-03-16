@@ -1,2 +1,0 @@
-# b/150577956
-dontaudit cppreopts postinstall_mnt_dir:dir search;
