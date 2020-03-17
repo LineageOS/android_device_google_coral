@@ -1,2 +1,0 @@
-# b/149545112
-dontaudit wcnss_service vendor_data_file:file read;
