@@ -214,6 +214,5 @@ genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-2/2-0008/wakeup             
 genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-3/3-0043/wakeup                                                                                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/89c000.i2c/i2c-2/2-0036/power_supply/maxfg/wakeup10                                                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/89c000.i2c/i2c-2/2-0036/power_supply/maxfg/wakeup11                                                                                        u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-3/3-0043/wakeup/wakeup9                                                                                                     u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-4/4-0043/wakeup/wakeup9                                                                                                     u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-3/3-0008/wakeup/wakeup8                                                                                                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-4/4-0043/wakeup                                                                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-3/3-0008/wakeup                                                                                                             u:object_r:sysfs_wakeup:s0
