@@ -48,6 +48,7 @@
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                                  u:object_r:hal_radioext_default_exec:s0
 /vendor/bin/hw/wait_for_strongbox                                                     u:object_r:wait_for_strongbox_exec:s0
 /vendor/bin/thermal_logd                                                              u:object_r:init-thermal-logging-sh_exec:s0
+/vendor/bin/mm_logd                                                                   u:object_r:init-mm-logging-sh_exec:s0
 /vendor/bin/color_init                                                                u:object_r:color_init_exec:s0
 /vendor/bin/init\.ramoops\.sh                                                         u:object_r:ramoops_exec:s0
 /vendor/bin/modem_svc                                                                 u:object_r:modem_svc_exec:s0
