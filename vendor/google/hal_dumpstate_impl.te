@@ -111,6 +111,7 @@ allow hal_dumpstate_impl debugfs_tzdbg:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_esim:file r_file_perms;
 allow hal_dumpstate_impl display_vendor_data_file:dir r_dir_perms;
 allow hal_dumpstate_impl firmware_file:dir r_dir_perms;
+allow hal_dumpstate_impl block_device:dir r_dir_perms;
 
 #dump power supply stats
 allow hal_dumpstate_impl sysfs_batteryinfo:dir search;
