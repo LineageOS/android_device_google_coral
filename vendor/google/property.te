@@ -1,9 +1,6 @@
 #thermal HAL
 type vendor_thermal_prop, property_type;
 
-# PowerHal
-type power_prop, property_type;
-
 # Tcpdump_logger
 type vendor_tcpdump_log_prop, property_type;
 
