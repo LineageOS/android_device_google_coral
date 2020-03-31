@@ -151,6 +151,3 @@ type npu_device, dev_type;
 
 #define devinfo block device
 type devinfo_block_device, dev_type;
-
-# define latency device
-type latency_device, dev_type;
