@@ -8,8 +8,6 @@ persist.vendor.radio.smlog_switch               u:object_r:vendor_radio_prop:s0
 ro.vendor.radio.log_loc                         u:object_r:vendor_radio_prop:s0
 ro.vendor.radio.log_prefix                      u:object_r:vendor_radio_prop:s0
 
-vendor.thermal.config                           u:object_r:vendor_thermal_prop:s0
-
 ro.boot.usbcontroller                           u:object_r:vendor_usb_prop:s0
 
 ro.boot.hardware.platform                       u:object_r:public_vendor_default_prop:s0
