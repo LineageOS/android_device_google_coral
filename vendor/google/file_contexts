@@ -39,7 +39,6 @@
 /vendor/bin/hw/android\.hardware\.oemlock@1\.0-service\.citadel                       u:object_r:hal_oemlock_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.pixel                    u:object_r:hal_power_stats_default_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.0-service\.st                     u:object_r:hal_secure_element_default_exec:s0
-/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.pixel                         u:object_r:hal_thermal_default_exec:s0
 /vendor/bin/hw/android\.hardware\.usb@1\.2-service\.coral                             u:object_r:hal_usb_impl_exec:s0
 /vendor/bin/hw/android\.hardware\.weaver@1\.0-service\.citadel                        u:object_r:hal_weaver_citadel_exec:s0
 /vendor/bin/hw/citadeld                                                               u:object_r:citadeld_exec:s0
@@ -50,7 +49,6 @@
 /vendor/bin/hw/vendor\.google\.airbrush@1\.0-service                                  u:object_r:airbrush_exec:s0
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                                  u:object_r:hal_radioext_default_exec:s0
 /vendor/bin/hw/wait_for_strongbox                                                     u:object_r:wait_for_strongbox_exec:s0
-/vendor/bin/thermal_logd                                                              u:object_r:init-thermal-logging-sh_exec:s0
 /vendor/bin/mm_logd                                                                   u:object_r:init-mm-logging-sh_exec:s0
 /vendor/bin/color_init                                                                u:object_r:color_init_exec:s0
 /vendor/bin/init\.ramoops\.sh                                                         u:object_r:ramoops_exec:s0
