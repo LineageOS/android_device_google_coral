@@ -220,3 +220,6 @@ genfscon sysfs /devices/platform/soc/89c000.i2c/i2c-2/2-0036/power_supply/maxfg/
 genfscon sysfs /devices/platform/soc/89c000.i2c/i2c-2/2-0036/power_supply/maxfg/wakeup11                                                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-4/4-0043/wakeup                                                                                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-3/3-0008/wakeup                                                                                                             u:object_r:sysfs_wakeup:s0
+
+genfscon sysfs /devices/platform/soc/soc:google,battery/power_supply/battery/charge_deadline                                                                                    u:object_r:sysfs_charge:s0
+genfscon sysfs /devices/platform/soc/soc:google,battery/power_supply/battery/charge_stage                                                                                       u:object_r:sysfs_charge:s0
