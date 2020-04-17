@@ -101,14 +101,6 @@ ifeq ($(wildcard vendor/google_devices/coral/proprietary/device-vendor-coral.mk)
     BUILD_WITHOUT_VENDOR := true
 endif
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/google/coral-kernel/Image.lz4
-else
-    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-PRODUCT_VENDOR_KERNEL_HEADERS := device/google/coral-kernel/sm8150/kernel-headers
-
-
 PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -119,7 +111,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 #
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
     $(LOCAL_PATH)/fstab.hardware:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.$(PRODUCT_PLATFORM) \
     $(LOCAL_PATH)/fstab.hardware:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(PRODUCT_PLATFORM) \
     $(LOCAL_PATH)/init.hardware.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).rc \
