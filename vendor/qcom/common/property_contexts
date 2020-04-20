@@ -80,3 +80,9 @@ persist.vendor.qti.telephony.vt_cam_interface   u:object_r:public_vendor_default
 
 # Vendor verbose logging prop
 persist.vendor.verbose_logging_enabled          u:object_r:vendor_logging_prop:s0
+
+# vendor_radio_prop
+persist.vendor.data.shs_ko_load                 u:object_r:vendor_radio_prop:s0
+persist.vendor.data.shsusr_load                 u:object_r:vendor_radio_prop:s0
+persist.vendor.data.perf_ko_load                u:object_r:vendor_radio_prop:s0
+persist.vendor.data.qmipriod_load               u:object_r:vendor_radio_prop:s0
