@@ -14,6 +14,7 @@ allow hal_imsrtp self:qipcrtr_socket create_socket_perms_no_ioctl;
 
 add_hwservice(hal_imsrtp, hal_imsrtp_hwservice)
 binder_call(hal_imsrtp, radio)
+binder_call(hal_imsrtp, qtelephony)
 unix_socket_connect(hal_imsrtp, ims, ims)
 
 get_prop(hal_imsrtp, hwservicemanager_prop)
