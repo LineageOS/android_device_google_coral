@@ -220,5 +220,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := floral_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/coral
+TARGET_KERNEL_EXT_MODULES := \
+    wlan/qcacld-3.0 \
+    touch/fts
 
 -include vendor/google_devices/coral/proprietary/BoardConfigVendor.mk
