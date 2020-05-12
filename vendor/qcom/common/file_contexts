@@ -294,6 +294,7 @@
 /data/vendor/audio(/.*)?               u:object_r:audio_vendor_data_file:s0
 /data/vendor/display(/.*)?             u:object_r:display_vendor_data_file:s0
 /data/vendor/time(/.*)?                u:object_r:time_data_file:s0
+/data/vendor/nnhal(/.*)?               u:object_r:hal_neuralnetworks_data_file:s0
 
 # spdaemon and sec_nvm files
 /dev/spdaemon_ssr                               u:object_r:spdaemon_ssr_device:s0
