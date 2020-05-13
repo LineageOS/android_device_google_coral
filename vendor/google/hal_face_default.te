@@ -46,6 +46,7 @@ userdebug_or_eng(`
   allow hal_face_default face_debug:fifo_file write;
 ')
 
+get_prop(hal_face_default, camera_config_prop)
 get_prop(hal_face_default, camera_prop)
 get_prop(hal_face_default, vendor_faceauth_prop)
 
