@@ -15,7 +15,7 @@ user=_app seinfo=platform name=com.android.pixellogger domain=logger_app type=ap
 user=_app seinfo=platform name=com.google.oslo domain=oslo_app type=app_data_file levelFrom=all
 
 # Domain for Display
-user=_app seinfo=platform name=com.android.refreshratecontrol domain=refreshrate_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.android.hbmsvmanager domain=hbmsvmanager_app type=app_data_file levelFrom=all
 
 # Domain for GoogleCBRS app
 user=_app seinfo=platform name=com.google.googlecbrs domain=cbrs_setup_app type=app_data_file levelFrom=user
