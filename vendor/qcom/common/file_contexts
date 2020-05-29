@@ -233,7 +233,7 @@
 /dev/st21nfc                                     u:object_r:nfc_device:s0
 /data/nfc(/.*)?                        u:object_r:nfc_data_file:s0
 #Android NN Driver
-/(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-qti u:object_r:hal_neuralnetworks_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-qti u:object_r:hal_neuralnetworks_default_exec:s0
 
 # dev nodes
 /dev/ipa                                        u:object_r:ipa_dev:s0
