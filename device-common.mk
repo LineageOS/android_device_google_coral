@@ -287,7 +287,6 @@ PRODUCT_ENABLE_UFFD_GC := true
 
 # Lights
 PRODUCT_PACKAGES += \
-    hardware.google.light@1.1-service \
     lights.qcom
 
 # Lineage Health

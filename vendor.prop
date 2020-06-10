@@ -92,6 +92,7 @@ ro.vendor.display.sensortype=2
 vendor.display.defer_fps_frame_count=2
 vendor.display.foss.config=1
 vendor.display.foss.config_path=/vendor/etc/FOSSConfig.xml
+vendor.display.lbe.supported=1
 vendor.display.primary_vsyncs_rate_change=2
 vendor.display.qdcm.mode_combine=1
 
