@@ -99,3 +99,6 @@ persist.bluetooth.bqr.min_interval_ms=500
 
 # atrace
 ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+
+# USAP
+persist.device_config.runtime_native.usap_pool_enabled=true
