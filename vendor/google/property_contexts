@@ -18,7 +18,6 @@ vendor.display.primary_green                    u:object_r:vendor_display_prop:s
 vendor.display.primary_blue                     u:object_r:vendor_display_prop:s0
 vendor.display.primary_white                    u:object_r:vendor_display_prop:s0
 vendor.display.native_display_primaries_ready   u:object_r:vendor_display_prop:s0
-vendor.display.enable_kernel_idle_timer         u:object_r:vendor_display_prop:s0
 
 # battery
 vendor.battery.defender.                        u:object_r:vendor_battery_defender_prop:s0
