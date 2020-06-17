@@ -22,6 +22,9 @@ set_prop(vendor_init, camera_prop)
 set_prop(vendor_init, vendor_build_type_prop)
 set_prop(vendor_init, vendor_disable_spu_prop)
 
+#IMS related
+set_prop(vendor_init, qcom_ims_prop)
+
 userdebug_or_eng(`
   set_prop(vendor_init, logpersistd_logging_prop)
   # Allow vendor_init to write vendor_tcpdump_log_prop on userdebug or eng ROM
