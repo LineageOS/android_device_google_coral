@@ -4,5 +4,4 @@ vendor.google.airbrush.manager::IAirbrushManager                u:object_r:hal_a
 vendor.google.darwinn.service::IDarwinnService                  u:object_r:hal_darwinn_hwservice:s0
 vendor.google.radioext::IRadioExt                               u:object_r:hal_radioext_hwservice:s0
 vendor.google.wifi_ext::IWifiExt                                u:object_r:hal_wifi_ext_hwservice:s0
-vendor.google.google_battery::IGoogleBattery                    u:object_r:hal_googlebattery_hwservice:s0
 vendor.google.wireless_charger::IWirelessCharger                u:object_r:hal_wlc_hwservice:s0
