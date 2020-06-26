@@ -1,7 +1,2 @@
 get_prop(platform_app, vendor_aware_available_prop)
 add_hwservice(platform_app, vnd_atcmdfwd_hwservice)
-
-# To find and bind Google Battery HAL
-allow platform_app hal_googlebattery_hwservice:hwservice_manager find;
-allow platform_app hal_googlebattery:binder call;
-allow platform_app hal_googlebattery:binder { call transfer };
