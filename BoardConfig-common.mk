@@ -19,7 +19,6 @@ include build/make/target/board/BoardConfigPixelCommon.mk
 
 TARGET_BOARD_PLATFORM := msmnile
 TARGET_BOARD_INFO_FILE := device/google/coral/board-info.txt
-USES_DEVICE_GOOGLE_CORAL := true
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -34,8 +33,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
-
-TARGET_BOARD_COMMON_PATH := device/google/coral/sm8150
 
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8 androidboot.console=ttyMSM0 printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
@@ -59,7 +56,6 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 # DTBO partition definitions
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 
-TARGET_NO_KERNEL := false
 BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_USES_METADATA_PARTITION := true
 
@@ -113,30 +109,12 @@ include device/google/coral/sepolicy/coral-sepolicy.mk
 
 TARGET_FS_CONFIG_GEN := device/google/coral/config.fs
 
-QCOM_BOARD_PLATFORMS += msmnile
-QC_PROP_ROOT := vendor/qcom/sm8150/proprietary
-QC_PROP_PATH := $(QC_PROP_ROOT)
-BOARD_HAVE_BLUETOOTH_QCOM := true
-BOARD_HAVE_QCOM_FM := false
-TARGET_USE_QTI_BT_SAR := true
-BOARD_USES_COMMON_BLUETOOTH_HAL := true
-
 # Camera
-TARGET_USES_AOSP := true
-BOARD_QTI_CAMERA_32BIT_ONLY := false
-CAMERA_DAEMON_NOT_PRESENT := true
 TARGET_USES_ION := true
 
 # GPS
-TARGET_NO_RPC := true
-TARGET_USES_HARDWARE_QCOM_GPS := false
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
-
-# Sensors
-TARGET_SUPPORT_DIRECT_REPORT := true
-# Enable sensor Version V_2
-USE_SENSOR_HAL_VER := 2.0
 
 # CHRE
 CHRE_DAEMON_ENABLED := true
@@ -159,48 +137,16 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
-AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
-AUDIO_FEATURE_ENABLED_SND_MONITOR := true
-AUDIO_FEATURE_ENABLED_USB_TUNNEL := true
-AUDIO_FEATURE_ENABLED_CIRRUS_SPKR_PROTECTION := true
-AUDIO_FEATURE_CONFIG_CIRRUS_RX_CHANNELS := 4
+
+# Sound Trigger
 BOARD_SUPPORTS_SOUND_TRIGGER := true
-AUDIO_FEATURE_FLICKER_SENSOR_INPUT := false
-SOUND_TRIGGER_FEATURE_LPMA_ENABLED := true
-AUDIO_FEATURE_ENABLED_MAXX_AUDIO := true
-AUDIO_FEATURE_ENABLED_24BITS_CAMCORDER := true
-AUDIO_FEATURE_ENABLED_AUDIO_ZOOM := true
-AUDIO_FEATURE_ENABLED_INSTANCE_ID := true
-
-# Audio hal flag
-TARGET_USES_HARDWARE_QCOM_AUDIO := true
-TARGET_USES_HARDWARE_QCOM_AUDIO_PLATFORM_8974 := true
-TARGET_USES_HARDWARE_QCOM_AUDIO_POSTPROC := true
-TARGET_USES_HARDWARE_QCOM_AUDIO_VOLUME_LISTENER := true
-TARGET_USES_HARDWARE_QCOM_AUDIO_GET_MMAP_DATA_FD := true
-TARGET_USES_HARDWARE_QCOM_AUDIO_APP_TYPE_CFG := true
-TARGET_USES_HARDWARE_QCOM_AUDIO_ACDB_INIT_V2_CVD := true
-TARGET_USES_HARDWARE_QCOM_AUDIO_MAX_TARGET_SPECIFIC_CHANNEL_CNT := "4"
-TARGET_USES_HARDWARE_QCOM_AUDIO_INCALL_MUSIC_ENABLED := true
-TARGET_USES_HARDWARE_QCOM_AUDIO_MULTIPLE_HW_VARIANTS_ENABLED := true
-TARGET_USES_HARDWARE_QCOM_AUDIO_INCALL_STEREO_CAPTURE_ENABLED := true
-
-# SoundTrigger hal flag of new codec
-USE_SOUND_TRIGGER_HAL := iaxxx
-# Setup configuration in Soong namespace
-$(call soong_config_set,knowles,use_sound_trigger_hal,$(USE_SOUND_TRIGGER_HAL))
-ifeq ($(PLATFORM_VERSION),P)
-$(call soong_config_set,knowles,sound_trigger_hal_is_android_p,true)
-endif
+$(call soong_config_set,knowles,use_sound_trigger_hal,iaxxx)
 
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE := device/google/coral/manifest.xml
 DEVICE_MATRIX_FILE := device/google/coral/compatibility_matrix.xml
 # Intall device framework compatibility matrix to product partition
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := device/google/coral/device_framework_matrix_product.xml
-
-# Use mke2fs to create ext4 images
-TARGET_USES_MKE2FS := true
 
 BOARD_SUPER_PARTITION_SIZE := 9755951104
 BOARD_SUPER_PARTITION_GROUPS := google_dynamic_partitions
@@ -219,6 +165,4 @@ BOARD_SUPER_PARTITION_ERROR_LIMIT := 9651093504
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/c2f2-setup.sh
 
--include vendor/google_devices/coral/proprietary/BoardConfigVendor.mk
-
-include device/google/coral/BoardConfigLineage.mk
+-include device/google/coral/BoardConfigLineage.mk
