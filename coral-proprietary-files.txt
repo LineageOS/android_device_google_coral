@@ -405,4 +405,4 @@ product/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so
 -product/priv-app/TetheringEntitlement/TetheringEntitlement.apk;PRESIGNED
 -product/priv-app/USCCDM/USCCDM.apk
 -product/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk
--product/priv-app/WfcActivation/WfcActivation.apk
+-product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
