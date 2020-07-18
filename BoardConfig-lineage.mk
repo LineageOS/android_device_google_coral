@@ -24,6 +24,10 @@ TARGET_KERNEL_CONFIG := floral_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/coral
 TARGET_NEEDS_DTBOIMAGE := true
 
+# Manifests
+DEVICE_MANIFEST_FILE += device/google/coral/lineage_manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/google/coral/lineage_compatibility_matrix.xml
+
 # Partitions
 ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
     BOARD_VENDORIMAGE_PARTITION_SIZE := 744660992
@@ -36,6 +40,10 @@ ifneq ($(WITH_GMS),true)
     BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 629145600
     BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 15728640
 endif
+
+# SELinux
+BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy-lineage/dynamic
+BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy-lineage/vendor
 
 # Verified Boot
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
