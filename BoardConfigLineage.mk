@@ -30,6 +30,7 @@ TARGET_NEEDS_DTBOIMAGE := true
 BUILD_BROKEN_DUP_RULES := true
 
 # Manifests
+DEVICE_MANIFEST_FILE += device/google/coral/lineage_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/google/coral/lineage_compatibility_matrix.xml
 
 # Partitions
@@ -48,6 +49,10 @@ BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1803550720
 endif
 BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 30720000
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 30720000
+
+# SELinux
+BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy-lineage/dynamic
+BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy-lineage/vendor
 
 # Verified Boot
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
