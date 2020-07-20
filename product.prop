@@ -102,3 +102,8 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 
 # atrace
 ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+
+# Setting product name here to avoid issues with retrieving
+# "/sys/board_properties/soc/msv" naming, which seems to use
+# PRODUCT_NAME during build time
+ro.product.name=Pixel 4 XL
