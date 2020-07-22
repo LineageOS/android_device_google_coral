@@ -1,0 +1,4 @@
+## All blobs are extracted from Google factory images for each new ASB
+product/etc/felica/common.cfg
+product/lib/lib-imsvideocodec.so
+product/lib64/lib-imsvideocodec.so
