@@ -28,5 +28,6 @@ AB_OTA_PARTITIONS += \
     vendor \
 
 # Properties
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 PRODUCT_DEFAULT_PROPERTIES += \
     ro.gfx.angle.supported=true \
