@@ -18,6 +18,10 @@
 PRODUCT_PACKAGES += \
     Snap \
 
+# Lights
+PRODUCT_PACKAGES += \
+    hardware.google.light@1.0.vendor \
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
