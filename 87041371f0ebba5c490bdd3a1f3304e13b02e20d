@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d556c2cf_08ddbb25",
+        "filename": "device-lineage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-07-23T09:28:54Z",
+      "side": 1,
+      "message": "Isn\u0027t it 1.1? Just judging by https://review.lineageos.org/c/LineageOS/android_device_google_coral/+/281833.",
+      "range": {
+        "startLine": 23,
+        "startChar": 26,
+        "endLine": 23,
+        "endChar": 29
+      },
+      "revId": "87041371f0ebba5c490bdd3a1f3304e13b02e20d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
