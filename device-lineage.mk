@@ -24,3 +24,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor \
+
+# Properties
+TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
