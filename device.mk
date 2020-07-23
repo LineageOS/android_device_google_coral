@@ -31,6 +31,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/google/darwinn \
     vendor/qcom/sm8150 \
     vendor/qcom/sm8150/codeaurora/telephony/ims \
+    vendor/qcom/sm8150/proprietary/data/permissions \
     vendor/qcom/sm8150/proprietary/qcril-data-hal/qdp \
     vendor/qcom/sm8150/proprietary/qcril-data-hal/util \
     vendor/qcom/sm8150/proprietary/qcril-data-hal/datamodule \
@@ -67,6 +68,9 @@ $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 ifeq ($(wildcard vendor/google_devices/coral/proprietary/device-vendor-coral.mk),)
     BUILD_WITHOUT_VENDOR := true
@@ -326,6 +330,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.relay_oprt_change=1 \
     persist.vendor.radio.no_wait_for_card=1 \
     persist.vendor.radio.sap_silent_pin=1 \
+    persist.vendor.radio.manual_nw_rej_ct=1 \
     persist.rcs.supported=1 \
     vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
     ro.hardware.keystore_desede=true \
@@ -350,7 +355,7 @@ PRODUCT_PACKAGES += \
 # Light HAL
 PRODUCT_PACKAGES += \
     lights.msmnile \
-    hardware.google.light@1.0-service
+    hardware.google.light@1.1-service
 
 # Memtrack HAL
 PRODUCT_PACKAGES += \
@@ -507,7 +512,7 @@ PRODUCT_PACKAGES += \
 
 # Wireless Charger HAL
 PRODUCT_PACKAGES += \
-    vendor.google.wireless_charger@1.0
+    vendor.google.wireless_charger@1.1
 
 ENABLE_VENDOR_RIL_SERVICE := true
 
@@ -932,7 +937,7 @@ PRODUCT_PACKAGES += $(HIDL_WRAPPER)
 
 # Increment the SVN for any official public releases
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.vendor.build.svn=13
+	ro.vendor.build.svn=23
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
