@@ -23,6 +23,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/packages/apps/Snap \
 
+# Partitions
+AB_OTA_PARTITIONS += \
+    vendor \
+
 # Properties
 PRODUCT_DEFAULT_PROPERTIES += \
     ro.gfx.angle.supported=true \
