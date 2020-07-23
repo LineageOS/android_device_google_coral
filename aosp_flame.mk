@@ -23,7 +23,6 @@ $(call inherit-product-if-exists, vendor/google_devices/coral/proprietary/device
 $(call inherit-product-if-exists, vendor/google_devices/coral/prebuilts/device-vendor-flame.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Ring_Synth_04.ogg \
     ro.com.android.dataroaming=true \
 
 PRODUCT_PACKAGES += \
