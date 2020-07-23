@@ -26,3 +26,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor \
+
+# Properties
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
