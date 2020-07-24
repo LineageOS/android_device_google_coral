@@ -395,7 +395,7 @@ product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
 -product/priv-app/OemDmTrigger/OemDmTrigger.apk
 -product/priv-app/OsloFeedback/OsloFeedback.apk
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
--product/priv-app/RefreshRateControl/RefreshRateControl.apk
+-product/priv-app/RefreshRateControl/RefreshRateControl.apk|1037dd9563e777c3667e140deccffd8825e1ee4f
 -product/priv-app/RilConfigService/RilConfigService.apk
 -product/priv-app/SCONE/SCONE.apk;PRESIGNED
 product/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so
