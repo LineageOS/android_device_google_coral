@@ -24,6 +24,18 @@ TARGET_KERNEL_CONFIG := floral_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/coral
 TARGET_NEEDS_DTBOIMAGE := true
 
+<<<<<<< HEAD
+=======
+# Partitions
+ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
+BOARD_VENDORIMAGE_PARTITION_SIZE := 744660992
+endif
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
+# Properties
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+
+>>>>>>> 8f76b87d2... floral: Build the vendor image
 # Reserved Space
 ifneq ($(WITH_GMS),true)
     BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 15728640
