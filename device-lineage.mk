@@ -27,5 +27,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 AB_OTA_PARTITIONS += \
     vendor \
 
+# Properties
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
 # Vendor Security Patch Level
 VENDOR_SECURITY_PATCH := "2020-07-05"
