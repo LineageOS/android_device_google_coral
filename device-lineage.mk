@@ -18,6 +18,9 @@
 PRODUCT_PACKAGES += \
     Snap \
 
+# GMS
+WITH_GMS_FI := true
+
 # Lights
 PRODUCT_PACKAGES += \
     hardware.google.light@1.0.vendor \
