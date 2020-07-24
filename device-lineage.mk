@@ -22,3 +22,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap \
+
+# Partitions
+AB_OTA_PARTITIONS += \
+    vendor \
+
+# Vendor Security Patch Level
+VENDOR_SECURITY_PATCH := "2020-07-05"
