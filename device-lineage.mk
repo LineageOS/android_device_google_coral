@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+BUILD_WITHOUT_VENDOR := true
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap \
