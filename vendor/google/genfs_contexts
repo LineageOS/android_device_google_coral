@@ -108,6 +108,7 @@ genfscon debugfs /regmap/2-000b/                                                
 genfscon debugfs /logbuffer/ssoc                                                u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /logbuffer/ttf                                                 u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /logbuffer/batt_ce                                             u:object_r:debugfs_batteryinfo:s0
+genfscon debugfs /logbuffer/maxfg                                               u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /logbuffer/wireless                                            u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /google_charger                                                u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /google_battery                                                u:object_r:debugfs_batteryinfo:s0
