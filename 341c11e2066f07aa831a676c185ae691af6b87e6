@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7af6bb8d_18dfbbe8",
+        "filename": "flame-proprietary-files-vendor.txt",
+        "patchSetId": 27
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-08-06T00:45:28Z",
+      "side": 1,
+      "message": "ws",
+      "range": {
+        "startLine": 23,
+        "startChar": 41,
+        "endLine": 23,
+        "endChar": 42
+      },
+      "revId": "341c11e2066f07aa831a676c185ae691af6b87e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e93f8fef_3d152055",
+        "filename": "flame-proprietary-files.txt",
+        "patchSetId": 27
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-08-06T00:45:28Z",
+      "side": 1,
+      "message": "ws",
+      "range": {
+        "startLine": 3,
+        "startChar": 34,
+        "endLine": 3,
+        "endChar": 35
+      },
+      "revId": "341c11e2066f07aa831a676c185ae691af6b87e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
