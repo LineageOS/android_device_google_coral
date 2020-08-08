@@ -257,6 +257,8 @@ vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/permissions/com.google.android.camera.experimental2019.xml
+vendor/etc/seccomp_policy/codec2.vendor.base.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/config/ak991x_polling_0.json
 vendor/etc/sensors/config/bmp380.json
