@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "573ba473_14a073bf",
+        "filename": "vendor.prop",
+        "patchSetId": 33
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 23773
+      },
+      "writtenOn": "2020-08-09T23:48:51Z",
+      "side": 1,
+      "message": "when i added these they werent present in coral device tree. But on a fresh sync of r41 there is a commit that adds these the proper way. not sure why no one seems to have the commit otherwise.\n\nhttps://github.com/xlxfoxxlx/device_google_coral1/commit/d7e1712974c54faef84caa6c1c45e1b0a1a9c5b4",
+      "revId": "92cfca693f6c4419a4de67aded10616163f80cca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
