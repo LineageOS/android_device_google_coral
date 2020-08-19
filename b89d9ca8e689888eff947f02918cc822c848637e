@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "869ed6ab_cc7824d8",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 958,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2020-08-19T05:48:38Z",
+      "side": 1,
+      "message": "This is supposed to go in device-lineage mk.\nAnd it needs this change: https://review.lineageos.org/261844",
+      "range": {
+        "startLine": 956,
+        "startChar": 0,
+        "endLine": 958,
+        "endChar": 127
+      },
+      "revId": "b89d9ca8e689888eff947f02918cc822c848637e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
