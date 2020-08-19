@@ -22,6 +22,30 @@
       "revId": "bc143975804bdf01be06c990d70243b51e6b9348",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0bd092c4_236a44d0",
+        "filename": "overlay-lineage/frameworks/base/core/res/res/values/arrays.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-08-19T05:33:32Z",
+      "side": 1,
+      "message": "thank you!",
+      "parentUuid": "22f008a4_77e77b47",
+      "range": {
+        "startLine": 35,
+        "startChar": 8,
+        "endLine": 35,
+        "endChar": 22
+      },
+      "revId": "bc143975804bdf01be06c990d70243b51e6b9348",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
