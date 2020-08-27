@@ -1,9 +1,3 @@
-#thermal HAL
-vendor_internal_prop(vendor_thermal_prop)
-
-# PowerHal
-vendor_internal_prop(power_prop)
-
 # Tcpdump_logger
 vendor_internal_prop(vendor_tcpdump_log_prop)
 
@@ -34,3 +28,6 @@ vendor_internal_prop(vendor_battery_defender_prop)
 
 # SecureElement property
 vendor_internal_prop(vendor_secure_element_prop)
+
+# wifi_sniffer
+vendor_internal_prop(vendor_wifi_sniffer_prop)

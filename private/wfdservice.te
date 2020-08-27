@@ -1,6 +1,0 @@
-typeattribute wfdservice coredomain;
-
-#Allow for transition from init domain to wfdservice
-init_daemon_domain(wfdservice)
-
-

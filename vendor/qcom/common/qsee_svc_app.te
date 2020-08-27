@@ -1,4 +1,0 @@
-type qsee_svc_app, domain;
-app_domain(qsee_svc_app)
-
-

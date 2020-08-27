@@ -1,2 +1,0 @@
-# b/149542444
-dontaudit hal_graphics_allocator_default sysfs_msm_subsys:dir search;

@@ -1,2 +1,0 @@
-# b/149544591
-dontaudit surfaceflinger sysfs_msm_subsys:dir search;
