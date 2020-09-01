@@ -18,6 +18,7 @@ allow pixelstats_vendor sysfs_scsi_devices_0000:file rw_file_perms;
 
 r_dir_file(pixelstats_vendor, sysfs_pixelstats)
 r_dir_file(pixelstats_vendor, sysfs_batteryinfo)
+allow pixelstats_vendor sysfs_batteryinfo:file rw_file_perms;
 allow pixelstats_vendor self:netlink_kobject_uevent_socket { create getopt setopt bind read };
 
 # wlc
