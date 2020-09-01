@@ -20,16 +20,12 @@ type rmnet_device, dev_type;
 #Define thermal-engine devices
 type thermal_device, dev_type;
 
-#Define vm_bms devices
-type vm_bms_device, dev_type;
 type battery_data_device, dev_type;
 
 #Add qdsp_device type
 type qdsp_device, dev_type, mlstrustedobject;
 type dsp_device, dev_type;
 type xdsp_device, dev_type;
-#Define hvdcp/quickcharge device
-type hvdcp_device, dev_type;
 
 #Define mpdecision device
 type device_latency, dev_type;
@@ -45,7 +41,6 @@ type ssd_device, dev_type;
 type rpmb_device, dev_type;
 type sg_device, dev_type;
 type dip_device, dev_type;
-type mdtp_device, dev_type;
 type sd_device, dev_type;
 
 type ssd_block_device, dev_type;
@@ -76,9 +71,6 @@ type logdump_partition, dev_type;
 
 #Bootselect partition
 type bootselect_device, dev_type;
-
-#define usb_uicc_device for usb_uicc daemon
-type usb_uicc_device, dev_type;
 
 # Define IPA devices
 type ipa_dev, dev_type;
@@ -113,7 +105,6 @@ type modem_ssr_device, dev_type;
 type qsee_ipc_irq_spss_device, dev_type;
 
 # Define QDSS devices
-type qdss_device, dev_type;
 
 #Define Gadget serial device
 type gadget_serial_device, dev_type;
@@ -121,19 +112,12 @@ type gadget_serial_device, dev_type;
 #energy-awareness device
 type pta_device, dev_type;
 
-#Added for hbtp
-type bu21150_device, dev_type;
-type hbtp_device, dev_type;
-
 #Define qfintverify device
 type qce_device, dev_type;
 type rng_device, dev_type;
 
 #Define system health monitor devices
 type system_health_monitor_device, dev_type;
-
-#Define usf device
-type usf_device, dev_type;
 
 #Define qbt1000 device - ultrasonic fingperprint sensor
 type qbt1000_device, dev_type;
@@ -167,6 +151,3 @@ type npu_device, dev_type;
 
 #define devinfo block device
 type devinfo_block_device, dev_type;
-
-# define latency device
-type latency_device, dev_type;
