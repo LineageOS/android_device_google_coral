@@ -1,7 +1,6 @@
 # property for uicc_daemon
 vendor_internal_prop(uicc_prop)
 vendor_restricted_prop(qcom_ims_prop)
-vendor_internal_prop(ctl_vendor_qmuxd_prop)
 vendor_internal_prop(ctl_vendor_netmgrd_prop)
 vendor_internal_prop(ctl_vendor_port-bridge_prop)
 vendor_internal_prop(ctl_qcrild_prop)
@@ -12,16 +11,8 @@ vendor_internal_prop(vendor_disable_spu_prop)
 # property for LKCore ctl start
 vendor_internal_prop(ctl_LKCore_prop)
 
-# properties for usf daemons
-vendor_internal_prop(usf_prop)
-
-# property for FactoryOTA
-vendor_restricted_prop(factory_ota_prop)
-
 vendor_internal_prop(freq_prop)
-vendor_internal_prop(vm_bms_prop) #To start vm_bms
 vendor_internal_prop(vendor_dataqti_prop)
-vendor_internal_prop(vendor_dataadpl_prop)
 vendor_restricted_prop(cnd_vendor_prop)
 vendor_internal_prop(sensors_prop)
 vendor_internal_prop(slpi_prop)
@@ -30,7 +21,6 @@ vendor_internal_prop(msm_irqbl_sdm630_prop)
 vendor_restricted_prop(camera_prop)
 vendor_internal_prop(spcomlib_prop)
 vendor_restricted_prop(vendor_display_prop)
-vendor_internal_prop(vendor_device_prop)
 vendor_internal_prop(scr_enabled_prop)
 vendor_internal_prop(bg_boot_complete_prop)
 vendor_internal_prop(opengles_prop)
@@ -64,14 +54,12 @@ vendor_internal_prop(vendor_coresight_prop)
 
 vendor_restricted_prop(public_vendor_default_prop)
 
-vendor_internal_prop(ctl_hbtp_prop)
 vendor_internal_prop(vendor_alarm_boot_prop)
 
 # DOLBY_START
 vendor_internal_prop(dolby_prop)
 # DOLBY_END
 
-vendor_internal_prop(vendor_wifi_ftmd_prop)
 
 # WIGIG
 vendor_internal_prop(wigig_prop)
@@ -104,14 +92,6 @@ vendor_internal_prop(vendor_system_prop)
 # Bluetooth props
 vendor_internal_prop(vendor_bluetooth_prop)
 
-# HBTP
-vendor_internal_prop(ctl_vendor_hbtp_prop)
-
-# factory properties
-vendor_internal_prop(ctl_vendor_mmid_prop)
-
-#qdma property
-vendor_internal_prop(vendor_qdma_prop)
 
 #WiFi Display
 vendor_internal_prop(wfd_service_prop)
@@ -119,9 +99,6 @@ vendor_internal_prop(wfd_debug_prop)
 
 #imsrcsservice
 vendor_internal_prop(ctl_vendor_imsrcsservice_prop)
-
-#mmi
-vendor_internal_prop(vendor_mmi_prop)
 
 #time service
 vendor_internal_prop(vendor_time_service_prop)

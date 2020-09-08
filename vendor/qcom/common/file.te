@@ -1,6 +1,3 @@
-# Default type for anything under /vendor/firmware_mnt.
-type firmware_file, file_type, contextmount_type, vendor_file_type;
-
 # All files under /vendor/firmware
 type vendor_firmware_file, vendor_file_type, file_type;
 
@@ -15,8 +12,6 @@ type vendor_qti_data_file, file_type, data_file_type;
 
 type proc_wifi_dbg, proc_type, fs_type;
 type proc_swappiness, proc_type, fs_type;
-#Define the pps socket type
-type pps_socket, file_type;
 
 #Define the qdcmss socket type
 type qdcmsocket_socket, file_type;
@@ -36,9 +31,7 @@ type sysfs_faceauth, sysfs_type, fs_type;
 
 #Define the files written during the operation of netmgrd and qmuxd
 type netmgrd_data_file, file_type, data_file_type;
-type sysrq_trigger_proc, fs_type, mlstrustedobject;
 # Persist file types
-type persist_file, file_type, vendor_persist_type;
 type persist_bluetooth_file, file_type , vendor_persist_type;
 type persist_camera_file, file_type , vendor_persist_type;
 type persist_data_file, file_type , vendor_persist_type;
@@ -48,11 +41,8 @@ type vendor_persist_mmi_file, file_type, vendor_persist_type;
 type persist_misc_file, file_type , vendor_persist_type;
 type persist_bms_file, file_type , vendor_persist_type;
 type persist_secnvm_file, file_type , vendor_persist_type;
-type persist_hvdcp_file, file_type , vendor_persist_type;
 type persist_audio_file, file_type , vendor_persist_type;
 
-#file type for restricting proc read by audiod
-type proc_audiod, fs_type, proc_type;
 type proc_sysctl_schedboost, proc_type, fs_type;
 
 #msm irqbalance
@@ -77,12 +67,6 @@ type rfs_shared_hlos_file, file_type, data_file_type;
 type persist_rfs_file, file_type, vendor_persist_type;
 type persist_rfs_shared_hlos_file, file_type, vendor_persist_type;
 
-#mm-pp-daemon file type for sysfs access
-#type sysfs_leds, fs_type, sysfs_type;
-
-#Define the files written during the operation of mm-pp-daemon
-type data_ad_calib_cfg, file_type, data_file_type;
-
 #SurfaceFlinger file type for sysfs access
 type sysfs_graphics, sysfs_type, fs_type;
 
@@ -95,9 +79,6 @@ type sysfs_vadc_dev, sysfs_type, fs_type;
 # sysfs spmi device for hvdcp/quickcharge
 type sysfs_spmi_dev, sysfs_type, fs_type;
 
-# sysfs qdss device for qcomsysd
-type sysfs_qdss_dev, sysfs_type, fs_type;
-
 # sysfs poweron_alarm is used in init.target.rc
 type sysfs_poweron_alarm, sysfs_type, fs_type;
 
@@ -105,7 +86,6 @@ type sysfs_poweron_alarm, sysfs_type, fs_type;
 type sysfs_mpdecision, fs_type, sysfs_type;
 type sysfs_rqstats, fs_type, sysfs_type;
 type sysfs_cpu_online, fs_type, sysfs_type;
-type mpctl_socket, file_type, mlstrustedobject;
 type mpctl_data_file, file_type, data_file_type;
 
 #Define the files used by lm
@@ -126,7 +106,6 @@ type sysfs_msm_boot, fs_type, sysfs_type;
 type sysfs_timestamp_switch, sysfs_type, fs_type;
 
 #define the files writer during the operation of app state changes
-type gamed_socket, file_type;
 
 #define the files writter during the operatio of iop
 type iop_socket, file_type;
@@ -134,15 +113,6 @@ type iop_data_file, file_type, data_file_type;
 
 #Socket node needed by ims_data daemon
 type ims_socket, file_type;
-
-#mink-lowi-interface-daemon (mlid) socket
-type mlid_socket, file_type, mlstrustedobject;
-
-#ssg qmi gateway daemon socket
-type ssgqmig_socket, file_type, mlstrustedobject;
-
-#ssg tz daemon socket
-type ssgtzd_socket, file_type, mlstrustedobject;
 
 #location file types
 type location_data_file, file_type, data_file_type;
@@ -162,10 +132,6 @@ type sysfs_hsic_host_rdy, sysfs_type, fs_type;
 # Files accessed by qcom-system-daemon
 type sysfs_socinfo, fs_type, sysfs_type;
 
-#Define the sysfs files for usb_uicc_daemon
-type sysfs_usb_uicc, sysfs_type, fs_type;
-
-type qlogd_socket, file_type, mlstrustedobject;
 #Defines the files (configs, dumps, etc) used by display processes
 type display_vendor_data_file, file_type, data_file_type;
 
@@ -195,43 +161,17 @@ type bt_firmware_file, file_type, contextmount_type, vendor_file_type;
 type  proc_dirty_ratio, fs_type, proc_type;
 
 #File types by mmi
-type vendor_mmi_socket, file_type;
 
-# hbtp config file
-type hbtp_cfg_file, file_type, vendor_file_type;
-type hbtp_log_file, file_type, data_file_type;
-type hbtp_kernel_sysfs, fs_type, sysfs_type;
-
-type persist_usf_file, file_type, vendor_persist_type;
 
 #rmt files
 type sysfs_rmtfs, sysfs_type, fs_type;
 
-#qfp-daemon
-type qfp-daemon_data_file, file_type, data_file_type;
-type persist_qti_fp_file, file_type, vendor_persist_type;
 
-#qsee_svc_app file types
-type qsee_svc_app_data_file, file_type, data_file_type;
 
-# imshelper_app file types
-type imshelper_app_data_file, file_type, data_file_type;
-
-# RIDL data files
-type RIDL_data_file, file_type, data_file_type;
-type RIDL_socket, file_type, data_file_type;
-
-# qti_logkit data files (privileged and public)
-type qti_logkit_priv_data_file, file_type, data_file_type;
-type qti_logkit_pub_data_file, file_type, data_file_type;
-type qti_logkit_priv_socket, file_type, data_file_type;
-type qti_logkit_pub_socket, file_type, mlstrustedobject, data_file_type;
 
 # used for /dsp files
 type adsprpcd_file, file_type, mlstrustedobject, vendor_file_type;
 
-#mdtp_svc_app file types
-type mdtp_svc_app_data_file, file_type, data_file_type;
 
 # Regionalization files
 type regionalization_file, file_type , vendor_persist_type;
@@ -246,8 +186,6 @@ type dynamic_nv_data_file, file_type, data_file_type;
 # Wifi Data file
 type wifi_vendor_data_file, file_type, data_file_type;
 type wifi_vendor_wpa_socket, file_type, data_file_type;
-type wifi_vendor_hostapd_socket, file_type, data_file_type;
-type hostapd_socket, file_type, data_file_type;
 
 #widevine data file
 type vendor_mediadrm_data_file, file_type, data_file_type;
@@ -281,8 +219,6 @@ type sysfs_diag, fs_type, sysfs_type;
 type sysfs_laser, fs_type, sysfs_type;
 
 # QDMA data files
-type vendor_qdma_data_file, file_type, data_file_type;
-type qdma_socket, file_type;
 
 # path to debugfs use this whic should be only used
 # in debug builds
@@ -300,10 +236,6 @@ type sysfs_uio_file, fs_type, sysfs_type;
 #irq balance sysfs type
 type sysfs_irqbalance , sysfs_type, fs_type;
 
-# vpp files
-type vendor_vpp_data_file, file_type, data_file_type;
-type persist_vpp_file, file_type, vendor_persist_type;
-
 # vendor camera files
 type vendor_camera_data_file, file_type, data_file_type;
 
@@ -318,8 +250,6 @@ type sysfs_bond0, fs_type, sysfs_type;
 type sysfs_wigig, fs_type, sysfs_type;
 type wigignpt_socket, file_type, data_file_type;
 
-# wigig_hostapd
-type wigig_hostapd_socket, file_type, data_file_type;
 
 # ea sysfs files
 type sysfs_ea, fs_type, sysfs_type;
@@ -343,7 +273,6 @@ type sysfs_boot_adsp, sysfs_type, fs_type;
 type data_tzstorage_file, file_type, data_file_type;
 
 #TLOC Files
-type tlocd_data_file, file_type, data_file_type;
 
 #DRM files
 type data_qsee_file, file_type, data_file_type;
@@ -362,6 +291,9 @@ type sysfs_jpeg, fs_type, sysfs_type;
 
 #SSR Log Files
 type ramdump_vendor_data_file, file_type, data_file_type, mlstrustedobject;
+
+# RamdumpFs files
+type ramdump_vendor_mnt_file, file_type, data_file_type, mlstrustedobject;
 
 # npu file
 type sysfs_npu, fs_type, sysfs_type;
@@ -391,9 +323,7 @@ type sysfs_msm_wlan, sysfs_type, fs_type;
 type sysfs_scsi_devices_0000, sysfs_type, fs_type;
 
 # for PowerHal
-type debugfs_sched_features, debugfs_type, fs_type;
-
-allow firmware_file self:filesystem associate;
+type proc_sched_energy_aware, proc_type, fs_type;
 
 # debugfs wlan
 type debugfs_wlan, debugfs_type, fs_type;

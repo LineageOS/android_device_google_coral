@@ -20,7 +20,6 @@ vendor.qti.hardware.radio.uim_remote_server::IUimRemoteServiceServer    u:object
 vendor.qti.hardware.radio.uim_remote_client::IUimRemoteServiceClient    u:object_r:hal_telephony_hwservice:s0
 vendor.qti.hardware.radio.uim::IUim                                     u:object_r:hal_telephony_hwservice:s0
 vendor.qti.hardware.radio.ims::IImsRadio                                u:object_r:hal_telephony_hwservice:s0
-vendor.qti.hardware.sensorscalibrate::ISensorsCalibrate                 u:object_r:hal_sensorscalibrate_qti_hwservice:s0
 vendor.qti.hardware.tui_comm::ITuiComm                                  u:object_r:hal_tui_comm_hwservice:s0
 vendor.qti.hardware.radio.atcmdfwd::IAtCmdFwd                           u:object_r:vnd_atcmdfwd_hwservice:s0
 vendor.qti.hardware.data.latency::ILinkLatency                          u:object_r:hal_latency_hwservice:s0
@@ -32,3 +31,4 @@ vendor.qti.hardware.data.connection::IDataConnection                    u:object
 vendor.qti.hardware.capabilityconfigstore::ICapabilityConfigStore       u:object_r:hal_capabilityconfigstore_qti_hwservice:s0
 vendor.qti.hardware.display.allocator::IQtiAllocator                    u:object_r:hal_graphics_allocator_hwservice:s0
 vendor.qti.ims.callinfo::IService                                       u:object_r:hal_imscallinfo_hwservice:s0
+vendor.qti.hardware.qseecom::IQSEECom                                   u:object_r:hal_qseecom_hwservice:s0

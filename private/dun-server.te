@@ -1,5 +1,0 @@
-type dun-server_exec, system_file_type, exec_type, file_type;
-typeattribute dun-server coredomain;
-
-init_daemon_domain(dun-server)
-
