@@ -51,4 +51,4 @@ PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service \
 
 # Vendor Security Patch Level
-VENDOR_SECURITY_PATCH := "2020-07-05"
+VENDOR_SECURITY_PATCH := "2020-08-05"
