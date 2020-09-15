@@ -11,3 +11,4 @@ BOARD_SEPOLICY_DIRS += device/google/coral-sepolicy/vendor/verizon
 
 # Pixel-wide
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/citadel
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
