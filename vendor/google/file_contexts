@@ -11,7 +11,6 @@
 /dev/maxfg_history                                                                    u:object_r:maxfg_device:s0
 /dev/vd6281                                                                           u:object_r:rls_device:s0
 /dev/sensor_tunnel                                                                    u:object_r:rls_device:s0
-/dev/st54j_se                                                                         u:object_r:secure_element_device:s0
 /dev/subsys_faceauth                                                                  u:object_r:faceauth_device:s0
 /dev/subsys_faceauth_b                                                                u:object_r:faceauth_device:s0
 /dev/touch_offload                                                                    u:object_r:touch_offload_device:s0
@@ -33,7 +32,6 @@
 /vendor/bin/hw/android\.hardware\.contexthub@1\.1-service\.generic                    u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-noronha                 u:object_r:hal_neuralnetworks_darwinn_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.pixel                    u:object_r:hal_power_stats_default_exec:s0
-/vendor/bin/hw/android\.hardware\.secure_element@1\.0-service\.st                     u:object_r:hal_secure_element_default_exec:s0
 /vendor/bin/hw/android\.hardware\.usb@1\.2-service\.coral                             u:object_r:hal_usb_impl_exec:s0
 /vendor/bin/hw/hardware\.google\.light@1\.1-service                                   u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/vendor\.google\.airbrush@1\.0-service                                  u:object_r:airbrush_exec:s0
@@ -104,7 +102,6 @@
 /data/vendor/modem_dump(/.*)?                                                         u:object_r:modem_dump_file:s0
 /data/vendor/tcpdump_logger(/.*)?                                                     u:object_r:tcpdump_vendor_data_file:s0
 /data/vendor_ce/[0-9]+/ramoops(/.*)?                                                  u:object_r:ramoops_vendor_data_file:s0
-/data/vendor/ese(/.*)?                                                                u:object_r:ese_vendor_data_file:s0
 /data/vendor/hal_neuralnetworks_darwinn/hal_camera(/.*)?                              u:object_r:hal_neuralnetworks_darwinn_hal_camera_data_file:s0
 /data/vendor/camera_calibration(/.*)?                                                 u:object_r:camera_calibration_vendor_data_file:s0
 /data/vendor/face(/.*)?                                                               u:object_r:face_vendor_data_file:s0
