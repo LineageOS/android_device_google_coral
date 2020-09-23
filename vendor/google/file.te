@@ -86,3 +86,7 @@ type sysfs_wifi_conmode, sysfs_type, fs_type;
 
 # Incremental file system driver
 type vendor_incremental_module, vendor_file_type, file_type;
+
+# Firmware mount
+type firmware_file, file_type, contextmount_type, vendor_file_type;
+allow firmware_file self:filesystem associate;

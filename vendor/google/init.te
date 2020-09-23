@@ -1,0 +1,3 @@
+# Allow init to mount firmware
+allow init firmware_file:dir mounton;
+allow init firmware_file:filesystem { getattr mount relabelfrom };
