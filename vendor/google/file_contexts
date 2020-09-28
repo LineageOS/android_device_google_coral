@@ -40,6 +40,7 @@
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                                  u:object_r:hal_radioext_default_exec:s0
 /vendor/bin/color_init                                                                u:object_r:color_init_exec:s0
 /vendor/bin/init\.ramoops\.sh                                                         u:object_r:ramoops_exec:s0
+/vendor/bin/init\.insmod\.sh                                                          u:object_r:init-insmod-sh_exec:s0
 /vendor/bin/modem_svc                                                                 u:object_r:modem_svc_exec:s0
 /vendor/bin/ramoops                                                                   u:object_r:ramoops_exec:s0
 /vendor/bin/hw/android\.hardware\.dumpstate@1\.[01]-service\.coral                    u:object_r:hal_dumpstate_impl_exec:s0
