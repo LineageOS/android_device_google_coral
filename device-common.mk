@@ -19,11 +19,11 @@ PRODUCT_PLATFORM := sm8150
 
 include device/google/coral/device.mk
 
-# Set Vendor SPL to match platform
-VENDOR_SECURITY_PATCH = 2020-08-05
+# Setting vendor SPL
+VENDOR_SECURITY_PATCH = 2020-09-05
 
 # Set boot SPL
-BOOT_SECURITY_PATCH = 2020-08-05
+BOOT_SECURITY_PATCH = 2020-09-05
 
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio.adm.buffering.ms=3
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio_hal.period_multiplier=2
