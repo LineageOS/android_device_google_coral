@@ -27,7 +27,6 @@
 /vendor/bin/pixelstats-vendor                                                         u:object_r:pixelstats_vendor_exec:s0
 
 # vendor binaries
-/vendor/bin/hw/android\.hardware\.atrace@1\.0-service.pixel                           u:object_r:hal_atrace_default_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.face@1\.0-service\.google               u:object_r:hal_face_default_exec:s0
 /vendor/bin/hw/android\.hardware\.camera\.provider@2\.6-service-google                u:object_r:hal_camera_default_exec:s0
 /vendor/bin/hw/android\.hardware\.contexthub@1\.1-service\.generic                    u:object_r:hal_contexthub_default_exec:s0
