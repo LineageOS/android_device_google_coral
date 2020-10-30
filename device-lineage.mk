@@ -54,6 +54,9 @@ PRODUCT_COPY_FILES += \
 # GMS
 WITH_GMS_FI := true
 
+# Kernel headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/google/coral/kernel-headers
+
 # Lights
 PRODUCT_PACKAGES += \
     hardware.google.light@1.0.vendor \
