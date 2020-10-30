@@ -46,6 +46,10 @@ AB_OTA_PARTITIONS += \
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4
+
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service \

@@ -1,5 +1,4 @@
 ## All blobs are extracted from Google factory images for each new ASB
-bin/iw
 bin/move_time_data.sh
 etc/permissions/com.qti.snapdragon.sdk.display.xml
 etc/permissions/privapp-permissions-google.xml
@@ -10,8 +9,6 @@ etc/permissions/privapp-permissions-google.xml
 -framework/vendor.qti.hardware.factory-V1.0-java.jar
 -framework/vendor.qti.ims.callinfo-V1.0-java.jar
 -framework/vendor.qti.voiceprint-V1.0-java.jar
-lib/android.hardware.radio@1.3.so
-lib/android.hardware.radio@1.4.so
 lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/com.qualcomm.qti.uceservice@2.0.so
@@ -19,13 +16,9 @@ lib/libadsprpc_system.so
 lib/libcdsprpc_system.so
 lib/libdiag_system.so
 lib/libdisplayconfig.so
-lib/liblogwrap.so
 lib/libmdsprpc_system.so
-lib/libminui.so
 lib/libmmosal.so
-lib/libnl.so
 lib/libOpenCL_system.so
-lib/libprotobuf-cpp-full.so
 lib/libqmi_cci_system.so
 lib/libsdsprpc_system.so
 lib/libvr_amb_engine.so
@@ -66,8 +59,6 @@ lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 lib/vendor.qti.hardware.seccam@1.0.so
 lib/vendor.qti.hardware.tui_comm@1.0.so
 lib/vendor.qti.ims.callinfo@1.0.so
-lib64/android.hardware.radio@1.3.so
-lib64/android.hardware.radio@1.4.so
 lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 lib64/com.qualcomm.qti.imscmservice@1.0.so
 lib64/com.qualcomm.qti.uceservice@2.0.so
@@ -76,11 +67,8 @@ lib64/libcdsprpc_system.so
 lib64/libdiag_system.so
 lib64/libdisplayconfig.so
 lib64/libmdsprpc_system.so
-lib64/libminui.so
 lib64/libmmosal.so
-lib64/libnl.so
 lib64/libOpenCL_system.so
-lib64/libprotobuf-cpp-full.so
 lib64/libqmi_cci_system.so
 lib64/libsdsprpc_system.so
 lib64/libvr_amb_engine.so
