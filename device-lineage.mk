@@ -14,6 +14,35 @@
 # limitations under the License.
 #
 
+# Build necessary packages for vendor
+PRODUCT_PACKAGES += \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    ese_spi_st \
+    libcamera2ndk_vendor \
+    libcodec2_hidl@1.0.vendor:32 \
+    libcodec2_vndk.vendor \
+    libdisplayconfig \
+    libjson \
+    libmedia_ecoservice.vendor \
+    libnos:64 \
+    libnosprotos:64 \
+    libnos_client_citadel:64 \
+    libnos_datagram:64 \
+    libnos_datagram_citadel:64 \
+    libnos_transport:64 \
+    libqti_vndfwk_detect.vendor \
+    libsensorndkbridge \
+    libstagefright_bufferpool@2.0.1.vendor \
+    libtextclassifier_hash.vendor:64 \
+    nos_app_avb:64 \
+    nos_app_keymaster:64 \
+    nos_app_weaver:64 \
+    libtinycompress \
+    libtinyxml \
+    libwifi-hal:64 \
+    libwifi-hal-qcom \
+    sound_trigger.primary.msmnile \
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap \
