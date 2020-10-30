@@ -1,4 +1,20 @@
 ## All blobs are extracted from Google factory images for each new ASB
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Handset_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Headset_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Global_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Hdmi_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Bluetooth_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Codec_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/General_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Speaker_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-flame-snd-card/Handset_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-flame-snd-card/Headset_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-flame-snd-card/Global_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-flame-snd-card/Hdmi_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-flame-snd-card/Bluetooth_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-flame-snd-card/Codec_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-flame-snd-card/General_cal.acdb
+vendor/etc/acdbdata/OEM/sm8150-iaxxx-flame-snd-card/Speaker_cal.acdb
 vendor/etc/sensors/config/f2_bmp380.json
 vendor/etc/sensors/config/f2_lis2mdl.json
 vendor/etc/sensors/config/f2_lis2mdl_dvt.json
@@ -38,10 +54,6 @@ vendor/firmware/ftm5_fw_f2_evt2.ftb
 vendor/firmware/ftm5_fw_f2_p2.ftb
 vendor/firmware/OsloSensorPackage.bin
 vendor/lib/hw/audio.primary.msmnile.so
-vendor/lib/hw/bootctrl.msmnile.so
-vendor/lib/hw/sensors.flame.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/hw/audio.primary.msmnile.so
-vendor/lib64/hw/bootctrl.msmnile.so
-vendor/lib64/hw/sensors.flame.so
 vendor/lib64/sensors.ssc.so

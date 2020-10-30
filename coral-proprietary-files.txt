@@ -15,7 +15,6 @@ lib/com.qualcomm.qti.uceservice@2.0.so
 lib/libadsprpc_system.so
 lib/libcdsprpc_system.so
 lib/libdiag_system.so
-lib/libdisplayconfig.so
 lib/libmdsprpc_system.so
 lib/libmmosal.so
 lib/libOpenCL_system.so
@@ -65,7 +64,6 @@ lib64/com.qualcomm.qti.uceservice@2.0.so
 lib64/libadsprpc_system.so
 lib64/libcdsprpc_system.so
 lib64/libdiag_system.so
-lib64/libdisplayconfig.so
 lib64/libmdsprpc_system.so
 lib64/libmmosal.so
 lib64/libOpenCL_system.so
