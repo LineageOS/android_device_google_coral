@@ -69,6 +69,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Elmyra
+PRODUCT_PACKAGES += \
+    ElmyraService
+
 # Enable missing vendor props
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true  \
