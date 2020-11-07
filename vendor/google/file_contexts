@@ -18,9 +18,6 @@
 /dev/lm36011_dot                                                                      u:object_r:laser_device:s0
 /dev/iaxxx-module-celldrv                                                             u:object_r:pwrstats_device:s0
 
-# product binaries
-/product/bin/twoshay                                                                  u:object_r:twoshay_exec:s0
-
 # system binaries
 /system/bin/hw/hardware\.google\.pixelstats@1\.0-service                              u:object_r:pixelstats_system_exec:s0
 /vendor/bin/pixelstats-vendor                                                         u:object_r:pixelstats_vendor_exec:s0
@@ -50,6 +47,7 @@
 /vendor/bin/hw/android\.hardware\.graphics\.composer@2\.4-service-sm8150              u:object_r:hal_graphics_composer_default_exec:s0
 /vendor/bin/hw/init_dp.sh                                                             u:object_r:init_dp_exec:s0
 /vendor/bin/wifi_sniffer                                                              u:object_r:wifi_sniffer_exec:s0
+/vendor/bin/twoshay                                                                   u:object_r:twoshay_exec:s0
 
 # Vendor firmware
 /vendor/firmware_mnt(/.*)?                                                            u:object_r:firmware_file:s0
