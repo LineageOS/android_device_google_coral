@@ -26,8 +26,5 @@ vendor_internal_prop(ecoservice_prop)
 vendor_internal_prop(vendor_shutdown_prop)
 vendor_internal_prop(vendor_battery_defender_prop)
 
-# SecureElement property
-vendor_internal_prop(vendor_secure_element_prop)
-
 # wifi_sniffer
 vendor_internal_prop(vendor_wifi_sniffer_prop)
