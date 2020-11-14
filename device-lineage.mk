@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Avoid using generic aosp_product.mk libnfc-nci.conf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf
+
 # Build necessary packages for system_ext
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.bluetooth_audio@1.0 \
