@@ -26,3 +26,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="flame-user 12 SP1A.211105.002 7743617 release-keys"
 
 BUILD_FINGERPRINT := google/flame/flame:12/SP1A.211105.002/7743617:user/release-keys
+
+$(call inherit-product, vendor/google/flame/flame-vendor.mk)
