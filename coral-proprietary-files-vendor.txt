@@ -792,6 +792,7 @@ vendor/lib/libqcodec2.so
 vendor/lib/libqcrildatactl.so
 vendor/lib/libqcrilFramework.so
 vendor/lib/libqdi.so
+-vendor/lib/libqdMetaData.so
 vendor/lib/libqdp.so
 vendor/lib/libqisl.so
 vendor/lib/libqmi.so
@@ -1245,6 +1246,7 @@ vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdma_file_agent.so
+-vendor/lib64/libqdMetaData.so
 vendor/lib64/libqdp.so
 vendor/lib64/libqisl.so
 vendor/lib64/libqmi.so
