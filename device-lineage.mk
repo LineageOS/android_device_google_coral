@@ -93,6 +93,10 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
+# Parts
+PRODUCT_PACKAGES += \
+    GoogleParts
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display \
