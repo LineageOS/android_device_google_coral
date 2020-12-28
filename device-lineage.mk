@@ -14,9 +14,66 @@
 # limitations under the License.
 #
 
+# Build necessary packages for system_ext
+PRODUCT_PACKAGES += \
+    com.qualcomm.qti.bluetooth_audio@1.0 \
+    vendor.display.config@1.8 \
+    vendor.qti.hardware.cryptfshw@1.0
+
+# Build necessary packages for vendor
+PRODUCT_PACKAGES += \
+    android.hardware.identity-support-lib.vendor:64 \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    chre \
+    ese_spi_st \
+    libavservices_minijail_vendor:32 \
+    libcamera2ndk_vendor \
+    libcodec2_hidl@1.0.vendor:32 \
+    libcodec2_vndk.vendor \
+    libcppbor.vendor:64 \
+    libhidltransport.product \
+    libhwbinder.vendor \
+    libjson \
+    libkeymaster_messages.vendor:64 \
+    libmedia_ecoservice.vendor \
+    libnos:64 \
+    libnos_client_citadel:64 \
+    libnos_datagram:64 \
+    libnos_datagram_citadel:64 \
+    libnosprotos:64 \
+    libnos_transport:64 \
+    libprotobuf-cpp-full-vendorcompat \
+    libpuresoftkeymasterdevice.vendor:64 \
+    libqti_vndfwk_detect.vendor \
+    libsensorndkbridge \
+    libsoft_attestation_cert.vendor:64 \
+    libstagefright_bufferpool@2.0.1 \
+    libteeui_hal_support.vendor:64 \
+    libtextclassifier_hash.vendor:64 \
+    libtinycompress \
+    libtinyxml \
+    libvndfwk_detect_jni.qti.vendor \
+    libwifi-hal:64 \
+    libwifi-hal-qcom \
+    nos_app_avb:64 \
+    nos_app_identity:64 \
+    nos_app_keymaster:64 \
+    nos_app_weaver:64 \
+    sound_trigger.primary.msmnile \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.cryptfshw@1.0.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
+
+# Enable missing vendor props
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true  \
+    media.mediadrmservice.enable=true \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno
 
 # EUICC
 PRODUCT_COPY_FILES += \
