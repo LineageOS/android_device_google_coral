@@ -82,6 +82,3 @@ PRODUCT_PACKAGES += \
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service \
-
-# Vendor Security Patch Level
-VENDOR_SECURITY_PATCH := "2020-08-05"
