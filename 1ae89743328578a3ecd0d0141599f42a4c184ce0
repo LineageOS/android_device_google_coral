@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "07f2c4cc_d7e7faef",
+        "filename": "coral/lineage-proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2021-01-06T00:47:25Z",
+      "side": 1,
+      "message": "this conflicts with something in GMS packages - what does this do?",
+      "range": {
+        "startLine": 132,
+        "startChar": 0,
+        "endLine": 132,
+        "endChar": 53
+      },
+      "revId": "1ae89743328578a3ecd0d0141599f42a4c184ce0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
