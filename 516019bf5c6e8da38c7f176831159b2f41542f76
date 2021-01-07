@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "940a82f7_4b121577",
+        "filename": "AndroidProducts.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2021-01-07T21:38:31Z",
+      "side": 0,
+      "message": "ought to add lunch options too",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 26
+      },
+      "revId": "516019bf5c6e8da38c7f176831159b2f41542f76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
