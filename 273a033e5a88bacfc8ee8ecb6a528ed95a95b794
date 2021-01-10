@@ -22,6 +22,30 @@
       "revId": "273a033e5a88bacfc8ee8ecb6a528ed95a95b794",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7b6a1fc3_d873343f",
+        "filename": "flame/lineage-proprietary-files.txt",
+        "patchSetId": 13
+      },
+      "lineNbr": 274,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2021-01-10T23:10:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5bc4f92a_63b3a420",
+      "range": {
+        "startLine": 274,
+        "startChar": 54,
+        "endLine": 274,
+        "endChar": 55
+      },
+      "revId": "273a033e5a88bacfc8ee8ecb6a528ed95a95b794",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
