@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ae79891a_62533bad",
+        "filename": "device-lineage.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2021-02-17T17:22:24Z",
+      "side": 1,
+      "message": "was the trailing / intentional?",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 51
+      },
+      "revId": "f7cc651c99fb45b3c9a753fd15a9163fa9cca029",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
