@@ -18,18 +18,14 @@
 /dev/lm36011_dot                                                                      u:object_r:laser_device:s0
 /dev/iaxxx-module-celldrv                                                             u:object_r:pwrstats_device:s0
 
-# product binaries
-/product/bin/twoshay                                                                  u:object_r:twoshay_exec:s0
-
 # system binaries
 /system/bin/hw/hardware\.google\.pixelstats@1\.0-service                              u:object_r:pixelstats_system_exec:s0
 /vendor/bin/pixelstats-vendor                                                         u:object_r:pixelstats_vendor_exec:s0
 
 # vendor binaries
-/vendor/bin/hw/android\.hardware\.atrace@1\.0-service.pixel                           u:object_r:hal_atrace_default_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.face@1\.0-service\.google               u:object_r:hal_face_default_exec:s0
 /vendor/bin/hw/android\.hardware\.camera\.provider@2\.6-service-google                u:object_r:hal_camera_default_exec:s0
-/vendor/bin/hw/android\.hardware\.contexthub@1\.1-service\.generic                    u:object_r:hal_contexthub_default_exec:s0
+/vendor/bin/hw/android\.hardware\.contexthub@1\.2-service\.generic                    u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-noronha                 u:object_r:hal_neuralnetworks_darwinn_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.pixel                    u:object_r:hal_power_stats_default_exec:s0
 /vendor/bin/hw/android\.hardware\.usb@1\.2-service\.coral                             u:object_r:hal_usb_impl_exec:s0
@@ -38,10 +34,10 @@
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                                  u:object_r:hal_radioext_default_exec:s0
 /vendor/bin/color_init                                                                u:object_r:color_init_exec:s0
 /vendor/bin/init\.ramoops\.sh                                                         u:object_r:ramoops_exec:s0
+/vendor/bin/init\.insmod\.sh                                                          u:object_r:init-insmod-sh_exec:s0
 /vendor/bin/modem_svc                                                                 u:object_r:modem_svc_exec:s0
 /vendor/bin/ramoops                                                                   u:object_r:ramoops_exec:s0
 /vendor/bin/hw/android\.hardware\.dumpstate@1\.[01]-service\.coral                    u:object_r:hal_dumpstate_impl_exec:s0
-/vendor/bin/ramdump                                                                   u:object_r:ramdump_exec:s0
 /vendor/bin/rlsservice                                                                u:object_r:rlsservice_exec:s0
 /vendor/bin/init\.radio\.sh                                                           u:object_r:init_radio_exec:s0
 /vendor/bin/hw/vendor\.google\.wifi_ext@1\.0-service-vendor                           u:object_r:hal_wifi_ext_exec:s0
@@ -51,6 +47,10 @@
 /vendor/bin/hw/android\.hardware\.graphics\.composer@2\.4-service-sm8150              u:object_r:hal_graphics_composer_default_exec:s0
 /vendor/bin/hw/init_dp.sh                                                             u:object_r:init_dp_exec:s0
 /vendor/bin/wifi_sniffer                                                              u:object_r:wifi_sniffer_exec:s0
+/vendor/bin/twoshay                                                                   u:object_r:twoshay_exec:s0
+
+# Vendor firmware
+/vendor/firmware_mnt(/.*)?                                                            u:object_r:firmware_file:s0
 
 # Vendor libs that are exposed to apps (those listed in /vendor/etc/public.libraries.txt
 # and their dependencies)

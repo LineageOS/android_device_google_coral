@@ -1,3 +1,4 @@
+google_camera_app selinuxfs file b/175910397
 hal_health_default unlabeled file b/156200409
 hal_neuralnetworks_default default_prop file b/159570217
 pixelstats_vendor sysfs file b/161946931

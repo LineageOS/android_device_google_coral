@@ -13,3 +13,6 @@ allow oslo_app radio_service:service_manager find;
 r_dir_file(oslo_app, persist_oslo_file)
 allow oslo_app mnt_vendor_file:dir search;
 allow oslo_app persist_file:dir search;
+
+get_prop(oslo_app, vendor_aware_available_prop)
+get_prop(oslo_app, pixel_oslo_debug_prop)
