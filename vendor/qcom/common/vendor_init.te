@@ -5,4 +5,3 @@ userdebug_or_eng(`
   # Allow vendor_init to write to /sys/kernel/debug/google_charger
   allow vendor_init debugfs_batteryinfo:file write;
 ')
-
