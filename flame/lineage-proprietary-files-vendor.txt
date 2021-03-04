@@ -44,7 +44,7 @@ vendor/bin/hw/citadel_updater
 vendor/bin/hw/init_citadel
 vendor/bin/hw/qcrild
 vendor/bin/hw/vendor.google.airbrush@1.0-service
-vendor/bin/hw/vendor.google.google_battery@1.0-service-vendor
+vendor/bin/hw/vendor.google.google_battery@1.1-service-vendor
 vendor/bin/hw/vendor.google.radioext@1.0-service
 vendor/bin/hw/vendor.google.wifi_ext@1.0-service-vendor
 vendor/bin/hw/vendor.google.wireless_charger@1.2-service-vendor
@@ -301,7 +301,7 @@ vendor/etc/init/qcrild.rc
 vendor/etc/init/rebootescrow-citadel.rc
 vendor/etc/init/rlsservice.rc
 vendor/etc/init/vendor.google.airbrush@1.0-service.rc
-vendor/etc/init/vendor.google.google_battery@1.0-service.rc
+vendor/etc/init/vendor.google.google_battery@1.1-service.rc
 vendor/etc/init/vendor.google.radioext@1.0-service.rc
 vendor/etc/init/vendor.google.wifi_ext@1.0-service.rc
 vendor/etc/init/vendor.google.wireless_charger@1.2-service.rc
@@ -765,6 +765,7 @@ vendor/lib64/libdepthgenerator.so
 vendor/lib64/libdiagjni.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdisp-aba.so
+vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdpps.so
 vendor/lib64/libdrmfs.so
@@ -974,6 +975,7 @@ vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libtime_genoff.so
 vendor/lib64/libtinyxml2_1.so
+vendor/lib64/libtrustedapploader.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/lib-uceservice.so
 vendor/lib64/libultradepth_api.so
@@ -1007,10 +1009,12 @@ vendor/lib64/unnhal-acc-hvx.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.config@2.0.so
 vendor/lib64/vendor.display.postproc@1.0.so
 vendor/lib64/vendor.google.airbrush.manager@1.0.so
 vendor/lib64/vendor.google.darwinn.service@1.0.so
 vendor/lib64/vendor.google.google_battery@1.0.so
+vendor/lib64/vendor.google.google_battery@1.1.so
 vendor/lib64/vendor.google.radioext@1.0.so
 vendor/lib64/vendor.google.radioext@1.1.so
 vendor/lib64/vendor.google.radioext@1.2.so
@@ -1172,6 +1176,7 @@ vendor/lib/libdataitems.so
 vendor/lib/libdiagjni.so
 vendor/lib/libdiag.so
 vendor/lib/libdisp-aba.so
+vendor/lib/libdisplayconfig.qti.so
 vendor/lib/libdisplayqos.so
 vendor/lib/libdpps.so
 vendor/lib/libdrc.so
@@ -1354,6 +1359,7 @@ vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libtime_genoff.so
 vendor/lib/libtinyxml2_1.so
+vendor/lib/libtrustedapploader.so
 vendor/lib/libtzdrmgenprov.so
 vendor/lib/lib-uceservice.so
 vendor/lib/libvd6281.so
@@ -1395,6 +1401,7 @@ vendor/lib/soundfx/libvolumelistener.so
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/vendor.display.color@1.1.so
 vendor/lib/vendor.display.color@1.2.so
+vendor/lib/vendor.display.config@2.0.so
 vendor/lib/vendor.display.postproc@1.0.so
 vendor/lib/vendor.google.radioext@1.0.so
 vendor/lib/vendor.google.radioext@1.1.so
@@ -1463,6 +1470,7 @@ vendor/radio/qcril_database/upgrade/12_israel_normal_ecc.sql
 vendor/radio/qcril_database/upgrade/13_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/14_add_fr_normal_ecc.sql
 vendor/radio/qcril_database/upgrade/15_fr_normal_ecc_on_wifi.sql
+vendor/radio/qcril_database/upgrade/16_ch_normal_ecc.sql
 vendor/radio/qcril_database/upgrade/1_version_intro.sql
 vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql
 vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
@@ -1523,6 +1531,7 @@ vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Bell_mvno/Solo_
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/CBRS_Chatr/pixel_CBRS_Chatr/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/CBRS/pixel_CBRS/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Cellcom/pixel_Cellcom/mcfg_sw.mbn
+vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Cellcom_Core/pixel_Cellcom_Core/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Cricket/pixel_Cricket/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/CSpire/VoLTE/pixel_CSpire/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Freedom/pixel_VoLTE/mcfg_sw.mbn
