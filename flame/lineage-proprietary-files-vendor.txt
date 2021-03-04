@@ -593,7 +593,7 @@ vendor/firmware/widevine.b06
 vendor/firmware/widevine.b07
 vendor/firmware/widevine.mdt
 vendor/firmware/wlanmdsp.mbn
--vendor/framework/com.google.android.camera.experimental2019.jar;PRESIGNED
+-vendor/framework/com.google.android.camera.experimental2019.jar
 vendor/lib64/android.hardware.authsecret@1.0-impl.nos.so
 vendor/lib64/android.hardware.confirmationui.secure_input_citadel.so
 vendor/lib64/android.hardware.identity@1.0-impl.nos.so
@@ -765,7 +765,6 @@ vendor/lib64/libdepthgenerator.so
 vendor/lib64/libdiagjni.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdpps.so
 vendor/lib64/libdrmfs.so
@@ -1009,7 +1008,6 @@ vendor/lib64/unnhal-acc-hvx.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.config@2.0.so
 vendor/lib64/vendor.display.postproc@1.0.so
 vendor/lib64/vendor.google.airbrush.manager@1.0.so
 vendor/lib64/vendor.google.darwinn.service@1.0.so
@@ -1047,8 +1045,6 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.perf@1.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
@@ -1176,7 +1172,6 @@ vendor/lib/libdataitems.so
 vendor/lib/libdiagjni.so
 vendor/lib/libdiag.so
 vendor/lib/libdisp-aba.so
-vendor/lib/libdisplayconfig.qti.so
 vendor/lib/libdisplayqos.so
 vendor/lib/libdpps.so
 vendor/lib/libdrc.so
@@ -1401,7 +1396,6 @@ vendor/lib/soundfx/libvolumelistener.so
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/vendor.display.color@1.1.so
 vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.config@2.0.so
 vendor/lib/vendor.display.postproc@1.0.so
 vendor/lib/vendor.google.radioext@1.0.so
 vendor/lib/vendor.google.radioext@1.1.so
@@ -1424,8 +1418,6 @@ vendor/lib/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.perf@1.0.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib/vendor.qti.hardware.qseecom@1.0.so

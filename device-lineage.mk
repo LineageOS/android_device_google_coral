@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor:32 \
     libcodec2_vndk.vendor \
     libcppbor.vendor:64 \
-    libhidltransport.product \
+    libdisplayconfig.qti.vendor \
+    libhidltransport.product:32 \
     libhwbinder.vendor \
     libjson \
     libkeymaster_messages.vendor:64 \
@@ -60,9 +61,12 @@ PRODUCT_PACKAGES += \
     nos_app_keymaster:64 \
     nos_app_weaver:64 \
     sound_trigger.primary.msmnile \
+    vendor.display.config@2.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.cryptfshw@1.0.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.perf@1.0.vendor \
+    vendor.qti.hardware.perf@2.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
