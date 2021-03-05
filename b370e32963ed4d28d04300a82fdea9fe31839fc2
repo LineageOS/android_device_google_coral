@@ -93,6 +93,30 @@
       "revId": "b370e32963ed4d28d04300a82fdea9fe31839fc2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "19f2f890_9ab02b34",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2021-03-05T00:30:32Z",
+      "side": 1,
+      "message": "(applies to both) like I said, was just a comment, not CR of any kind lol - feel free to do it how you see fit.\n\nNice find that they can be source built.",
+      "parentUuid": "4cfb9758_6be65c28",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 38
+      },
+      "revId": "b370e32963ed4d28d04300a82fdea9fe31839fc2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
