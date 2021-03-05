@@ -71,6 +71,3 @@ vendor.ramoops.                                 u:object_r:vendor_ramoops_prop:s
 persist.vendor.wifi.sniffer.freq                u:object_r:vendor_wifi_sniffer_prop:s0
 persist.vendor.wifi.sniffer.bandwidth           u:object_r:vendor_wifi_sniffer_prop:s0
 vendor.wifi.sniffer.start                       u:object_r:vendor_wifi_sniffer_prop:s0
-
-vendor.all.modules.ready                        u:object_r:vendor_device_prop:s0
-vendor.all.devices.ready                        u:object_r:vendor_device_prop:s0

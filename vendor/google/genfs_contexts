@@ -36,8 +36,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-l3-lat/devfreq           
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/clkgate_enable               u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/hibern8_on_idle_enable       u:object_r:sysfs_scsi_devices_0000:s0
 genfscon proc /sys/kernel/sched_energy_aware                                    u:object_r:proc_sched_energy_aware:s0
-genfscon proc /sys/kernel/sched_lib_name                                        u:object_r:proc_sched_lib_mask_cpuinfo:s0
-genfscon proc /sys/kernel/sched_lib_mask_force                                  u:object_r:proc_sched_lib_mask_cpuinfo:s0
 
 # PowerStatsHal
 genfscon sysfs /power/system_sleep/stats           u:object_r:sysfs_power_stats:s0
@@ -93,9 +91,6 @@ genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/devcfg                 
 
 # eSIM status
 genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/esim                   u:object_r:sysfs_esim:s0
-
-# Input
-genfscon sysfs /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.2.auto/usb1  u:object_r:sysfs_uhid:s0
 
 # Battery
 genfscon sysfs /devices/platform/soc/soc:google,battery/power_supply/battery    u:object_r:sysfs_batteryinfo:s0
