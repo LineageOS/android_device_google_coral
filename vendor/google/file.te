@@ -17,12 +17,10 @@ type sysfs_chargelevel, sysfs_type, fs_type;
 #sysfs files
 type sysfs_display, sysfs_type, fs_type;
 type sysfs_touch, sysfs_type, fs_type;
-type sysfs_power_stats, sysfs_type, fs_type;
 type sysfs_power_stats_ignore, sysfs_type, fs_type;
 type sysfs_camera, sysfs_type, fs_type;
 type sysfs_devcfg, sysfs_type, fs_type;
 type sysfs_msm_boardid, fs_type, sysfs_type;
-type sysfs_iio_devices, fs_type, sysfs_type;
 type sysfs_pixelstats, fs_type, sysfs_type;
 type sysfs_airbrush, sysfs_type, fs_type;
 type sysfs_wlc, sysfs_type, fs_type;
