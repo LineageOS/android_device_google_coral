@@ -7,5 +7,6 @@ allow grilservice_app hal_wifi_ext_hwservice:hwservice_manager find;
 allow grilservice_app app_api_service:service_manager find;
 allow grilservice_app hal_bluetooth_sar_hwservice:hwservice_manager find;
 
+binder_call(grilservice_app, hal_bluetooth_default)
 binder_call(grilservice_app, hal_radioext_default)
 binder_call(grilservice_app, hal_wifi_ext)
