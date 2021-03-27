@@ -92,7 +92,7 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+    vendor.lineage.livedisplay@2.1-service-sdm
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
