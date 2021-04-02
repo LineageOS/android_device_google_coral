@@ -326,8 +326,7 @@ static void *dumpModemThread(void *data)
                 "/data/vendor/radio/metrics_data",
                 "/data/vendor/ssrlog/ssr_log.txt",
                 "/data/vendor/ssrlog/ssr_log_old.txt",
-                "/data/vendor/rfs/mpss/modem_efs",
-                "/sys/kernel/debug/ipa/ipa_statistics_msg"
+                "/data/vendor/rfs/mpss/modem_efs"
             };
 
        bool tcpdumpEnabled = android::base::GetBoolProperty(TCPDUMP_PERSIST_PROPERTY, false);
@@ -452,34 +451,9 @@ static void DumpDisplay(int fd) {
     DumpFileToFd(fd, "PANEL VENDOR NAME", "/sys/class/panel_info/panel0/panel_vendor_name");
     DumpFileToFd(fd, "PANEL SN", "/sys/class/panel_info/panel0/serial_number");
     DumpFileToFd(fd, "PANEL EXTRA INFO", "/sys/class/panel_info/panel0/panel_extinfo");
-
-    const std::string pmic_regmap_path = "/sys/kernel/debug/regmap/spmi0-05";
-    using android::base::WriteStringToFile;
-
-    if (WriteStringToFile("0x80", pmic_regmap_path + "/count", true) &&
-            WriteStringToFile("0xE000", pmic_regmap_path + "/address", true)) {
-        DumpFileToFd(fd, "OLEDB Register Dump", pmic_regmap_path + "/data");
-    } else {
-	dprintf(fd, "Unable to print OLEDB Register Dump\n");
-    }
-
-    if (WriteStringToFile("0x80", pmic_regmap_path + "/count", true) &&
-            WriteStringToFile("0xDE00", pmic_regmap_path + "/address", true)) {
-        DumpFileToFd(fd, "ELVDD Register Dump", pmic_regmap_path + "/data");
-    } else {
-	dprintf(fd, "Unable to print ELVDD Register Dump\n");
-    }
-
-    if (WriteStringToFile("0x60", pmic_regmap_path + "/count", true) &&
-            WriteStringToFile("0xDC00", pmic_regmap_path + "/address", true)) {
-        DumpFileToFd(fd, "ELVSS Register Dump", pmic_regmap_path + "/data");
-    } else {
-	dprintf(fd, "Unable to print ELVSS Register Dump\n");
-    }
 }
 
 static void DumpF2FS(int fd) {
-    DumpFileToFd(fd, "F2FS", "/sys/kernel/debug/f2fs/status");
     DumpFileToFd(fd, "F2FS", "/dev/fscklogs/fsck");
     RunCommandToFd(fd, "F2FS - fsck time (ms)", {"/vendor/bin/sh", "-c", "getprop ro.boottime.init.fsck.data"});
     RunCommandToFd(fd, "F2FS - checkpoint=disable time (ms)", {"/vendor/bin/sh", "-c", "getprop ro.boottime.init.mount.data"});
@@ -489,7 +463,6 @@ static void DumpUFS(int fd) {
     DumpFileToFd(fd, "UFS model", "/sys/block/sda/device/model");
     DumpFileToFd(fd, "UFS rev", "/sys/block/sda/device/rev");
     DumpFileToFd(fd, "UFS size", "/sys/block/sda/size");
-    DumpFileToFd(fd, "UFS show_hba", "/sys/kernel/debug/ufshcd0/show_hba");
 
     DumpFileToFd(fd, "UFS Slow IO Read", "/dev/sys/block/bootdevice/slowio_read_cnt");
     DumpFileToFd(fd, "UFS Slow IO Write", "/dev/sys/block/bootdevice/slowio_write_cnt");
@@ -619,15 +592,6 @@ Return<DumpstateStatus> DumpstateDevice::dumpstateBoard_1_1(const hidl_handle& h
 
     DumpPower(fd);
 
-    DumpFileToFd(fd, "LL-Stats", "/d/wlan0/ll_stats");
-    DumpFileToFd(fd, "WLAN Connect Info", "/d/wlan0/connect_info");
-    DumpFileToFd(fd, "WLAN Offload Info", "/d/wlan0/offload_info");
-    DumpFileToFd(fd, "WLAN Roaming Stats", "/d/wlan0/roam_stats");
-    DumpFileToFd(fd, "ICNSS Stats", "/d/icnss/stats");
-    DumpFileToFd(fd, "SMD Log", "/d/ipc_logging/smd/log");
-    RunCommandToFd(fd, "ION HEAPS", {"/vendor/bin/sh", "-c", "for d in $(ls -d /d/ion/*); do for f in $(ls $d); do echo --- $d/$f; cat $d/$f; done; done"});
-    DumpFileToFd(fd, "dmabuf info", "/d/dma_buf/bufinfo");
-    DumpFileToFd(fd, "dmabuf process info", "/d/dma_buf/dmaprocs");
     RunCommandToFd(fd, "Temperatures", {"/vendor/bin/sh", "-c", "for f in /sys/class/thermal/thermal* ; do type=`cat $f/type` ; temp=`cat $f/temp` ; echo \"$type: $temp\" ; done"});
     RunCommandToFd(fd, "Cooling Device Current State", {"/vendor/bin/sh", "-c", "for f in /sys/class/thermal/cooling* ; do type=`cat $f/type` ; temp=`cat $f/cur_state` ; echo \"$type: $temp\" ; done"});
     RunCommandToFd(
@@ -639,52 +603,22 @@ Return<DumpstateStatus> DumpstateDevice::dumpstateBoard_1_1(const hidl_handle& h
     RunCommandToFd(fd, "CPU cpuidle", {"/vendor/bin/sh", "-c", "for cpu in /sys/devices/system/cpu/cpu*; do for d in $cpu/cpuidle/state*; do if [ ! -d $d ]; then continue; fi; echo \"$d: `cat $d/name` `cat $d/desc` `cat $d/time` `cat $d/usage`\"; done; done"});
     RunCommandToFd(fd, "Airbrush debug info", {"/vendor/bin/sh", "-c", "for f in `ls /sys/devices/platform/soc/c84000.i2c/i2c-*/*-0066/@(*curr|temperature|vbat)`; do echo \"$f: `cat $f`\" ; done; file=/sys/devices/platform/soc/soc:abc-sm/mapped_chip_state; echo \"$file: `cat $file`\"; file=/sys/devices/platform/soc/soc:abc-sm/state_stats; echo \"$file: `cat $file`\""});
     DumpFileToFd(fd, "MDP xlogs", "/data/vendor/display/mdp_xlog");
-    DumpFileToFd(fd, "TCPM logs", "/d/tcpm/usbpd0");
-    DumpFileToFd(fd, "PD Engine", "/d/logbuffer/usbpd");
-    DumpFileToFd(fd, "PPS", "/d/logbuffer/pps");
-    DumpFileToFd(fd, "BMS", "/d/logbuffer/ssoc");
-    DumpFileToFd(fd, "smblib", "/d/logbuffer/smblib");
-    DumpFileToFd(fd, "TTF", "/d/logbuffer/ttf");
     DumpFileToFd(fd, "TTF details", "/sys/class/power_supply/battery/ttf_details");
     DumpFileToFd(fd, "TTF stats", "/sys/class/power_supply/battery/ttf_stats");
     DumpFileToFd(fd, "aacr_state", "/sys/class/power_supply/battery/aacr_state");
-    DumpFileToFd(fd, "batt_ce", "/d/logbuffer/batt_ce");
-    DumpFileToFd(fd, "maxfg", "/d/logbuffer/maxfg");
-    DumpFileToFd(fd, "WLC logs", "/d/logbuffer/wireless");
-    DumpFileToFd(fd, "ipc-local-ports", "/d/msm_ipc_router/dump_local_ports");
-    DumpFileToFd(fd, "Charging table dump", "/d/google_battery/chg_raw_profile");
     RunCommandToFd(fd, "TRICKLE-DEFEND Config", {"/vendor/bin/sh", "-c", " cd /sys/devices/platform/soc/soc:google,battery/power_supply/battery/; echo \"bd_trickle_enable: `cat bd_trickle_enable`\"; echo \"bd_trickle_cnt: `cat bd_trickle_cnt`\";  echo \"bd_trickle_recharge_soc: `cat bd_trickle_recharge_soc`\";  echo \"bd_trickle_dry_run: `cat bd_trickle_dry_run`\"; echo \"bd_trickle_reset_sec: `cat bd_trickle_reset_sec`\""});
     RunCommandToFd(fd, "DWELL-DEFEND Config", {"/vendor/bin/sh", "-c", " cd /sys/devices/platform/soc/soc:google,charger/; for f in `ls charge_s*` ; do echo \"$f: `cat $f`\" ; done"});
     RunCommandToFd(fd, "TEMP-DEFEND Config", {"/vendor/bin/sh", "-c", " cd /sys/devices/platform/soc/soc:google,charger/; for f in `ls bd_*` ; do echo \"$f: `cat $f`\" ; done"});
     RunCommandToFd(fd, "USB Device Descriptors", {"/vendor/bin/sh", "-c", "cd /sys/bus/usb/devices/1-1 && cat product && cat bcdDevice; cat descriptors | od -t x1 -w16 -N96"});
     RunCommandToFd(fd, "Power supply properties", {"/vendor/bin/sh", "-c", "for f in `ls /sys/class/power_supply/*/uevent` ; do echo \"------ $f\\n`cat $f`\\n\" ; done"});
-    RunCommandToFd(fd, "PMIC Votables", {"/vendor/bin/sh", "-c", "cat /sys/kernel/debug/pmic-votable/*/status"});
     DumpFileToFd(fd, "Charger Stats", "/sys/class/power_supply/battery/charge_details");
     DumpFileToFd(fd, "Maxim FG History", "/dev/maxfg_history");
 
-    std::string hwVersion = android::base::GetProperty(HW_VERSION_PROPERTY, "");
-    if (hwVersion == "PROTO1.0" || hwVersion == "PROTO1.1" || hwVersion == "EVT1.0") {
-        RunCommandToFd(fd, "Maxim FG registers", {"/vendor/bin/sh", "-c", "cat /d/regmap/1-0036/registers"});
-        RunCommandToFd(fd, "Maxim FG NV RAM", {"/vendor/bin/sh", "-c", "cat /d/regmap/1-000b/registers"});
-    } else {
-        RunCommandToFd(fd, "Maxim FG registers", {"/vendor/bin/sh", "-c", "cat /d/regmap/2-0036/registers"});
-        RunCommandToFd(fd, "Maxim FG NV RAM", {"/vendor/bin/sh", "-c", "cat /d/regmap/2-000b/registers"});
-    }
-
-    RunCommandToFd(fd, "Google Charger", {"/vendor/bin/sh", "-c", "cd /d/google_charger/; for f in `ls pps_*` ; do echo \"$f: `cat $f`\" ; done"});
-    RunCommandToFd(fd, "Google Battery", {"/vendor/bin/sh", "-c", "cd /d/google_battery/; for f in `ls ssoc_*` ; do echo \"$f: `cat $f`\" ; done"});
     DumpFileToFd(fd, "WLC VER", "/sys/devices/platform/soc/880000.i2c/i2c-1/1-0061/version");
     DumpFileToFd(fd, "WLC STATUS", "/sys/devices/platform/soc/880000.i2c/i2c-1/1-0061/status");
 
     RunCommandToFd(fd, "eSIM Status", {"/vendor/bin/sh", "-c", "od -t x1 /sys/firmware/devicetree/base/chosen/cdt/cdb2/esim"});
     DumpFileToFd(fd, "Modem Stat", "/data/vendor/modem_stat/debug.txt");
-    DumpFileToFd(fd, "Pixel trace", "/d/tracing/instances/pixel-trace/trace");
-
-    // Slower dump put later in case stuck the rest of dump
-    // Timeout after 3s as TZ log missing EOF
-    RunCommandToFd(fd, "QSEE logs", {"/vendor/bin/sh", "-c", "/vendor/bin/timeout 3 cat /d/tzdbg/qsee_log"});
-    RunCommandToFd(fd, "TZ logs", {"/vendor/bin/sh", "-c", "/vendor/bin/timeout 3 cat /d/tzdbg/log"});
-    RunCommandToFd(fd, "HYP logs", {"/vendor/bin/sh", "-c", "/vendor/bin/timeout 3 cat /d/tzdbg/hyp_log"});
 
     // Citadel info
     RunCommandToFd(fd, "Citadel VERSION", {"/vendor/bin/hw/citadel_updater", "-lv"});
@@ -700,8 +634,6 @@ Return<DumpstateStatus> DumpstateDevice::dumpstateBoard_1_1(const hidl_handle& h
     // Dump fastrpc dma buffer size
     DumpFileToFd(fd, "Fastrpc dma buffer", "/sys/kernel/fastrpc/total_dma_kb");
 
-    // Dump page owner
-    DumpFileToFd(fd, "Page Owner", "/sys/kernel/debug/page_owner");
     if (modemThreadHandle) {
         pthread_join(modemThreadHandle, NULL);
     }
