@@ -21,4 +21,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/coral/coral:11/RQ2A.210405.005/7181113:user/release-keys
 
-$(call inherit-product-if-exists, vendor/google/coral/coral-vendor.mk)
+$(call inherit-product, vendor/google/coral/coral-vendor.mk)
