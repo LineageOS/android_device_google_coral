@@ -944,8 +944,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.recovery.device.rc:recovery/root/init.recovery.flame.rc
 
 # Oslo feature flag
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.vendor.aware_available=true
+#PRODUCT_PRODUCT_PROPERTIES += \
+#    ro.vendor.aware_available=true
 
 QTI_TELEPHONY_UTILS := qti-telephony-utils
 QTI_TELEPHONY_UTILS += qti_telephony_utils.xml
