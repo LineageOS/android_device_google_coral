@@ -53,6 +53,8 @@ get_prop(hal_face_default, vendor_faceauth_prop)
 hwbinder_use(hal_face_default);
 
 # Allow the face HAL to communicate with IStats.
+allow hal_face_default fwk_stats_hwservice:hwservice_manager find;
+binder_call(hal_face_default, stats_service_server)
 allow hal_face_default fwk_stats_service:service_manager find;
 binder_use(hal_face_default)
 
