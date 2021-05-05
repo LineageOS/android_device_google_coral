@@ -19,6 +19,9 @@ vendor_restricted_prop(camera_ro_prop)
 #ramoops
 vendor_internal_prop(vendor_ramoops_prop)
 
+# battery_profile
+vendor_internal_prop(vendor_battery_profile_prop)
+
 #ecoservice
 vendor_internal_prop(ecoservice_prop)
 
