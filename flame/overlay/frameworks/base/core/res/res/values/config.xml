@@ -162,8 +162,8 @@
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">600</integer>
 
-    <!-- Whether or not we should show the option to show battery percentage -->
-    <bool name="config_battery_percentage_setting_available">true</bool>
+    <!-- Whether or not we should show the option to show battery percentage
+    <bool name="config_battery_percentage_setting_available">true</bool> -->
 
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">132px</dimen>
