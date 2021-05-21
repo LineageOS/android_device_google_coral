@@ -140,5 +140,4 @@ vendor_internal_prop(vendor_modem_diag_prop)
 vendor_internal_prop(vendor_logging_prop)
 
 #Keymaster 4.1
-vendor_internal_prop(vendor_disable_spu_prop)
 vendor_restricted_prop(vendor_km_strongbox_version_prop)
