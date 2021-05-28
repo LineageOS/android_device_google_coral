@@ -68,7 +68,7 @@ constexpr char kGaugeSerial[] {FG_DIR "/serial_number"};
 
 static BatteryDefender battDefender(WLC_DIR "/present");
 static BatteryThermalControl battThermalControl(
-    "sys/devices/virtual/thermal/tz-by-name/soc/mode");
+    "/sys/devices/virtual/thermal/tz-by-name/soc/mode");
 static BatteryMetricsLogger battMetricsLogger(
     kBatteryResistance, kBatteryOCV, kBatteryAvgResistance);
 static LowBatteryShutdownMetrics shutdownMetrics(kVoltageAvg);
