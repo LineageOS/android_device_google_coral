@@ -67,7 +67,7 @@ on init
     symlink /sys/devices/platform/${ro.boot.boot_devices} /dev/sys/block/bootdevice
 
     # Disable UFS powersaving
-    write /dev/sys/block/bootdevice/clkgate_enable 0
+    write /sys/devices/platform/soc/1d84000.ufshc/clkgate_enable 0
 
     # start qseecomd early as we mount system/ vendor/ early
     # vold needs keymaster that needs qseecomd
