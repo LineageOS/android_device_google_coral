@@ -1,6 +1,7 @@
 ## All blobs are extracted from Google factory images for each new ASB
 -product/app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
 product/etc/ambient/matcher_tah.leveldb
+product/etc/CarrierSettings/a1_at.pb
 product/etc/CarrierSettings/airtel_in.pb
 product/etc/CarrierSettings/apt_tw.pb
 product/etc/CarrierSettings/att5g_us.pb
@@ -13,8 +14,8 @@ product/etc/CarrierSettings/bouygues_fr.pb
 product/etc/CarrierSettings/btb_gb.pb
 product/etc/CarrierSettings/btc_gb.pb
 product/etc/CarrierSettings/carrier_list.pb
-product/etc/CarrierSettings/cellcom_us.pb
 product/etc/CarrierSettings/cellcommno_us.pb
+product/etc/CarrierSettings/cellcom_us.pb
 product/etc/CarrierSettings/cht_tw.pb
 product/etc/CarrierSettings/congstar_de.pb
 product/etc/CarrierSettings/consumercellulartmo_us.pb
@@ -28,16 +29,18 @@ product/etc/CarrierSettings/eplus_de.pb
 product/etc/CarrierSettings/esn_gb.pb
 product/etc/CarrierSettings/fet_tw.pb
 product/etc/CarrierSettings/fido_ca.pb
-product/etc/CarrierSettings/firstnetpacific_us.pb
 product/etc/CarrierSettings/firstnetpacific2_us.pb
+product/etc/CarrierSettings/firstnetpacific_us.pb
 product/etc/CarrierSettings/firstnet_us.pb
 product/etc/CarrierSettings/fi_us.pb
 product/etc/CarrierSettings/fizz_ca.pb
 product/etc/CarrierSettings/freedommobile_ca.pb
+product/etc/CarrierSettings/free_fr.pb
 product/etc/CarrierSettings/gamma_gb.pb
 product/etc/CarrierSettings/h3_at.pb
 product/etc/CarrierSettings/h3_gb.pb
 product/etc/CarrierSettings/h3_se.pb
+product/etc/CarrierSettings/halebop_se.pb
 product/etc/CarrierSettings/homobile_it.pb
 product/etc/CarrierSettings/idea_in.pb
 product/etc/CarrierSettings/idmobile_gb.pb
@@ -45,6 +48,7 @@ product/etc/CarrierSettings/kddi_jp.pb
 product/etc/CarrierSettings/kddimvno_jp.pb
 product/etc/CarrierSettings/kena_it.pb
 product/etc/CarrierSettings/koodo_ca.pb
+product/etc/CarrierSettings/kpn_nl.pb
 product/etc/CarrierSettings/luckymobile_ca.pb
 product/etc/CarrierSettings/movistar_es.pb
 product/etc/CarrierSettings/o2_de.pb
@@ -73,6 +77,7 @@ product/etc/CarrierSettings/sprintprepaid_us.pb
 product/etc/CarrierSettings/sprint_us.pb
 product/etc/CarrierSettings/sprintwholesale_us.pb
 product/etc/CarrierSettings/starhub_sg.pb
+product/etc/CarrierSettings/stc_sa.pb
 product/etc/CarrierSettings/sunrise_ch.pb
 product/etc/CarrierSettings/swisscom_ch.pb
 product/etc/CarrierSettings/swisscom_li.pb
@@ -83,12 +88,14 @@ product/etc/CarrierSettings/telekom_de.pb
 product/etc/CarrierSettings/telenor_dk.pb
 product/etc/CarrierSettings/telenor_no.pb
 product/etc/CarrierSettings/telenor_se.pb
+product/etc/CarrierSettings/telia_dk.pb
 product/etc/CarrierSettings/telia_no.pb
 product/etc/CarrierSettings/telia_se.pb
 product/etc/CarrierSettings/telstra_au.pb
 product/etc/CarrierSettings/telus_ca.pb
 product/etc/CarrierSettings/three_dk.pb
 product/etc/CarrierSettings/tim_it.pb
+product/etc/CarrierSettings/tmobile_at.pb
 product/etc/CarrierSettings/tmobile_cz.pb
 product/etc/CarrierSettings/tmobile_nl.pb
 product/etc/CarrierSettings/tmobile_us.pb
