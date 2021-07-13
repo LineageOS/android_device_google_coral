@@ -31,3 +31,5 @@ vendor_internal_prop(vendor_battery_defender_prop)
 
 # wifi_sniffer
 vendor_internal_prop(vendor_wifi_sniffer_prop)
+
+vendor_internal_prop(vendor_device_prop)
