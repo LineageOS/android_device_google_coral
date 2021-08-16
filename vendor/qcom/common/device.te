@@ -43,7 +43,7 @@ type sg_device, dev_type;
 type dip_device, dev_type;
 type sd_device, dev_type;
 
-type ssd_block_device, dev_type;
+type ssd_block_device, dev_type, bdev_type;
 
 #ESOC device
 type esoc_device, dev_type;
@@ -135,19 +135,19 @@ type bt_device, dev_type;
 type wlan_device, dev_type;
 
 #Define rawdump block device
-type rawdump_block_device, dev_type;
+type rawdump_block_device, dev_type, bdev_type;
 
 #Block device for A/B partitions
-type custom_ab_block_device, dev_type;
-type xbl_block_device, dev_type;
-type gpt_block_device, dev_type;
-type modem_block_device, dev_type;
-type uefi_block_device, dev_type;
+type custom_ab_block_device, dev_type, bdev_type;
+type xbl_block_device, dev_type, bdev_type;
+type gpt_block_device, dev_type, bdev_type;
+type modem_block_device, dev_type, bdev_type;
+type uefi_block_device, dev_type, bdev_type;
 
-type persist_block_device, dev_type;
+type persist_block_device, dev_type, bdev_type;
 
 #Define npu device
 type npu_device, dev_type;
 
 #define devinfo block device
-type devinfo_block_device, dev_type;
+type devinfo_block_device, dev_type, bdev_type;
