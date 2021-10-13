@@ -19,7 +19,6 @@
 
 # system binaries
 /system/bin/hw/hardware\.google\.pixelstats@1\.0-service                              u:object_r:pixelstats_system_exec:s0
-/vendor/bin/pixelstats-vendor                                                         u:object_r:pixelstats_vendor_exec:s0
 
 # vendor binaries
 /vendor/bin/hw/android\.hardware\.biometrics\.face@1\.0-service\.google               u:object_r:hal_face_default_exec:s0
