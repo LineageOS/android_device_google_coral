@@ -20,16 +20,6 @@ import /vendor/etc/init/hw/init.${ro.boot.hardware.platform}.logging.rc
 import /vendor/etc/init/hw/init.${ro.boot.hardware.platform}.mpssrfs.rc
 import /vendor/etc/init/hw/init.${ro.boot.hardware.platform}.power.rc
 
-service vendor.charger /system/bin/charger
-    class charger
-    user system
-    group system wakelock input
-    capabilities SYS_BOOT
-    file /dev/kmsg w
-    file /sys/fs/pstore/console-ramoops-0 r
-    file /sys/fs/pstore/console-ramoops r
-    file /proc/last_kmsg r
-
 on early-init
     # Disable EAS
     write /proc/sys/kernel/sched_energy_aware 0
