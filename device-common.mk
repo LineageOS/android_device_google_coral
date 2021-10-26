@@ -240,6 +240,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.coral \
+    android.hardware.health-service.coral_recovery
+
 # Identity Credential
 PRODUCT_PACKAGES += \
     android.hardware.identity_credential.xml
@@ -290,10 +295,6 @@ $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
 $(call soong_config_set,lineage_health,fast_charge_node,/sys/class/qcom-battery/restrict_chg)
 $(call soong_config_set,lineage_health,fast_charge_value_none,1)
 $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
-
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-coral \
-    android.hardware.health@2.1-service
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
