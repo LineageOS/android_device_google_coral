@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c33cfe7_59611460",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2022-02-08T11:26:35Z",
+      "side": 1,
+      "message": "Can\u0027t this go in vendor/lineage for any user using Pixel Launcher?\n\nSince all LOS devices ship ROM without gapps.",
+      "revId": "2f56c2a6ad713bdba845c10685fb626fe2738bdf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
