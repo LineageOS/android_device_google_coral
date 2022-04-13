@@ -49,9 +49,6 @@ $(call inherit-product-if-exists, vendor/google_devices/coral/prebuilts/device-v
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
 
-# Don't build super.img.
-PRODUCT_BUILD_SUPER_PARTITION := false
-
 # b/113232673 STOPSHIP deal with Qualcomm stuff later
 # PRODUCT_RESTRICT_VENDOR_FILES := all
 
