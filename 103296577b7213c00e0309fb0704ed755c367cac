@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d64d3f80_1bc3b384",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-05-10T18:13:10Z",
+      "side": 1,
+      "message": "KERNEL_LTO is not supposed to be set in device trees, it should only be set in your local environment if you are having issues",
+      "revId": "103296577b7213c00e0309fb0704ed755c367cac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
