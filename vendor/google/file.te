@@ -67,6 +67,7 @@ type sysfs_contaminant, sysfs_type, fs_type;
 # Darwinn HAL shared files.
 type hal_neuralnetworks_darwinn_hal_camera_data_file, file_type, data_file_type;
 type proc_sched_lib_mask_cpuinfo, proc_type, fs_type;
+type sysfs_limit_power_transfer, sysfs_type, fs_type;
 
 # Directory for camera autocalibration files
 type camera_calibration_vendor_data_file, file_type, data_file_type;
