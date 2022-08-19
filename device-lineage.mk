@@ -53,13 +53,21 @@ include hardware/google/pixel/touch/device.mk
 # Display
 PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
-    vendor.display.config@2.0
+    vendor.display.config@1.1 \
+    vendor.display.config@1.2 \
+    vendor.display.config@1.3 \
+    vendor.display.config@1.4 \
+    vendor.display.config@1.5 \
+    vendor.display.config@1.6 \
+    vendor.display.config@1.7 \
+    vendor.display.config@1.8
 
 # Build necessary packages for vendor
 
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
     hardware.google.bluetooth.bt_channel_avoidance@1.0.vendor \
     hardware.google.bluetooth.sar@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
@@ -76,7 +84,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
     libavservices_minijail.vendor \
-    libavservices_minijail_vendor:32 \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
     libmedia_ecoservice.vendor \
@@ -89,7 +96,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig.qti.vendor \
+    libdisplayconfig.qti \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
@@ -163,9 +170,13 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.authsecret@1.0.vendor \
     android.hardware.biometrics.face@1.0.vendor:64 \
+    android.hardware.camera.common@1.0.vendor:64 \
+    android.hardware.camera.device@1.0.vendor:64 \
+    android.hardware.camera.device@3.2.vendor:64 \
+    android.hardware.camera.provider@2.4.vendor:64 \
     android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.input.classifier@1.0.vendor:64 \
-    android.hardware.input.common@1.0.vendor:64 \
+    android.hardware.input.common-V1-ndk.vendor:64 \
+    android.hardware.input.processor-V1-ndk.vendor:64 \
     android.hardware.keymaster@3.0.vendor \
     android.hardware.keymaster@4.0.vendor \
     android.hardware.keymaster@4.1.vendor \
@@ -174,7 +185,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.2.vendor:64 \
     android.hardware.neuralnetworks@1.3.vendor:64 \
     android.hardware.oemlock@1.0.vendor:64 \
-    android.hardware.power-V1-ndk_platform.vendor \
+    android.hardware.power-V1-ndk.vendor \
     android.hardware.radio.config@1.0.vendor:64 \
     android.hardware.radio.config@1.1.vendor:64 \
     android.hardware.radio.config@1.2.vendor:64 \
@@ -195,6 +206,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.3.vendor:64 \
     android.hardware.wifi@1.4.vendor:64 \
     android.hardware.wifi@1.5.vendor:64 \
+    android.hardware.wifi@1.6.vendor:64 \
     android.system.net.netd@1.1.vendor:64
 
 # Properties
