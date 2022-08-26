@@ -1,0 +1,3 @@
+userdebug_or_eng(`
+  dontaudit wifi_sniffer debugfs_wlan:dir search;
+')
