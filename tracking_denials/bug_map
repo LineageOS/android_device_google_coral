@@ -4,9 +4,6 @@ dumpstate incident process b/238705597
 dumpstate system_data_file dir b/238837224
 hal_drm_widevine default_prop file b/238263778
 hal_power_default hal_power_default capability b/238263962
-init app_data_file dir b/241049543
-init privapp_data_file dir b/241049543
-init system_app_data_file dir b/241049543
 rfs_access unlabeled dir b/238705225
 shell adb_keys_file file b/238836599
 shell cache_file lnk_file b/238836599
