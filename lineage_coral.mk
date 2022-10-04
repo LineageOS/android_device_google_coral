@@ -23,8 +23,8 @@ TARGET_SCREEN_WIDTH := 1440
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=coral \
-    PRIVATE_BUILD_DESC="coral-user 13 TP1A.220905.004 8927612 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 13 TP1A.221005.002 9012097 release-keys"
 
-BUILD_FINGERPRINT := google/coral/coral:13/TP1A.220905.004/8927612:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:13/TP1A.221005.002/9012097:user/release-keys
 
 $(call inherit-product, vendor/google/coral/coral-vendor.mk)
