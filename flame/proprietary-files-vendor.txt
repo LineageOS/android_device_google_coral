@@ -1258,6 +1258,8 @@ vendor/lib64/libgoog_mesh_warp.so
 vendor/lib64/libgoog_pdaf_core_imx363.so
 vendor/lib64/libgooglecamera.proto_message.converter.so
 vendor/lib64/libgooglecamera.proto_message.protos.so
+vendor/lib64/libgooglecamerahal.so
+vendor/lib64/libgooglecamerahalutils.so
 vendor/lib64/libgooglecamerahwl_impl.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
