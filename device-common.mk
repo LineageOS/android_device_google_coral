@@ -123,3 +123,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 
+# Workaround for prebuilt Qualcomm neural network HAL
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
