@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b3f82dd_b3a87c0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24656
+      },
+      "writtenOn": "2023-04-05T18:30:50Z",
+      "side": 1,
+      "message": "Observing logs without this change produces spam such as:\nhwservicemanager: getTransport: Cannot find entry vendor.google.google_battery@1.2::IGoogleBattery/default in either framework or device VINTF manifest.",
+      "revId": "16c9952d57097a5dbe2b347b06a9de9309a4f53c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
