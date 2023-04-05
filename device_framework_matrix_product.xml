@@ -80,9 +80,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>vendor.google.google_battery</name>
-        <version>1</version>
+        <version>1.2</version>
         <interface>
             <name>IGoogleBattery</name>
             <instance>default</instance>
