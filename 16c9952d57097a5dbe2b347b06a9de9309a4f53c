@@ -33,6 +33,23 @@
       "message": "google_battery is unused unless you have turbo sepolicy and stuff included externally anyway, so we\u0027ll likely just be dropping it instead.\n\nThanks for alerting us.",
       "revId": "16c9952d57097a5dbe2b347b06a9de9309a4f53c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f26c7102_af699cf6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-04-16T17:39:52Z",
+      "side": 1,
+      "message": "we are going a diff route.",
+      "revId": "16c9952d57097a5dbe2b347b06a9de9309a4f53c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
