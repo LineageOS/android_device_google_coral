@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "254e325e_d134fbfe",
+        "filename": "gps.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2023-05-19T02:37:44Z",
+      "side": 1,
+      "message": "what",
+      "revId": "7c9fdaf6ecf7236a9bf23c703a98254350490b3b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
