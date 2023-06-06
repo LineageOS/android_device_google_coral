@@ -504,6 +504,8 @@ vendor/firmware/cdsp.mdt
 vendor/firmware/cdspr.jsn
 vendor/firmware/citadel/ec.bin
 vendor/firmware/citadel/ec.rec
+# EVT/DVT Titan Firmware - from coral-qd1a.190821.007-factory-e915f51a
+vendor/firmware/citadel/FIH-RC1-dev-fusing.ec.bin|bc086148dd33158053e89002460879c16970782c
 vendor/firmware/confirmationui.b00
 vendor/firmware/confirmationui.b01
 vendor/firmware/confirmationui.b02
