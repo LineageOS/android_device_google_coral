@@ -21,6 +21,9 @@ product/etc/res/images/charger/battery_scale.png
 product/etc/res/images/charger/main_font.png
 product/etc/res/values/charger/animation.txt
 
+# Citadel - from coral-qd1a.190821.007-factory-e915f51a
+vendor/firmware/citadel/FIH-RC1-dev-fusing.ec.bin|bc086148dd33158053e89002460879c16970782c
+
 # Felica
 product/etc/felica/common.cfg
 product/etc/felica/mfm.cfg
