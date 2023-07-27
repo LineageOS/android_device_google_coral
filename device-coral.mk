@@ -37,7 +37,3 @@ PRODUCT_PACKAGES += \
     SettingsOverlayG020J \
     SettingsOverlayG020P \
     SettingsOverlayG020Q \
-
-# Setup wizard overlay packages for ActiveEdge
-PRODUCT_PACKAGES += \
-    PixelSetupWizardOverlayActiveEdge \
