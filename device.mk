@@ -1020,7 +1020,7 @@ include hardware/google/pixel/common/pixel-common-device.mk
 include hardware/google/pixel/vibrator/cs40l25/device.mk
 include hardware/google/pixel/pixelstats/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
-include hardware/google/pixel/thermal/device.mk
+include device/google/gs-common/thermal/thermal_hal/device.mk
 
 # gs-common
 include device/google/gs-common/misc_writer/misc_writer.mk
