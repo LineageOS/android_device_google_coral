@@ -1,0 +1,9 @@
+package {
+    default_applicable_licenses: ["device_google_coral_license"],
+}
+
+runtime_resource_overlay {
+    name: "NfcOverlayCoral",
+    sdk_version: "current",
+    product_specific: true
+}
