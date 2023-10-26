@@ -27,6 +27,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/sm8150/display \
     hardware/qcom/sm8150/data/ipacfg-mgr \
     hardware/qcom/sm8150/gps \
+    hardware/qcom/wlan/legacy \
+    system/chre/host/hal_generic \
     vendor/google/airbrush/floral \
     vendor/google/biometrics/face/florence \
     vendor/google/camera \
@@ -185,7 +187,6 @@ PRODUCT_PACKAGES += \
     update_engine_sideload
 
 PRODUCT_PACKAGES_DEBUG += \
-    sg_write_buffer \
     f2fs_io \
     check_f2fs
 
