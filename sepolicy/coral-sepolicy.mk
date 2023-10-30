@@ -11,6 +11,7 @@ BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/st
 BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/verizon
 
 # Pixel-wide
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/confirmationui_hal
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
 
 # system_ext
