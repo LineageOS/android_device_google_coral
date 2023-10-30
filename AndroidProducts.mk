@@ -27,5 +27,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_flame_hwasan.mk \
 
 COMMON_LUNCH_CHOICES := \
-    aosp_coral-userdebug \
-    aosp_flame-userdebug \
+    aosp_coral-trunk_staging-userdebug \
+    aosp_flame-trunk_staging-userdebug \
