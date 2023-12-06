@@ -450,7 +450,8 @@ PRODUCT_PACKAGES += \
     Tag \
     SecureElement \
     android.hardware.nfc-service.st \
-    android.hardware.secure_element@1.0-service.st
+    android.hardware.secure_element@1.0-service.st \
+    NfcOverlayCoral
 
 PRODUCT_COPY_FILES += \
     device/google/coral/nfc/com.google.hardware.pixel.japan.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_G020N/com.google.hardware.pixel.japan.xml \
