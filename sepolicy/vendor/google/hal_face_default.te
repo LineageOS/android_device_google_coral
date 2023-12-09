@@ -18,6 +18,7 @@ allow hal_face_default hidl_token_hwservice:hwservice_manager find;
 
 #Allow face hal to talk to cameraserver
 allow hal_face_default fwk_camera_hwservice:hwservice_manager find;
+allow hal_face_default fwk_camera_service:service_manager find;
 binder_call(hal_face_default, camera_service_server)
 binder_call(camera_service_server, hal_face_default)
 
