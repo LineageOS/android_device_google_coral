@@ -165,7 +165,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.authsecret@1.0.vendor \
-    android.hardware.biometrics.face@1.0.vendor:64 \
     android.hardware.camera.common@1.0.vendor:64 \
     android.hardware.camera.device@1.0.vendor:64 \
     android.hardware.camera.device@3.2.vendor:64 \
