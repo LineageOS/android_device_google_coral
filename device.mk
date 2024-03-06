@@ -33,6 +33,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/google/biometrics/face/florence \
     vendor/google/camera \
     vendor/google/darwinn \
+    vendor/google/tools/power-anomaly-qcril \
     vendor/google_devices/common/proprietary/confirmatioui_hal \
     vendor/google_nos/host/android \
     vendor/qcom/sm8150 \
@@ -1036,3 +1037,6 @@ include hardware/google/pixel/citadel/citadel.mk
 include hardware/google/pixel/PixelLogger/PixelLogger.mk
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota_retrofit.mk)
+
+# Update soong config namespace
+-include vendor/google/build/soong/soong_config_namespace/qcril_oemhook.mk
