@@ -82,6 +82,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.device-V1-ndk.vendor:64 \
+    android.hardware.camera.provider-V1-ndk.vendor:64 \
     libcamera2ndk_vendor
 
 # CHRE

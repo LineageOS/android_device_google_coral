@@ -17,6 +17,7 @@ vendor/bin/diag_mdlog
 vendor/bin/diag_socket_log
 vendor/bin/diag_uart_log
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+vendor/bin/hw/android.hardware.camera.provider@2.7-service-google
 vendor/bin/hw/android.hardware.confirmationui@1.0-service-google
 vendor/bin/hw/android.hardware.drm-service.widevine
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
