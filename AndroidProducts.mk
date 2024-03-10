@@ -29,7 +29,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_flame.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_coral-userdebug \
-    aosp_flame-userdebug \
-    lineage_coral-userdebug \
-    lineage_flame-userdebug
+    aosp_coral-trunk_staging-userdebug \
+    aosp_flame-trunk_staging-userdebug \
+    lineage_coral-trunk_staging-userdebug \
+    lineage_flame-trunk_staging-userdebug

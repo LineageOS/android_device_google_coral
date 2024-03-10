@@ -426,7 +426,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Tag \
     android.hardware.nfc-service.st \
-    android.hardware.secure_element@1.0-service.st
+    android.hardware.secure_element@1.0-service.st \
+    NfcOverlayCoral
 
 PRODUCT_COPY_FILES += \
     device/google/coral/nfc/com.google.hardware.pixel.japan.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_G020N/com.google.hardware.pixel.japan.xml \
@@ -951,7 +952,10 @@ include hardware/google/pixel/common/pixel-common-device.mk
 include hardware/google/pixel/vibrator/cs40l25/device.mk
 include hardware/google/pixel/pixelstats/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
-include hardware/google/pixel/thermal/device.mk
+include device/google/gs-common/thermal/thermal_hal/device.mk
+
+# gs-common
+include device/google/gs-common/misc_writer/misc_writer.mk
 
 # Citadel
 include hardware/google/pixel/citadel/citadel.mk
