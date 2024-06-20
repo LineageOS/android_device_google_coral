@@ -12,12 +12,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,faceauth_fws                      
 genfscon sysfs /devices/platform/soc/soc:qcom,faceauth_fws_b                                                                           u:object_r:sysfs_faceauth:s0
 genfscon sysfs /bus/esoc                                                                                                               u:object_r:sysfs_esoc:s0
 genfscon sysfs /bus/msm_subsys                                                                                                         u:object_r:sysfs_msm_subsys:s0
-genfscon debugfs /wlan                                                                                                                 u:object_r:debugfs_wlan:s0
-genfscon debugfs /wlan0                                                                                                                u:object_r:debugfs_wlan:s0
-genfscon debugfs /icnss                                                                                                                u:object_r:debugfs_icnss:s0
-genfscon debugfs /ipc_logging                                                                                                          u:object_r:debugfs_ipc:s0
-genfscon debugfs /ion                                                                                                                  u:object_r:debugfs_ion:s0
-genfscon debugfs /tzdbg                                                                                                                u:object_r:debugfs_tzdbg:s0
 genfscon sysfs /module/diagchar                                                                                                        u:object_r:sysfs_diag:s0
 genfscon proc /debugdriver/driverdump                                                                                                  u:object_r:proc_wifi_dbg:s0
 genfscon proc /ath_pktlog/cld                                                                                                          u:object_r:proc_wifi_dbg:s0

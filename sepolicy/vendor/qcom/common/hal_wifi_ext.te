@@ -17,10 +17,3 @@ set_prop(hal_wifi_ext, vendor_wifi_version)
 
 # Allow wifi_ext to report callbacks to gril-service app
 allow hal_wifi_ext grilservice_app:binder call;
-
-userdebug_or_eng(`
-# debugfs entries are only needed in user-debug or eng builds
-
-# Allow wifi hal to access wlan debugfs directories
-allow hal_wifi_ext debugfs_wlan:dir r_dir_perms;
-')

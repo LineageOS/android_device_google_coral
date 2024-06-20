@@ -12,13 +12,6 @@ allow hal_dumpstate_impl vendor_toolbox_exec:file rx_file_perms;
 allow hal_dumpstate_impl sysfs_touch:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_touch:file rw_file_perms;
 allow hal_dumpstate_impl proc_touch:file rw_file_perms;
-
-allow hal_dumpstate_impl debugfs_f2fs:dir r_dir_perms;
-allow hal_dumpstate_impl debugfs_f2fs:file r_file_perms;
-allow hal_dumpstate_impl debugfs_ufs:dir r_dir_perms;
-allow hal_dumpstate_impl debugfs_ufs:file r_file_perms;
-allow hal_dumpstate_impl debugfs_ipc:dir r_dir_perms;
-allow hal_dumpstate_impl debugfs_ipc:file r_file_perms;
 allow hal_dumpstate_impl proc_f2fs:dir r_dir_perms;
 allow hal_dumpstate_impl proc_f2fs:file r_file_perms;
 
@@ -39,48 +32,15 @@ r_dir_file(hal_dumpstate_impl, sysfs_thermal)
 # Access to files for dumping
 allow hal_dumpstate_impl sysfs:dir r_dir_perms;
 
-allow hal_dumpstate_impl debugfs_wlan:dir r_dir_perms;
-allow hal_dumpstate_impl debugfs_wlan:file r_file_perms;
 allow hal_dumpstate_impl sysfs_msm_wlan:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_power_stats:file r_file_perms;
 
-# Allow to dump page_owner
-userdebug_or_eng(`
-  allow hal_dumpstate_impl debugfs_page_owner:file r_file_perms;
-')
-
-allow hal_dumpstate_impl debugfs_icnss:dir r_dir_perms;
-allow hal_dumpstate_impl debugfs_icnss:file r_file_perms;
-
-# For dma_buf/ion dump
-allow hal_dumpstate_impl debugfs_dma_buf:file r_file_perms;
-
 # Battery/Charger/Guage
-allow hal_dumpstate_impl debugfs_batteryinfo:file r_file_perms;
 allow hal_dumpstate_impl sysfs_chargelevel:file r_file_perms;
 allow hal_dumpstate_impl sysfs_batteryinfo:file r_file_perms;
 
-# Dump PMIC data
-allow hal_dumpstate_impl debugfs_pmic:dir r_dir_perms;
-allow hal_dumpstate_impl debugfs_pmic:file r_file_perms;
-userdebug_or_eng(`
-  allow hal_dumpstate_impl debugfs_pmic:file rw_file_perms;
-')
-
-#Dumpstats IPA statistics
-userdebug_or_eng(`
-  allow hal_dumpstate_impl debugfs_ipa:file r_file_perms;
-')
-
 #Dumpstats fastrpc buffer
 allow hal_dumpstate_impl sysfs_fastrpc:file r_file_perms;
-
-# USB logs
-allow hal_dumpstate_impl debugfs_usb:file r_file_perms;
-
-# Allow to read pixel-trace trace file
-allow hal_dumpstate_impl debugfs_tracing_instances:dir search;
-allow hal_dumpstate_impl debugfs_tracing_instances:file r_file_perms;
 
 # Access to modem files
 userdebug_or_eng(`
@@ -112,12 +72,6 @@ get_prop(hal_dumpstate_impl, vendor_radio_prop)
 allow hal_dumpstate_impl sysfs_wlc:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_wlc:file r_file_perms;
 
-allow hal_dumpstate_impl debugfs_batteryinfo:dir r_dir_perms;
-allow hal_dumpstate_impl debugfs_batteryinfo:file r_file_perms;
-allow hal_dumpstate_impl debugfs_ion:dir r_dir_perms;
-allow hal_dumpstate_impl debugfs_ion:file r_file_perms;
-allow hal_dumpstate_impl debugfs_tzdbg:file r_file_perms;
-allow hal_dumpstate_impl debugfs_tzdbg:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_esim:file r_file_perms;
 allow hal_dumpstate_impl display_vendor_data_file:dir r_dir_perms;
 allow hal_dumpstate_impl firmware_file:dir r_dir_perms;
@@ -133,7 +87,6 @@ allow hal_dumpstate_impl maxfg_device:chr_file r_file_perms;
 # Access to airbrush related debug info
 r_dir_file(hal_dumpstate_impl, sysfs_airbrush_dumpstate)
 r_dir_file(hal_dumpstate_impl, sysfs_airbrush)
-r_dir_file(hal_dumpstate_impl, debugfs_airbrush)
 
 # Access to Citadel is via citadeld
 vndbinder_use(hal_dumpstate_impl)

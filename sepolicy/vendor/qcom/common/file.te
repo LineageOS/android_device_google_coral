@@ -218,12 +218,6 @@ type sysfs_diag, fs_type, sysfs_type;
 #laser sysfs files
 type sysfs_laser, fs_type, sysfs_type;
 
-# QDMA data files
-
-# path to debugfs use this whic should be only used
-# in debug builds
-type qti_debugfs, fs_type, debugfs_type;
-
 # vendor radio files
 type vendor_radio_data_file, file_type, data_file_type, mlstrustedobject;
 
@@ -318,21 +312,6 @@ type sysfs_scsi_devices_0000, sysfs_type, fs_type;
 
 # for PowerHal
 type proc_sched_energy_aware, proc_type, fs_type;
-
-# debugfs wlan
-type debugfs_wlan, debugfs_type, fs_type;
-
-# debugfs bt
-type debugfs_ipc, debugfs_type, fs_type;
-
-# debugfs icnss
-type debugfs_icnss, debugfs_type, fs_type;
-
-# debugfs ion
-type debugfs_ion, debugfs_type, fs_type;
-
-# debugfs tz
-type debugfs_tzdbg, debugfs_type, fs_type;
 
 # CNSS file
 type cnss_vendor_data_file, file_type, data_file_type, mlstrustedobject;

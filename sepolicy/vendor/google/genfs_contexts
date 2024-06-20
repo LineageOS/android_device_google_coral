@@ -1,5 +1,3 @@
-genfscon debugfs /f2fs                                u:object_r:debugfs_f2fs:s0
-genfscon debugfs /ufshcd0                             u:object_r:debugfs_ufs:s0
 genfscon proc /sys/kernel/sched_boost                 u:object_r:proc_sysctl_schedboost:s0
 genfscon sysfs /devices/soc0                          u:object_r:sysfs_soc:s0
 genfscon sysfs /devices/soc0/serial_number            u:object_r:sysfs_soc_sensitive:s0
@@ -73,11 +71,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight     
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight/panel0-backlight/vr_mode u:object_r:sysfs_lights:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/panel_info                         u:object_r:sysfs_display:s0
 
-# PMIC
-genfscon debugfs /regmap/spmi0-05/address                                       u:object_r:debugfs_pmic:s0
-genfscon debugfs /regmap/spmi0-05/count                                         u:object_r:debugfs_pmic:s0
-genfscon debugfs /regmap/spmi0-05/data                                          u:object_r:debugfs_pmic:s0
-
 # Vibrator
 # EVT 1.0 and older
 genfscon sysfs /devices/platform/soc/c94000.i2c/i2c-3/3-0043                    u:object_r:sysfs_vibrator:s0
@@ -106,20 +99,9 @@ genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply       
 genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply/wireless    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:google,bms/power_supply/charger u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/usbpd0/power_supply u:object_r:sysfs_batteryinfo:s0
-genfscon debugfs /regmap/1-0036/                                                u:object_r:debugfs_batteryinfo:s0
-genfscon debugfs /regmap/1-000b/                                                u:object_r:debugfs_batteryinfo:s0
-genfscon debugfs /regmap/2-0036/                                                u:object_r:debugfs_batteryinfo:s0
-genfscon debugfs /regmap/2-000b/                                                u:object_r:debugfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/usbpd0/usb_limit_sink_current   u:object_r:sysfs_limit_power_transfer:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/usbpd0/usb_limit_sink_enable    u:object_r:sysfs_limit_power_transfer:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/usbpd0/usb_limit_source_enable  u:object_r:sysfs_limit_power_transfer:s0
-genfscon debugfs /logbuffer/ssoc                                                u:object_r:debugfs_batteryinfo:s0
-genfscon debugfs /logbuffer/ttf                                                 u:object_r:debugfs_batteryinfo:s0
-genfscon debugfs /logbuffer/batt_ce                                             u:object_r:debugfs_batteryinfo:s0
-genfscon debugfs /logbuffer/maxfg                                               u:object_r:debugfs_batteryinfo:s0
-genfscon debugfs /logbuffer/wireless                                            u:object_r:debugfs_batteryinfo:s0
-genfscon debugfs /google_charger                                                u:object_r:debugfs_batteryinfo:s0
-genfscon debugfs /google_battery                                                u:object_r:debugfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/soc:google,charger/                        u:object_r:sysfs_chargelevel:s0
 
 # Pixelstats
@@ -147,25 +129,12 @@ genfscon sysfs /devices/platform/soc/a8c000.spi/spi_master/spi5/spi5.0/iaxxx/plu
 genfscon sysfs /firmware/devicetree/base/qcom,board-id                     u:object_r:sysfs_msm_boardid:s0
 
 # USB
-genfscon debugfs /tcpm/usbpd0                         u:object_r:debugfs_usb:s0
-genfscon debugfs /logbuffer/usbpd                     u:object_r:debugfs_usb:s0
-genfscon debugfs /logbuffer/smblib                    u:object_r:debugfs_usb:s0
-genfscon debugfs /logbuffer/pps			      u:object_r:debugfs_usb:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/usbpd0/typec u:object_r:sysfs_typec_info:s0
 
 # Airbrush
 genfscon sysfs /devices/platform/soc/soc:abc-sm                            u:object_r:sysfs_airbrush:s0
 genfscon sysfs /devices/platform/soc/c84000.i2c/i2c-4/4-0066           u:object_r:sysfs_airbrush_dumpstate:s0
 genfscon sysfs /devices/platform/soc/c84000.i2c/i2c-5/5-0066           u:object_r:sysfs_airbrush_dumpstate:s0
-genfscon debugfs /faceauth                                                 u:object_r:debugfs_airbrush:s0
-genfscon debugfs /airbrush                                                 u:object_r:debugfs_airbrush:s0
-
-# Dumpstate hal
-genfscon debugfs /dma_buf/bufinfo                     u:object_r:debugfs_dma_buf:s0
-genfscon debugfs /dma_buf/dmaprocs                    u:object_r:debugfs_dma_buf:s0
-
-# Power
-genfscon debugfs /clk/debug_suspend                   u:object_r:debugfs_clk:s0
 
 # ramoops
 genfscon sysfs /devices/virtual/ramoops/pstore/aes_key                          u:object_r:sysfs_pstore:s0
@@ -173,15 +142,9 @@ genfscon sysfs /devices/virtual/ramoops/pstore/aes_key_iv                       
 genfscon sysfs /devices/virtual/ramoops/pstore/aes_key_tag                      u:object_r:sysfs_pstore:s0
 genfscon sysfs /devices/virtual/ramoops/pstore/use_alt                          u:object_r:sysfs_pstore:s0
 
-# pmic
-genfscon debugfs /pmic-votable                        u:object_r:debugfs_pmic:s0
-
 # USB contaminant detection
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/usb/moisture_detected            u:object_r:sysfs_contaminant:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/usb/moisture_detection_enabled   u:object_r:sysfs_contaminant:s0
-
-# Dumpstats IPA statistics
-genfscon debugfs /ipa/ipa_statistics_msg                  u:object_r:debugfs_ipa:s0
 
 # Wakeup stats (new)
 # https://lkml.org/lkml/2019/8/6/1275
