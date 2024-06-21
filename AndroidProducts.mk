@@ -13,7 +13,3 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_coral.mk \
     $(LOCAL_DIR)/lineage_flame.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_coral-trunk_staging-userdebug \
-    lineage_flame-trunk_staging-userdebug
