@@ -665,7 +665,7 @@ vendor/lib/libGPTEE_vendor.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
 vendor/lib/libI420colorconvert.so
--vendor/lib/libMpeg4SwEncoder.so
+vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
 vendor/lib/libOmxAlacDecSw.so
@@ -865,7 +865,7 @@ vendor/lib/libsdm-colormgr-algo.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
--vendor/lib/libsdsprpc.so
+vendor/lib/libsdsprpc.so
 vendor/lib/libsecureui.so
 vendor/lib/libsecureui_svcsock.so
 vendor/lib/libsensorslog.so
@@ -1128,7 +1128,7 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libI420colorconvert.so
--vendor/lib64/libMpeg4SwEncoder.so
+vendor/lib64/libMpeg4SwEncoder.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAlacDec.so
 vendor/lib64/libOmxAlacDecSw.so
@@ -1368,7 +1368,7 @@ vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
--vendor/lib64/libsdsprpc.so
+vendor/lib64/libsdsprpc.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsensorslog.so
