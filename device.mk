@@ -19,8 +19,6 @@ LOCAL_PATH := device/google/coral
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 PRODUCT_SOONG_NAMESPACES += \
-    hardware/google/av \
-    hardware/google/camera \
     hardware/google/interfaces \
     hardware/google/pixel \
     device/google/coral \
