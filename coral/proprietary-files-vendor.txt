@@ -1171,7 +1171,6 @@ vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libaudiozoom.so
-vendor/lib64/libautocalsolvers.so
 vendor/lib64/libautohal.so
 vendor/lib64/libbase64.so
 vendor/lib64/libbatterylistener.so
