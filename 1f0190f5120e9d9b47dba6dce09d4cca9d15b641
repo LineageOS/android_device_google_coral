@@ -16,6 +16,24 @@
       "message": "```suggestion\n/sys/devices/platform/soc/soc:google,battery/power_supply/battery charge_deadline 0644 system system\n```",
       "revId": "1f0190f5120e9d9b47dba6dce09d4cca9d15b641",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d639ef0_d54e92d1",
+        "filename": "ueventd.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2025-01-01T22:15:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "827390a6_fdd7ff46",
+      "revId": "1f0190f5120e9d9b47dba6dce09d4cca9d15b641",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
