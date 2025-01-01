@@ -325,17 +325,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.snapshot_timer=0
 
 PRODUCT_PACKAGES += \
-    hwcomposer.msmnile \
+    hwcomposer.qcom \
     android.hardware.graphics.composer@2.4-service-sm8150 \
-    gralloc.msmnile \
+    gralloc.qcom \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.qti.hardware.display.allocator-service
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.gralloc=qcom \
+    ro.hardware.hwcomposer=qcom
+
 # Light HAL
 PRODUCT_PACKAGES += \
-    lights.msmnile \
+    lights.qcom \
     hardware.google.light@1.1-service
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.lights=qcom
 
 # Memtrack HAL
 PRODUCT_PACKAGES += \
