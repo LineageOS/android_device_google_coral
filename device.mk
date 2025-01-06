@@ -23,7 +23,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     device/google/coral \
     hardware/qcom/sm8150/display \
-    hardware/qcom/sm8150/data/ipacfg-mgr \
     hardware/qcom/sm8150/gps \
     hardware/qcom/wlan/legacy \
     system/chre/host/hal_generic \
@@ -34,6 +33,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/google/tools/power-anomaly-qcril \
     vendor/google_devices/common/proprietary/confirmatioui_hal \
     vendor/google_nos/host/android \
+    vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um \
     vendor/qcom/sm8150 \
     vendor/qcom/sm8150/proprietary/commonsys/telephony-apps/DataStatusNotification \
     vendor/qcom/sm8150/proprietary/gps \
