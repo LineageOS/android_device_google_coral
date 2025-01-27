@@ -82,6 +82,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \
     $(LOCAL_PATH)/init.ramoops.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.ramoops.sh
 
+# Partitions
+PRODUCT_PACKAGES += \
+    vendor_firmware_mnt_mountpoint
 
 MSM_VIDC_TARGET_LIST := msmnile # Get the color format from kernel headers
 MASTER_SIDE_CP_TARGET_LIST := msmnile # ION specific settings
