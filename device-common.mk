@@ -124,3 +124,6 @@ PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
+
+# UFFD GC
+OVERRIDE_ENABLE_UFFD_GC := false
