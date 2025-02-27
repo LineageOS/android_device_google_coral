@@ -43,6 +43,9 @@ endif
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := true
+
 # Lineage Health
 include hardware/google/pixel/lineage_health/device.mk
 
