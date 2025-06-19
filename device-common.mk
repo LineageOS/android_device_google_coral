@@ -509,9 +509,6 @@ include device/google/coral/vibrator/cs40l25/device.mk
 # VNDK
 PRODUCT_PRODUCT_VNDK_VERSION := current
 
-PRODUCT_PACKAGES += \
-    com.android.vndk.current.on_vendor
-
 # Wi-Fi
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
