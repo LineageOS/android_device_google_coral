@@ -43,6 +43,9 @@ persist.data.wda.enable=true
 persist.rmnet.data.enable=true
 persist.vendor.data.mode=concurrent
 
+# eBPF
+ro.bpf.kver_override=5.4.186
+
 # EUICC
 masterclear.allow_retain_esim_profiles_after_fdr=true
 persist.radio.reboot_on_modem_change=false
