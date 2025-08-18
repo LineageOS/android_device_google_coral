@@ -11,10 +11,13 @@ TARGET_KERNEL_CONFIG := floral_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/msm-4.14
 TARGET_NEEDS_DTBOIMAGE := true
 
+<<<<<<< PATCH SET (95f750 floral: Migrate to AIDL LiveDisplay HAL)
+=======
 # Manifests
 DEVICE_MANIFEST_FILE += device/google/coral/lineage_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
 
+>>>>>>> BASE      (462157 floral: apktool_patch() no longer takes custom arguments)
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor
