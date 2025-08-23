@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e872339e_34e0a91e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-08-23T04:03:57Z",
+      "side": 1,
+      "message": "You should just match common sepolicy https://review.lineageos.org/c/LineageOS/android_device_lineage_sepolicy/+/442887/1/qcom/vendor/hal_lineage_livedisplay_qti.te\n\nAlso we should probably switch to common sepolicy instead of having copies in trees",
+      "revId": "2d40fc33b06bbb0dc97f888ab6eaf6f1e50e16fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
