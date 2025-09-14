@@ -89,25 +89,10 @@ PRODUCT_PACKAGES += \
 MSM_VIDC_TARGET_LIST := msmnile # Get the color format from kernel headers
 MASTER_SIDE_CP_TARGET_LIST := msmnile # ION specific settings
 
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-  PRODUCT_COPY_FILES += \
-      $(LOCAL_PATH)/init.hardware.mpssrfs.rc.userdebug:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).mpssrfs.rc
-  PRODUCT_COPY_FILES += \
-      $(LOCAL_PATH)/init.hardware.diag.rc.userdebug:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).diag.rc
-  PRODUCT_COPY_FILES += \
-      $(LOCAL_PATH)/init.hardware.wlc.rc.userdebug:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(PRODUCT_PLATFORM).wlc.rc
-else
-  PRODUCT_COPY_FILES += \
-      $(LOCAL_PATH)/init.hardware.mpssrfs.rc.user:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).mpssrfs.rc
-  PRODUCT_COPY_FILES += \
-      $(LOCAL_PATH)/init.hardware.diag.rc.user:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).diag.rc
-endif
-
-# Enable CAT by default
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-  PRODUCT_COPY_FILES += \
-      $(LOCAL_PATH)/init.cat.rc.userdebug:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cat.rc
-endif
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.hardware.mpssrfs.rc.user:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).mpssrfs.rc
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.hardware.diag.rc.user:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).diag.rc
 
 # A/B support
 PRODUCT_PACKAGES += \
@@ -138,22 +123,12 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     update_engine_sideload
 
-PRODUCT_PACKAGES_DEBUG += \
-    f2fs_io \
-    check_f2fs
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Userdata Checkpointing OTA GC
 PRODUCT_PACKAGES += \
     checkpoint_gc
-
-# The following modules are included in debuggable builds only.
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl \
-    r.vendor \
-    update_engine_client
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -243,20 +218,6 @@ PRODUCT_PACKAGES += \
     libtunnel \
     libodsp \
     adnc_strm.primary.default
-# Add Oslo test for debug rom
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PACKAGES += \
-    tunneling_hal_test \
-    sensor_param_test \
-    oslo_config_test \
-    oslo_data_injection_test \
-    oslo_get_stats \
-    odsp_api_test \
-    crash_event_logger \
-    dump_debug_info \
-    get_pwr_stats \
-    crash_trigger_test
-endif
 
 # graphics
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -351,10 +312,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
-#Bluetooth SAR HAL
-PRODUCT_PACKAGES_DEBUG += \
-    bluetooth_sar_test
-
 # Bluetooth SoC
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee
@@ -425,13 +382,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7-service-google
 
-# Google Camera HAL test libraries in debug builds
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PACKAGES_DEBUG += \
-    libgoogle_camera_hal_proprietary_tests \
-    libgoogle_camera_hal_tests
-endif
-
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal
 
@@ -442,13 +392,6 @@ PRODUCT_PACKAGES += \
 # Context hub HAL
 PRODUCT_PACKAGES += \
     android.hardware.contexthub-service.generic
-
-# CHRE tools
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PACKAGES += \
-    chre_power_test_client \
-    chre_test_client
-endif
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
@@ -478,18 +421,11 @@ ENABLE_VENDOR_RIL_SERVICE := true
 USE_QCRIL_OEMHOOK := true
 
 HOSTAPD := hostapd
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-HOSTAPD += hostapd_cli
-endif
 PRODUCT_PACKAGES += $(HOSTAPD)
 
 WPA := wpa_supplicant.conf
 WPA += wpa_supplicant
 PRODUCT_PACKAGES += $(WPA)
-
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PACKAGES += wpa_cli
-endif
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -524,19 +460,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.audio.service
-
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PACKAGES += \
-    tinyplay \
-    tinycap \
-    tinymix \
-    tinypcminfo \
-    cplay
-endif
-
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PACKAGES += chre_test_client
-endif
 
 # Audio hal xmls
 PRODUCT_COPY_FILES += \
@@ -616,17 +539,6 @@ PRODUCT_COPY_FILES += \
     device/google/coral/audio/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Codec_cal.acdb \
     device/google/coral/audio/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb
 
-
-# Audio ACDB workspace files for QACT
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_COPY_FILES += \
-    device/google/coral/audio/acdbdata/OEM/sm8150-iaxxx-jaws-snd-card/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sm8150-iaxxx-jaws-snd-card/workspaceFile.qwsp \
-    device/google/coral/audio/acdbdata/OEM/sm8150-iaxxx-coral-snd-card/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sm8150-iaxxx-coral-snd-card/workspaceFile.qwsp \
-    device/google/coral/audio/acdbdata/OEM/sm8150-iaxxx-c2proto-snd-card/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sm8150-iaxxx-c2proto-snd-card/workspaceFile.qwsp \
-    device/google/coral/audio/acdbdata/OEM/sm8150-iaxxx-flame-snd-card/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sm8150-iaxxx-flame-snd-card/workspaceFile.qwsp \
-    device/google/coral/audio/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/workspaceFile.qwsp
-endif
-
 # Audio speaker tunning config data
 PRODUCT_COPY_FILES += \
     device/google/coral/audio/data/crus_sp_config_coral_rx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_config_coral_rx.bin \
@@ -646,13 +558,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.snd_card.open.retries=50
 
-
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-# Subsystem ramdump
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.sys.ssr.enable_ramdumps=1
-endif
-
 # Subsystem silent restart
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sys.ssr.restart_level=modem,slpi,adsp
@@ -663,16 +568,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Use the default charger mode images
 PRODUCT_PACKAGES += \
     charger_res_images
-
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-# b/36703476: Set default log size to 1M
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.logd.size=1M
-# b/114766334: persist all logs by default rotating on 30 files of 1MiB
-PRODUCT_PROPERTY_OVERRIDES += \
-  logd.logpersistd=logcatd \
-  logd.logpersistd.size=30
-endif
 
 # Dumpstate HAL
 PRODUCT_PACKAGES += \
@@ -719,22 +614,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.radio.log_prefix="modem_log_"
 
 # Enable modem logging for debug
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.sys.modem.diag.mdlog=true
-else
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sys.modem.diag.mdlog=false
-endif
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sys.modem.diag.mdlog_br_num=5
-
-# Enable tcpdump_logger on eng
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-    PRODUCT_PROPERTY_OVERRIDES += \
-        persist.vendor.tcpdump.log.alwayson=false \
-        persist.vendor.tcpdump.log.br_num=5
-endif
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUIGoogle  # For internal
@@ -746,12 +629,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Enable stats logging in LMKD
 TARGET_LMKD_STATS_LOG := true
-
-# default usb oem functions
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-  PRODUCT_PROPERTY_OVERRIDES += \
-      persist.vendor.usb.usbradio.config=diag
-endif
 
 # Enable app/sf phase offset as durations. The numbers below are translated from the existing
 # positive offsets by finding the duration app/sf will have with the offsets.
@@ -836,25 +713,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gatekeeper.disable_spu = true
 
-# Enable iwlan service logging for debug
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-    PRODUCT_PROPERTY_OVERRIDES += persist.vendor.iwlan.logging.logcat=true
-endif
-
 # Vendor verbose logging default property
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.verbose_logging_enabled=true
-else
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.verbose_logging_enabled=false
-endif
-
-# Disable Rescue Party on eng build
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.disable_rescue=true
-endif
 
 # Set support one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
