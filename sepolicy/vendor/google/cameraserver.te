@@ -1,0 +1,3 @@
+# For Google Camera app
+get_prop(cameraserver, vendor_camera_prop)
+get_prop(cameraserver, vendor_camera_ro_prop)
