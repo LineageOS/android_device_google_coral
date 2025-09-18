@@ -2,6 +2,8 @@
 # and use debug properties; silently deny the former but allow the latter
 
 dontaudit cameraserver gpu_device:chr_file rw_file_perms;
+get_prop(cameraserver, camera_prop)
+get_prop(cameraserver, camera_ro_prop)
 get_prop(cameraserver, vendor_display_prop)
 
 dontaudit cameraserver sysfs_msm_subsys:dir search;
