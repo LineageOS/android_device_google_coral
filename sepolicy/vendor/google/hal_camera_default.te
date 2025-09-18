@@ -50,6 +50,9 @@ allow hal_camera_default fwk_stats_hwservice:hwservice_manager find;
 binder_call(hal_camera_default, stats_service_server)
 allow hal_camera_default fwk_stats_service:service_manager find;
 binder_use(hal_camera_default)
+allow hal_camera_default statsdw_socket:sock_file { write getattr };
+# Silence annoying spam from Google Camera
+dontaudit hal_camera_default statsd:unix_dgram_socket sendto;
 
 # For camera hal to use system property
 set_prop(hal_camera_default, camera_prop)
