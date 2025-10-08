@@ -44,7 +44,7 @@ persist.rmnet.data.enable=true
 persist.vendor.data.mode=concurrent
 
 # eBPF
-ro.bpf.kver_override=5.4.186
+ro.bpf.kver_override=5.4.299
 
 # EUICC
 masterclear.allow_retain_esim_profiles_after_fdr=true
