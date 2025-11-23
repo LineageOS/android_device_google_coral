@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery
 
-$(call soong_config_set,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
+$(call soong_config_bool,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -296,7 +296,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.sdm
 
-$(call soong_config_set,livedisplay_sdm,enable_dm,false)
+$(call soong_config_bool,livedisplay_sdm,enable_dm,false)
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
