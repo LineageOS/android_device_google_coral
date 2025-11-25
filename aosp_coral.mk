@@ -42,7 +42,7 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
-$(call inherit-product, device/google/coral/device-coral.mk)
+$(call inherit-product, device/google/coral/coral/device.mk)
 $(call inherit-product-if-exists, vendor/google_devices/coral/proprietary/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/coral/prebuilts/device-vendor-coral.mk)
 
