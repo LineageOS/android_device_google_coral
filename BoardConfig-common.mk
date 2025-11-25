@@ -1,17 +1,7 @@
 #
-# Copyright (C) 2016 The Android Open-Source Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# SPDX-FileCopyrightText: 2016 The Android Open-Source Project
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
 #
 
 include build/make/target/board/BoardConfigMainlineCommon.mk
@@ -68,7 +58,8 @@ AB_OTA_PARTITIONS += \
     dtbo \
     product \
     system_ext \
-    vbmeta_system
+    vbmeta_system \
+    vendor
 
 # Partitions (listed in the file) to be wiped under recovery.
 TARGET_RECOVERY_WIPE := device/google/coral/recovery.wipe
@@ -79,11 +70,13 @@ TARGET_RECOVERY_UI_LIB := \
     libfstab
 
 # Enable chain partition for system.
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 BOARD_AVB_VBMETA_SYSTEM := system system_ext product
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
+
 
 # product.img
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -97,6 +90,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # persist.img
 BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432
 BOARD_PERSISTIMAGE_FILE_SYSTEM_TYPE := ext4
+
+# vendor.img
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # boot.img
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
@@ -143,6 +139,7 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 $(call soong_config_set,knowles,use_sound_trigger_hal,iaxxx)
 
 # Vendor Interface Manifest
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := device/google/coral/manifest.xml
 DEVICE_MATRIX_FILE := device/google/coral/compatibility_matrix.xml
 # Intall device framework compatibility matrix to product partition
@@ -165,4 +162,12 @@ BOARD_SUPER_PARTITION_ERROR_LIMIT := 9651093504
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/c2f2-setup.sh
 
--include device/google/coral/BoardConfigLineage.mk
+# Kernel
+BOARD_KERNEL_IMAGE_NAME := Image.lz4
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_CONFIG := floral_defconfig
+TARGET_KERNEL_SOURCE := kernel/google/msm-4.14
+TARGET_NEEDS_DTBOIMAGE := true
+
+# Reserve space for gapps install
+-include vendor/lineage/config/BoardConfigReservedSize.mk
