@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2020-2021 The LineageOS Project
-#
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -10,7 +9,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_flame.mk)
 
-include device/google/coral/flame/device-lineage.mk
+include device/google/coral/flame/device.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
