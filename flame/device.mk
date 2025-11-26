@@ -25,7 +25,8 @@ $(call soong_config_set,chre,chre_daemon_dsp_library,//vendor/google/flame:libsd
 PRODUCT_COPY_FILES += \
     device/google/coral/configs/displayconfig/display_19261132550654593.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_19261132550654593.xml
 
-PRODUCT_PRODUCT_PROPERTIES += ro.com.google.ime.height_ratio=1.2
+# Properties
+TARGET_PRODUCT_PROP += $(LOCAL_PATH)/flame/product.prop
 
 # Settings overlay packages for regulatory_info
 PRODUCT_PACKAGES += \
