@@ -150,12 +150,11 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # CHRE
-CHRE_DAEMON_ENABLED := true
-CHRE_DAEMON_LPMA_ENABLED := true
-CHRE_DAEMON_LOAD_INTO_SENSORSPD := true
-
 PRODUCT_PACKAGES += \
     chre_daemon_msm
+
+$(call soong_config_set,chre,chre_daemon_lpma_enabled,true)
+$(call soong_config_set,chre,chre_daemon_load_into_sensorspd,true)
 
 # Citadel
 include hardware/google/pixel/citadel/citadel.mk
