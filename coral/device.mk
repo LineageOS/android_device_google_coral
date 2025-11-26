@@ -16,14 +16,14 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth Tx power caps for coral
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth_power_limits_coral.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits.csv
+    $(LOCAL_PATH)/configs/bluetooth/bluetooth_power_limits_coral.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits.csv
 
 # CHRE
 $(call soong_config_set,chre,chre_daemon_dsp_library,//vendor/google/coral:libsdsprpc)
 
 # Display config
 PRODUCT_COPY_FILES += \
-    device/google/coral/displayconfig/display_19260504575090817.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_19260504575090817.xml
+    device/google/coral/configs/displayconfig/display_19260504575090817.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_19260504575090817.xml
 
 # Settings overlay packages for regulatory_info
 PRODUCT_PACKAGES += \
