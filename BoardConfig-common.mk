@@ -123,7 +123,6 @@ include $(DEVICE_COMMON_PATH)/sepolicy/coral-sepolicy.mk
 
 # Sound Trigger
 BOARD_SUPPORTS_SOUND_TRIGGER := true
-$(call soong_config_set,knowles,use_sound_trigger_hal,iaxxx)
 
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/c2f2-setup.sh
