@@ -950,3 +950,6 @@ PRODUCT_PACKAGES += \
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
+# Keep the VNDK APEX in /system partition
+PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
