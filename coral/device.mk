@@ -23,7 +23,7 @@ $(call soong_config_set,chre,chre_daemon_dsp_library,//vendor/google/coral:libsd
 
 # Display config
 PRODUCT_COPY_FILES += \
-    device/google/coral/displayconfig/display_19260504575090817.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_19260504575090817.xml
+    device/google/coral/configs/displayconfig/display_19260504575090817.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_19260504575090817.xml
 
 # Settings overlay packages for regulatory_info
 PRODUCT_PACKAGES += \
