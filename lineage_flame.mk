@@ -46,10 +46,6 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_MODEL := Pixel 4
 PRODUCT_NAME := lineage_flame
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2280
-TARGET_SCREEN_WIDTH := 1080
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="flame-user 13 TP1A.221005.002.B2 9382335 release-keys" \
     BuildFingerprint=google/flame/flame:13/TP1A.221005.002.B2/9382335:user/release-keys \
