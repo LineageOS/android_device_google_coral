@@ -1,7 +1,187 @@
+# APK Verity
+ro.apk_verity.mode=2
+
+# Audio
+aaudio.hw_burst_min_usec=2000
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+af.fast_track_multiplier=1
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+ro.audio.monitorRotation=true
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=7
+ro.vendor.audio.sdk.fluencetype=fluencepro
+vendor.audio.adm.buffering.ms=3
+vendor.audio.capture.enforce_legacy_copp_sr=true
+vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.audiozoom.enable=true
+vendor.audio.feature.concurrent_capture.enable=false
+vendor.audio.feature.external_dsp.enable=true
+vendor.audio.feature.external_speaker.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.hwdep_cal.enable=true
+vendor.audio.feature.incall_music.enable=true
+vendor.audio.feature.maxx_audio.enable=true
+vendor.audio.feature.multi_voice_session.enable=true
+vendor.audio.feature.snd_mon.enable=true
+vendor.audio.feature.spkr_prot.enable=true
+vendor.audio.feature.usb_offload.enable=true
+vendor.audio.mic_break=true
+vendor.audio.offload.buffer.size.kb=256
+vendor.audio.offload.gapless.enabled=true
+vendor.audio.snd_card.open.retries=50
+vendor.audio_hal.period_multiplier=2
+
+# Bluetooth
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.bt.aac_frm_ctl.enabled=true
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bluetooth.emb_wp_mode=false
+ro.vendor.bluetooth.wipower=false
+ro.vendor.bt.bdaddr_path=/proc/device-tree/chosen/cdt/cdb2/bt_addr
+vendor.qcom.bluetooth.soc=cherokee
+
+# Camera
+persist.camera.googfd.enable=1
+persist.camera.google_hwl.enabled=true
+persist.camera.google_hwl.name=libgooglecamerahwl_impl.so
+persist.camera.managebuffer.enable=1
+
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.systemuicompilerfilter=speed
+
+# Dex Pre-Opt
+ro.cp_system_other_odex=1
+
 # DRM
 drm.service.enabled=true
 media.mediadrmservice.enable=true
 
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Gatekeeper
+vendor.gatekeeper.disable_spu = true
+
+# Gralloc
+ro.hardware.gralloc=qcom
+
 # Graphics
+debug.sf.enable_gl_backpressure=1
+persist.sys.sf.color_mode=9
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=2
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
+ro.opengles.version=196610
+ro.vendor.display.foss=1
+ro.vendor.display.paneltype=2
+ro.vendor.display.sensortype=2
+vendor.display.defer_fps_frame_count=2
+vendor.display.foss.config=1
+vendor.display.foss.config_path=/vendor/etc/FOSSConfig.xml 
+vendor.display.primary_vsyncs_rate_change=2
+vendor.display.qdcm.mode_combine=1
+
+# HWC
+ro.hardware.hwcomposer=qcom
+
+# IMS
+persist.vendor.ims.mm_minqp=1
+
+# IncrementalFS
+ro.incremental.enable=module:/vendor/lib/modules/incrementalfs.ko
+
+# Init
+vendor.skip.init=0
+
+# Keyguard
+keyguard.no_require_sim=true
+
+# Lights
+ro.hardware.lights=qcom
+
+# Logging
+persist.vendor.verbose_logging_enabled=false
+
+# OEM Unlock
+ro.oem_unlock_supported=1
+
+# Privapp Permissions
+ro.control_privapp_permissions=enforce
+
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM8150
+
+# SurfaceFlinger
+debug.sf.early.app.duration=16500000
+debug.sf.early.sf.duration=16000000
+debug.sf.earlyGl.app.duration=21000000
+debug.sf.earlyGl.sf.duration=13500000
+debug.sf.late.app.duration=20500000
+debug.sf.late.sf.duration=10500000
+debug.sf.use_phase_offsets_as_durations=1
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=80
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.support_kernel_idle_timer=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
+
+# SVN
+ro.vendor.build.svn=65
+
+# Telephony
+persist.rcs.supported=1
+persist.vendor.cne.feature=1
+persist.vendor.data.iwlan.enable=true
+persist.vendor.radio.RATE_ADAPT_ENABLE=1
+persist.vendor.radio.ROTATION_ENABLE=1
+persist.vendor.radio.VT_ENABLE=1
+persist.vendor.radio.VT_HYBRID_ENABLE=1
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.data_con_rprt=true
+persist.vendor.radio.data_ltd_sys_ind=1
+persist.vendor.radio.manual_nw_rej_ct=1
+persist.vendor.radio.mt_sms_ack=30
+persist.vendor.radio.multisim_switch_support=true
+persist.vendor.radio.no_wait_for_card=1
+persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.relay_oprt_change=1
+persist.vendor.radio.sap_silent_pin=1
+persist.vendor.radio.sib16_support=1
+persist.vendor.radio.snapshot_enabled=0
+persist.vendor.radio.snapshot_timer=0
+persist.vendor.radio.videopause.mode=1
+persist.vendor.sys.modem.diag.mdlog=false
+persist.vendor.sys.modem.diag.mdlog_br_num=5
+persist.vendor.sys.ssr.restart_level=modem,slpi,adsp
+ro.hardware.keystore_desede=true
+ro.telephony.default_cdma_sub=0
+ro.telephony.default_network=10
+ro.vendor.radio.log_loc="/data/vendor/modem_dump"
+ro.vendor.radio.log_prefix="modem_log_"
+telephony.active_modems.max_count=2
+vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+
+# UI
+ro.support_one_handed_mode=true
+
+# VENC
+vendor.qc2.venc.avgqp.enable=1

@@ -23,29 +23,11 @@ PRODUCT_SOONG_NAMESPACES += \
     system/chre/host/hal_generic \
     vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    keyguard.no_require_sim=true
-
-# enable cal by default on accel sensor
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.vendor.debug.sensors.accel_cal=1
-
-# The default value of this variable is false and should only be set to true when
-# the device allows users to retain eSIM profiles after factory reset of user data.
-PRODUCT_PRODUCT_PROPERTIES += \
-    masterclear.allow_retain_esim_profiles_after_fdr=true
-
 PRODUCT_COPY_FILES += \
     device/google/coral/configs/permissions/default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions.xml \
     device/google/coral/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
-
-# Enforce privapp-permissions whitelist
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.control_privapp_permissions=enforce
-
-TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -95,13 +77,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier
 
-# Use Sdcardfs
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.sys.sdcardfs=1
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cp_system_other_odex=1
-
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -116,9 +91,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 PRODUCT_PACKAGES += \
     update_engine_sideload
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Userdata Checkpointing OTA GC
 PRODUCT_PACKAGES += \
@@ -174,113 +146,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
 
-# Audio fluence, ns, aec property, voice and media volume steps
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.audio.sdk.fluencetype=fluencepro \
-    persist.vendor.audio.fluence.voicecall=true \
-    persist.vendor.audio.fluence.speaker=true \
-    persist.vendor.audio.fluence.voicecomm=true \
-    persist.vendor.audio.fluence.voicerec=false \
-    ro.config.vc_call_vol_steps=7 \
-    ro.config.media_vol_steps=25 \
-
-# Audio Features
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.audio.feature.external_dsp.enable=true \
-    vendor.audio.feature.external_speaker.enable=true \
-    vendor.audio.feature.concurrent_capture.enable=false \
-    vendor.audio.feature.a2dp_offload.enable=true \
-    vendor.audio.feature.hfp.enable=true \
-    vendor.audio.feature.hwdep_cal.enable=true \
-    vendor.audio.feature.incall_music.enable=true \
-    vendor.audio.feature.maxx_audio.enable=true \
-    vendor.audio.feature.spkr_prot.enable=true \
-    vendor.audio.feature.usb_offload.enable=true \
-    vendor.audio.feature.audiozoom.enable=true \
-    vendor.audio.feature.snd_mon.enable=true \
-    vendor.audio.feature.multi_voice_session.enable=true \
-    vendor.audio.capture.enforce_legacy_copp_sr=true \
-    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
-    vendor.audio.offload.gapless.enabled=true \
-
-# MaxxAudio effect and add rotation monitor
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.audio.monitorRotation=true
-
 # Iaxxx streming and factory binary
 PRODUCT_PACKAGES += \
     libtunnel \
     libodsp \
     adnc_strm.primary.default
-
-# graphics
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196610
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.display.foss=1 \
-    ro.vendor.display.paneltype=2 \
-    ro.vendor.display.sensortype=2 \
-    vendor.display.foss.config=1 \
-    vendor.display.foss.config_path=/vendor/etc/FOSSConfig.xml \
-    vendor.display.qdcm.mode_combine=1
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.defer_fps_frame_count=2 \
-    vendor.display.primary_vsyncs_rate_change=2
-
-# camera google face detection
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.googfd.enable=1
-
-# camera hal buffer management
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.managebuffer.enable=1
-
-# Lets the vendor library that Google Camera HWL is enabled
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.google_hwl.enabled=true \
-    persist.camera.google_hwl.name=libgooglecamerahwl_impl.so
-
-# OEM Unlock reporting
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.oem_unlock_supported=1
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.cne.feature=1 \
-    persist.vendor.data.iwlan.enable=true \
-    persist.vendor.radio.RATE_ADAPT_ENABLE=1 \
-    persist.vendor.radio.ROTATION_ENABLE=1 \
-    persist.vendor.radio.VT_ENABLE=1 \
-    persist.vendor.radio.VT_HYBRID_ENABLE=1 \
-    persist.vendor.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.custom_ecc=1 \
-    persist.vendor.radio.data_ltd_sys_ind=1 \
-    persist.vendor.radio.videopause.mode=1 \
-    persist.vendor.radio.mt_sms_ack=30 \
-    persist.vendor.radio.multisim_switch_support=true \
-    persist.vendor.radio.sib16_support=1 \
-    persist.vendor.radio.data_con_rprt=true \
-    persist.vendor.radio.relay_oprt_change=1 \
-    persist.vendor.radio.no_wait_for_card=1 \
-    persist.vendor.radio.sap_silent_pin=1 \
-    persist.vendor.radio.manual_nw_rej_ct=1 \
-    persist.rcs.supported=1 \
-    vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
-    ro.hardware.keystore_desede=true \
-    persist.vendor.radio.procedure_bytes=SKIP \
-
-# Enable reboot free DSDS
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.radio.reboot_on_modem_change=false
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    telephony.active_modems.max_count=2
-
-# Disable snapshot timer
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.radio.snapshot_enabled=0 \
-    persist.vendor.radio.snapshot_timer=0
 
 PRODUCT_PACKAGES += \
     hwcomposer.qcom \
@@ -290,34 +160,14 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.qti.hardware.display.allocator-service
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.gralloc=qcom \
-    ro.hardware.hwcomposer=qcom
-
 # Light HAL
 PRODUCT_PACKAGES += \
     lights.qcom \
     hardware.google.light@1.1-service
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.lights=qcom
-
 # Memtrack HAL
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
-
-# Bluetooth SoC
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.qcom.bluetooth.soc=cherokee
-
-# Property for loading BDA from device tree
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.bt.bdaddr_path=/proc/device-tree/chosen/cdt/cdb2/bt_addr
-
-# Bluetooth WiPower
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.bluetooth.emb_wp_mode=false \
-    ro.vendor.bluetooth.wipower=false
 
 # DRM HAL
 PRODUCT_PACKAGES += \
@@ -353,25 +203,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health.storage@1.0-service
 
-# Create input surface on the framework side
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.stagefright.c2inputsurface=-1 \
-
-# Transcoding related property.
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.media.transcoding.codec_max_operating_rate_720P=480 \
-    debug.media.transcoding.codec_max_operating_rate_1080P=240 \
-    debug.media.transcoding.codec_max_operating_rate_4k=120 \
-
 # Enable ECO service
 QC2_HAVE_ECO_SERVICE := true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.qc2.venc.avgqp.enable=1
-
-# To reach target bitrate in CBR mode for IMS VT Call
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.ims.mm_minqp=1
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7-service-google
@@ -549,13 +382,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.audio.snd_card.open.retries=50
-
-# Subsystem silent restart
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.sys.ssr.restart_level=modem,slpi,adsp
-
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -567,86 +393,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1-service.coral
 
-# Storage: for factory reset protection feature
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
-# Override heap growth limit due to high display density on device
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=256m \
-
-# Use 64-bit dex2oat for better dexopt time.
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat64.enabled=true
-
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
-
-#Set default CDMA subscription to RUIM
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_cdma_sub=0
-
-# Set network mode to Global by default and no DSDS/DSDA
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=10
-
-# Set display color mode to Adaptive by default
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.sf.color_saturation=1.0 \
-    persist.sys.sf.native_mode=2 \
-    persist.sys.sf.color_mode=9
 
 # Keymaster configuration
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml \
     frameworks/native/data/etc/android.hardware.device_unique_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.device_unique_attestation.xml
 
-# Enable modem logging
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.radio.log_loc="/data/vendor/modem_dump" \
-    ro.vendor.radio.log_prefix="modem_log_"
-
-# Enable modem logging for debug
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.sys.modem.diag.mdlog=false
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.sys.modem.diag.mdlog_br_num=5
-
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUIGoogle  # For internal
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI  # For AOSP
 
-# Compile SystemUI on device with `speed`.
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.systemuicompilerfilter=speed
-
 # Enable stats logging in LMKD
 TARGET_LMKD_STATS_LOG := true
-
-# Enable app/sf phase offset as durations. The numbers below are translated from the existing
-# positive offsets by finding the duration app/sf will have with the offsets.
-# For SF the previous value was 6ms which under 16.6ms vsync time (60Hz) will leave SF with ~10.5ms
-# for each frame. For App the previous value was 2ms which under 16.6ms vsync time will leave the
-# App with ~20.5ms (16.6ms * 2 - 10.5ms - 2ms). The other values were calculated similarly.
-# Full comparison between the old vs. the new values are captured in
-# https://docs.google.com/spreadsheets/d/1a_5cVNY3LUAkeg-yL56rYQNwved6Hy-dvEcKSxp6f8k/edit
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.use_phase_offsets_as_durations=1
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.late.sf.duration=10500000
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.late.app.duration=20500000
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.early.sf.duration=16000000
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.early.app.duration=16500000
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.earlyGl.sf.duration=13500000
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.earlyGl.app.duration=21000000
-
-# Enable backpressure for GL comp
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_gl_backpressure=1
-
-# Do not skip init trigger by default
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    vendor.skip.init=0
 
 BOARD_USES_QCNE := true
 
@@ -668,10 +429,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/init/init.insmod.coral.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.coral.cfg \
 	$(LOCAL_PATH)/init/init.insmod.flame.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.flame.cfg
-
-# Use /product/etc/fstab.postinstall to mount system_other
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.postinstall.fstab.prefix=/product
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.postinstall:$(TARGET_COPY_OUT_PRODUCT)/etc/fstab.postinstall
@@ -695,29 +452,8 @@ HIDL_WRAPPER += qti-telephony-hidl-wrapper-prd
 HIDL_WRAPPER += qti_telephony_hidl_wrapper_prd.xml
 PRODUCT_PACKAGES += $(HIDL_WRAPPER)
 
-# Increment the SVN for any official public releases
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.vendor.build.svn=65
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-
-# Disable SPU usage
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.gatekeeper.disable_spu = true
-
-# Vendor verbose logging default property
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.verbose_logging_enabled=false
-
-# Set support one-handed mode
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.support_one_handed_mode=true
-
-# Set system properties identifying the chipset
-PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
-PRODUCT_VENDOR_PROPERTIES += ro.soc.model=SM8150
 
 # Security
 -include vendor/qcom/sm8150/proprietary/securemsm/config/keymaster_vendor_proprietary_board.mk
@@ -751,51 +487,8 @@ VENDOR_SECURITY_PATCH = 2022-10-05
 # Set boot SPL
 BOOT_SECURITY_PATCH = 2022-10-05
 
-PRODUCT_PROPERTY_OVERRIDES += vendor.audio.adm.buffering.ms=3
-PRODUCT_PROPERTY_OVERRIDES += vendor.audio_hal.period_multiplier=2
-PRODUCT_PROPERTY_OVERRIDES += af.fast_track_multiplier=1
-PRODUCT_PROPERTY_OVERRIDES += vendor.audio.offload.buffer.size.kb=256
-
-# Enable AAudio MMAP/NOIRQ data path.
-# 1 is AAUDIO_POLICY_NEVER  means only use Legacy path.
-# 2 is AAUDIO_POLICY_AUTO   means try MMAP then fallback to Legacy path.
-# 3 is AAUDIO_POLICY_ALWAYS means only use MMAP path.
-PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_policy=2
-# 1 is AAUDIO_POLICY_NEVER  means only use SHARED mode
-# 2 is AAUDIO_POLICY_AUTO   means try EXCLUSIVE then fallback to SHARED mode.
-# 3 is AAUDIO_POLICY_ALWAYS means only use EXCLUSIVE mode.
-PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_exclusive_policy=2
-
-# Increase the apparent size of a hardware burst from 1 msec to 2 msec.
-# A "burst" is the number of frames processed at one time.
-# That is an increase from 48 to 96 frames at 48000 Hz.
-# The DSP will still be bursting at 48 frames but AAudio will think the burst is 96 frames.
-# A low number, like 48, might increase power consumption or stress the system.
-PRODUCT_PROPERTY_OVERRIDES += aaudio.hw_burst_min_usec=2000
-
 # A2DP offload enabled for compilation
 AUDIO_FEATURE_ENABLED_A2DP_OFFLOAD := true
-
-# A2DP offload supported
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.bluetooth.a2dp_offload.supported=true
-
-# A2DP offload disabled (UI toggle property)
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.bluetooth.a2dp_offload.disabled=false
-
-# A2DP offload DSP supported encoder list
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
-
-# Enable AAC frame ctl for A2DP sinks
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.bt.aac_frm_ctl.enabled=true
-
-# Set lmkd options
-PRODUCT_PRODUCT_PROPERTIES += \
-	ro.config.low_ram = false \
-	ro.lmk.log_stats = true \
 
 # Modem logging file
 PRODUCT_COPY_FILES += \
@@ -803,26 +496,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     device/google/coral/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
-
-# Pixelstats broken mic detection
-PRODUCT_PROPERTY_OVERRIDES += vendor.audio.mic_break=true
-
-# Enable APK Verity, which depends on fs-verity support in kernel.
-PRODUCT_PROPERTY_OVERRIDES += ro.apk_verity.mode=2
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.use_color_management=true
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.has_wide_color_display=true
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.has_HDR_display=true
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.set_idle_timer_ms=80
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.set_touch_timer_ms=200
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.set_display_power_timer_ms=1000
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.support_kernel_idle_timer=true
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.use_content_detection_for_refresh_rate=true
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.protected_contents=true
-
-# Must align with HAL types Dataspace
-# The data space of wide color gamut composition preference is Dataspace::DISPLAY_P3
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # MIDI feature
 PRODUCT_COPY_FILES += \
@@ -835,14 +508,6 @@ PRODUCT_COPY_FILES += \
 # Pro audio feature
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml
-
-# Set thermal warm reset
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.thermal_warmreset = true \
-
-# Enable Incremental on the device via kernel module
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.incremental.enable=module:/vendor/lib/modules/incrementalfs.ko
 
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 
@@ -866,11 +531,6 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
 
-# Camera
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
-    ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
-
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
@@ -886,9 +546,6 @@ PRODUCT_COPY_FILES += \
 ifeq ($(WITH_GMS),true)
 GMS_MAKEFILE=gms_minimal.mk
 endif
-
-# Google Assistant
-PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
 # Lineage Health
 include hardware/google/pixel/lineage_health/device.mk
@@ -949,6 +606,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-ctrl:64
 
 # Properties
+TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
 # Keep the VNDK APEX in /system partition
