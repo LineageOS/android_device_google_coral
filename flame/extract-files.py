@@ -48,13 +48,13 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'product/etc/felica/common.cfg': blob_fixup()
-        .patch_file('osaifu-keitai.patch'),
+        .patch_file('patches/osaifu-keitai.patch'),
     'product/etc/sysconfig/nexus.xml': blob_fixup()
         .regex_replace('qulacomm', 'qualcomm'),
     'system_ext/lib64/libsecureuisvc_jni.so': blob_fixup()
         .add_needed('libgui_shim.so'),
     'system_ext/priv-app/HbmSVManager/HbmSVManager.apk': blob_fixup()
-        .apktool_patch('HbmSVManager.patch'),
+        .apktool_patch('patches/HbmSVManager.patch'),
     'vendor/bin/color_init': blob_fixup()
         .add_needed('libbase_shim.so'),
     (
