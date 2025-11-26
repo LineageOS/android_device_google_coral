@@ -422,9 +422,7 @@ PRODUCT_PACKAGES += \
     RcsService
 
 # RIL
-BOARD_USES_QCNE := true
 ENABLE_VENDOR_RIL_SERVICE := true
-USE_QCRIL_OEMHOOK := true
 
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
