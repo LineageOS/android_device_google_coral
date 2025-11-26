@@ -8,31 +8,33 @@ PRODUCT_HARDWARE := flame
 
 include device/google/coral/device-common.mk
 
-DEVICE_PACKAGE_OVERLAYS += device/google/coral/flame/overlay
-
-# Audio XMLs for flame
+# Audio
 PRODUCT_COPY_FILES += \
     device/google/coral/audio/audio_policy_volumes_flame.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml
 
-# Bluetooth Tx power caps for flame
+# Bluetooth
 PRODUCT_COPY_FILES += \
     device/google/coral/configs/bluetooth/bluetooth_power_limits_flame.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits.csv
+
+# Boot Animation
+TARGET_SCREEN_HEIGHT := 2280
+TARGET_SCREEN_WIDTH := 1080
 
 # CHRE
 $(call soong_config_set,chre,chre_daemon_dsp_library,//vendor/google/flame:libsdsprpc)
 
-# Display config
+# Display
 PRODUCT_COPY_FILES += \
     device/google/coral/configs/displayconfig/display_19261132550654593.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_19261132550654593.xml
 
 # Properties
 TARGET_PRODUCT_PROP += $(LOCAL_PATH)/flame/product.prop
 
-# Settings overlay packages for regulatory_info
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/flame/overlay
+
 PRODUCT_PACKAGES += \
     SettingsOverlayG020I \
     SettingsOverlayG020I_VN \
     SettingsOverlayG020M \
-    SettingsOverlayG020N \
-
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/flame/overlay-lineage
+    SettingsOverlayG020N
