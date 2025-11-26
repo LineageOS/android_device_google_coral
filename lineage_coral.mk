@@ -46,10 +46,6 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_MODEL := Pixel 4 XL
 PRODUCT_NAME := lineage_coral
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 3040
-TARGET_SCREEN_WIDTH := 1440
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="coral-user 13 TP1A.221005.002.B2 9382335 release-keys" \
     BuildFingerprint=google/coral/coral:13/TP1A.221005.002.B2/9382335:user/release-keys \
