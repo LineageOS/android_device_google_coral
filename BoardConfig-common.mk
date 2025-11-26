@@ -62,8 +62,8 @@ AB_OTA_PARTITIONS += \
     vendor
 
 # Partitions (listed in the file) to be wiped under recovery.
-TARGET_RECOVERY_WIPE := device/google/coral/recovery.wipe
-TARGET_RECOVERY_FSTAB := device/google/coral/fstab.hardware
+TARGET_RECOVERY_WIPE := device/google/coral/init/recovery.wipe
+TARGET_RECOVERY_FSTAB := device/google/coral/init/fstab.hardware
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_LIB := \
     //hardware/google/pixel/recovery:librecovery_ui_pixel \

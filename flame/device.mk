@@ -16,14 +16,14 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth Tx power caps for flame
 PRODUCT_COPY_FILES += \
-    device/google/coral/bluetooth_power_limits_flame.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits.csv
+    device/google/coral/configs/bluetooth/bluetooth_power_limits_flame.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits.csv
 
 # CHRE
 $(call soong_config_set,chre,chre_daemon_dsp_library,//vendor/google/flame:libsdsprpc)
 
 # Display config
 PRODUCT_COPY_FILES += \
-    device/google/coral/displayconfig/display_19261132550654593.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_19261132550654593.xml
+    device/google/coral/configs/displayconfig/display_19261132550654593.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_19261132550654593.xml
 
 PRODUCT_PRODUCT_PROPERTIES += ro.com.google.ime.height_ratio=1.2
 
