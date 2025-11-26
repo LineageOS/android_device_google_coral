@@ -459,6 +459,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     sound_trigger.primary.msmnile
 
+$(call soong_config_set,knowles,use_sound_trigger_hal,iaxxx)
+
 # Storage Health
 PRODUCT_PACKAGES += \
     android.hardware.health.storage@1.0-service
