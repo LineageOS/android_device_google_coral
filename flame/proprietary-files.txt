@@ -1,4 +1,4 @@
-# All blobs are extracted from Google factory images for each new ASB
+# All blobs are extracted from coral 13 TP1A.221005.002.B2 9382335 (Factory Image)
 
 # product partition
 
