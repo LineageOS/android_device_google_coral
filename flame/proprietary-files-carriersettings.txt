@@ -1,4 +1,5 @@
-# All blobs are extracted from Google factory images for each new ASB
+# All blobs below are extracted from the release mentioned in proprietary-files.txt
+
 product/etc/CarrierSettings/a1_at.pb
 product/etc/CarrierSettings/ahamo_jp.pb
 product/etc/CarrierSettings/airtel_in.pb
