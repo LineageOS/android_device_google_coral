@@ -25,6 +25,12 @@ BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/ramdump/common
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/google/coral/sepolicy/system_ext/public
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/google/coral/sepolicy/system_ext/private
 
+# misc_writer
+BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/google/misc_writer
+
+# thermal
+BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/google/thermal
+
 # Lineage-specific
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/dynamic/lineage
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/lineage
