@@ -316,7 +316,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 # Misc Writer
-include device/google/gs-common/misc_writer/misc_writer.mk
+PRODUCT_PACKAGES += \
+    misc_writer
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -481,13 +482,15 @@ PRODUCT_COPY_FILES += \
     device/google/coral/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.pixel \
+    thermal_symlinks
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal-engine-$(PRODUCT_HARDWARE)-normal_mode.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-$(PRODUCT_HARDWARE)-normal_mode.conf \
     $(LOCAL_PATH)/configs/thermal/thermal-engine-$(PRODUCT_HARDWARE)-retail_mode.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-$(PRODUCT_HARDWARE)-retail_mode.conf \
     $(LOCAL_PATH)/configs/thermal/thermal_info_config_$(PRODUCT_HARDWARE).json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
     $(LOCAL_PATH)/configs/thermal/thermal_info_config_$(PRODUCT_HARDWARE)_jaws.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_jaws.json
-
-include device/google/gs-common/thermal/thermal_hal/device.mk
 
 # Touch
 include hardware/google/pixel/touch/device.mk
