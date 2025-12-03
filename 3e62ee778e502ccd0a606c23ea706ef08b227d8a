@@ -118,6 +118,30 @@
       },
       "revId": "3e62ee778e502ccd0a606c23ea706ef08b227d8a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e331a8f5_05ea563d",
+        "filename": "device-common.mk",
+        "patchSetId": 16
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-12-03T22:52:43Z",
+      "side": 1,
+      "message": "```Will revert to prior PS until/if we update AOSP hals.```\n\nYeah, I plan to, just reverting to this PS for now.",
+      "parentUuid": "03f80184_5fd2a2fd",
+      "range": {
+        "startLine": 190,
+        "startChar": 0,
+        "endLine": 192,
+        "endChar": 73
+      },
+      "revId": "3e62ee778e502ccd0a606c23ea706ef08b227d8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
