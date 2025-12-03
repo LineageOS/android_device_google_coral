@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d05f3359_03ff7122",
+        "filename": "device-common.mk",
+        "patchSetId": 16
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-03T20:53:41Z",
+      "side": 1,
+      "message": "What about these?",
+      "range": {
+        "startLine": 190,
+        "startChar": 0,
+        "endLine": 192,
+        "endChar": 73
+      },
+      "revId": "3e62ee778e502ccd0a606c23ea706ef08b227d8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
