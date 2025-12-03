@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd9fbfb0_192f23a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-03T20:38:51Z",
+      "side": 1,
+      "message": "Except CHRE_DAEMON_ENABLED which can be removed, the soong flags are set in build/make based on these mk flags, so they are still used.",
+      "revId": "132ac93612312616c322afa8f3a1d36d3c2e0ffd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
