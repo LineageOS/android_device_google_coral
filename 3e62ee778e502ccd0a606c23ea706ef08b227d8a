@@ -70,6 +70,30 @@
       },
       "revId": "3e62ee778e502ccd0a606c23ea706ef08b227d8a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "87484c10_818baf0f",
+        "filename": "device-common.mk",
+        "patchSetId": 16
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-12-03T21:37:33Z",
+      "side": 1,
+      "message": "```\n    export_cflags: select(soong_config_variable(\"qtidisplay\", \"gralloc_handle_has_reserved_size\"), {\n        \"true\": [\"-DGRALLOC_HANDLE_HAS_RESERVED_SIZE\"],\n        default: [],\n```\n\n```\n    ] + select(soong_config_variable(\"qtidisplay\", \"gralloc4\"), {\n        \"true\": [\"-DTARGET_USES_GRALLOC4\"],\n        default: [],\n```\n\n```\n    ] + select(soong_config_variable(\"qtidisplay\", \"drmpp\"), {\n        \"true\": [\"-DPP_DRM_ENABLE\"],\n        default: [],\n```\n\nAh, so I was right the first time. Will revert to prior PS until/if we update AOSP hals.",
+      "parentUuid": "f0b6382c_654113a8",
+      "range": {
+        "startLine": 190,
+        "startChar": 0,
+        "endLine": 192,
+        "endChar": 73
+      },
+      "revId": "3e62ee778e502ccd0a606c23ea706ef08b227d8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
