@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a8c05ad_d2d481a9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-12-03T20:35:00Z",
+      "side": 1,
+      "message": "Leaving to stew for a good while but OUT is 1:1 with before this chain as of \"drop deprecated com.androiud.vndk\" commit - minus the RRO changes to copyright and resources, and the sepolicy ordering.",
+      "revId": "88d9879efd326adfa5594b9675d020d3d8c76be0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
