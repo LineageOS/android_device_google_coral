@@ -94,6 +94,30 @@
       },
       "revId": "3e62ee778e502ccd0a606c23ea706ef08b227d8a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "03f80184_5fd2a2fd",
+        "filename": "device-common.mk",
+        "patchSetId": 16
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-03T21:59:34Z",
+      "side": 1,
+      "message": "I would rather update AOSP HALs. That was our change, wasn\u0027t it?",
+      "parentUuid": "87484c10_818baf0f",
+      "range": {
+        "startLine": 190,
+        "startChar": 0,
+        "endLine": 192,
+        "endChar": 73
+      },
+      "revId": "3e62ee778e502ccd0a606c23ea706ef08b227d8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
