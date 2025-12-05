@@ -409,9 +409,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
-# Pixel Logger
-include hardware/google/pixel/PixelLogger/PixelLogger.mk
-
 # Power
 include hardware/google/pixel/power-libperfmgr/aidl/device.mk
 
@@ -509,7 +506,6 @@ include device/google/coral/vibrator/cs40l25/device.mk
 PRODUCT_PRODUCT_VNDK_VERSION := current
 
 # Wi-Fi
-
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     ConnectivityOverlay \
