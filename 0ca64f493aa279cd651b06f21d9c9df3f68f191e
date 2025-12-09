@@ -16,6 +16,24 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_packages_apps_Dialer/+/462325 isn\u0027t merged yet btw",
       "revId": "0ca64f493aa279cd651b06f21d9c9df3f68f191e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c9ad3a4_83a2bd21",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-12-09T20:55:26Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "8f17dc40_14427d27",
+      "revId": "0ca64f493aa279cd651b06f21d9c9df3f68f191e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
