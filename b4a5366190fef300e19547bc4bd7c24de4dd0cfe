@@ -16,6 +16,24 @@
       "message": "Extra line",
       "revId": "b4a5366190fef300e19547bc4bd7c24de4dd0cfe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2e7af2b8_d54198c2",
+        "filename": "BoardConfig-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-12-13T03:50:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "23fcc16f_875864a6",
+      "revId": "b4a5366190fef300e19547bc4bd7c24de4dd0cfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
