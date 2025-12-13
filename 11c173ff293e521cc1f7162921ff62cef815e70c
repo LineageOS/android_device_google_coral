@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a02b45f0_28fec3fa",
+        "filename": "device-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-13T01:16:53Z",
+      "side": 1,
+      "message": "This is unused, should be removed in the flag cleanup commit",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 2
+      },
+      "revId": "11c173ff293e521cc1f7162921ff62cef815e70c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "565bd8ac_e070cdf7",
+        "filename": "device-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 523,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-13T01:16:53Z",
+      "side": 1,
+      "message": "This is also unused, should be removed in the flag cleanup commit",
+      "revId": "11c173ff293e521cc1f7162921ff62cef815e70c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
