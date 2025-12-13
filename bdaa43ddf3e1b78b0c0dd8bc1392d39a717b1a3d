@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b15b2d79_3d02be3b",
+        "filename": "BoardConfig-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-13T01:00:24Z",
+      "side": 1,
+      "message": "This is also unused",
+      "revId": "bdaa43ddf3e1b78b0c0dd8bc1392d39a717b1a3d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49cc2fac_04274159",
+        "filename": "BoardConfig-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-13T01:00:24Z",
+      "side": 1,
+      "message": "Also unused",
+      "range": {
+        "startLine": 116,
+        "startChar": 0,
+        "endLine": 117,
+        "endChar": 45
+      },
+      "revId": "bdaa43ddf3e1b78b0c0dd8bc1392d39a717b1a3d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c3fe4853_0dbae6c9",
+        "filename": "BoardConfig-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-13T01:00:24Z",
+      "side": 1,
+      "message": "Unused",
+      "range": {
+        "startLine": 134,
+        "startChar": 0,
+        "endLine": 135,
+        "endChar": 34
+      },
+      "revId": "bdaa43ddf3e1b78b0c0dd8bc1392d39a717b1a3d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
