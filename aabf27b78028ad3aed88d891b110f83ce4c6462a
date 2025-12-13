@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0f2a3199_0f8370e8",
+        "filename": "vendor.prop",
+        "patchSetId": 4
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-13T01:10:38Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "aabf27b78028ad3aed88d891b110f83ce4c6462a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
