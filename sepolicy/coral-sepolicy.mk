@@ -31,6 +31,12 @@ BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/google/misc_wr
 # thermal
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/google/thermal
 
+# wifi_perf_diag
+BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/wifi_perf_diag
+
+# wifi_sniffer
+BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/wifi_sniffer
+
 # Lineage-specific
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/dynamic/lineage
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/lineage

@@ -509,7 +509,6 @@ include device/google/coral/vibrator/cs40l25/device.mk
 PRODUCT_PRODUCT_VNDK_VERSION := current
 
 # Wi-Fi
-
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     ConnectivityOverlay \
@@ -519,6 +518,10 @@ PRODUCT_PACKAGES += \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf
+
+PRODUCT_PACKAGES_ENG += \
+    wifi_sniffer \
+    wifi_perf_diag
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
