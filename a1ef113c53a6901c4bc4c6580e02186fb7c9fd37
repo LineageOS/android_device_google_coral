@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b67cd0c_306d68d7",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 521,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-13T20:34:26Z",
+      "side": 1,
+      "message": "Don\u0027t really need these",
+      "revId": "a1ef113c53a6901c4bc4c6580e02186fb7c9fd37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
