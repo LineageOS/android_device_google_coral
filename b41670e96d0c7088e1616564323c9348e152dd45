@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c47ababe_efd306c5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-13T01:19:42Z",
+      "side": 1,
+      "message": "Move the UFFD+BPF changes to the end as they depend on kernel merge.",
+      "revId": "b41670e96d0c7088e1616564323c9348e152dd45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
