@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "adb53920_1be82011",
+        "filename": "lineage_coral.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-13T01:07:04Z",
+      "side": 1,
+      "message": "This should go to device.mk or device-common.mk",
+      "revId": "7585c9b7d91975057666173cd4ec0896ace6e697",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b58feabe_8f0c795b",
+        "filename": "lineage_flame.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-13T01:07:04Z",
+      "side": 1,
+      "message": "Same as coral",
+      "revId": "7585c9b7d91975057666173cd4ec0896ace6e697",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
