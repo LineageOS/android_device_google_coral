@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8ea4e4a_5ee5e7f0",
+        "filename": "device-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-12-13T04:02:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a02b45f0_28fec3fa",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 2
+      },
+      "revId": "11c173ff293e521cc1f7162921ff62cef815e70c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "565bd8ac_e070cdf7",
@@ -37,6 +61,24 @@
       "writtenOn": "2025-12-13T01:16:53Z",
       "side": 1,
       "message": "This is also unused, should be removed in the flag cleanup commit",
+      "revId": "11c173ff293e521cc1f7162921ff62cef815e70c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5cfebdbb_970c7264",
+        "filename": "device-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 523,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-12-13T04:02:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "565bd8ac_e070cdf7",
       "revId": "11c173ff293e521cc1f7162921ff62cef815e70c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
