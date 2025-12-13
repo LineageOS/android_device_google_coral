@@ -16,6 +16,24 @@
       "message": "Don\u0027t really need these",
       "revId": "a1ef113c53a6901c4bc4c6580e02186fb7c9fd37",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd874dce_5a7998d3",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 521,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-12-13T21:18:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0b67cd0c_306d68d7",
+      "revId": "a1ef113c53a6901c4bc4c6580e02186fb7c9fd37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
