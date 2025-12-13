@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
     device/google/coral/configs/displayconfig/display_19260504575090817.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_19260504575090817.xml
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/coral/coral/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/coral/overlay
 
 PRODUCT_PACKAGES += \
     SettingsOverlayG020J \
