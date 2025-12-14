@@ -57,6 +57,8 @@ blob_fixups: blob_fixups_user_type = {
         .apktool_patch('patches/HbmSVManager.patch'),
     'vendor/bin/color_init': blob_fixup()
         .add_needed('libbase_shim.so'),
+    'vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-noronha': blob_fixup()
+        .replace_needed('libbase.so', 'libbase-v33.so'),
     (
         'vendor/bin/hw/android.hardware.rebootescrow-service.citadel',
         'vendor/lib64/android.hardware.keymaster@4.1-impl.nos.so',
