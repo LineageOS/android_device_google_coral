@@ -204,6 +204,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1-service.coral
 
+# ECO Service
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/lib/libcodec2_hidl@1.0.so \
+    system/lib/libcodec2_hidl_plugin_stub.so \
+    system/lib64/libcodec2_hidl@1.0.so \
+    system/lib64/libcodec2_hidl_plugin_stub.so
+
 # Elmyra
 PRODUCT_PACKAGES += \
     ElmyraService
