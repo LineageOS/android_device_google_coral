@@ -83,9 +83,9 @@ ro.hardware.gralloc=qcom
 
 # Graphics
 debug.sf.enable_gl_backpressure=1
-persist.sys.sf.color_mode=9
+persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
-persist.sys.sf.native_mode=2
+persist.sys.sf.native_mode=0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
