@@ -107,7 +107,7 @@
     <integer name="config_screenBrightnessDim">6</integer>
 
     <!-- Screen brightness when dozing. -->
-    <integer name="config_screenBrightnessDoze">49</integer>
+    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.19216</item>
 
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
