@@ -344,7 +344,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Parts
 PRODUCT_PACKAGES += \
