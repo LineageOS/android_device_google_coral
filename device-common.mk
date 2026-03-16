@@ -49,7 +49,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl:32 \
     android.hardware.audio.effect@7.0-impl:32 \
     android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -77,12 +76,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_iaxxx_f2proto.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_iaxxx_f2proto.xml \
     $(LOCAL_PATH)/audio/mixer_paths_iaxxx_flame.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_iaxxx_flame.xml \
     $(LOCAL_PATH)/audio/mixer_paths_iaxxx_jaws.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_iaxxx_jaws.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_c2proto.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_c2proto.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_coral.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_coral.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_default.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_f2proto.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_f2proto.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_flame.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_flame.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_jaws.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_jaws.xml \
     device/google/coral/audio/acdbdata/OEM/sm8150-iaxxx-c2proto-snd-card/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sm8150-iaxxx-c2proto-snd-card/Bluetooth_cal.acdb \
     device/google/coral/audio/acdbdata/OEM/sm8150-iaxxx-c2proto-snd-card/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sm8150-iaxxx-c2proto-snd-card/Codec_cal.acdb \
     device/google/coral/audio/acdbdata/OEM/sm8150-iaxxx-c2proto-snd-card/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sm8150-iaxxx-c2proto-snd-card/General_cal.acdb \
@@ -476,15 +469,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um \
     vendor/qcom/opensource/display
 
-# Sound Trigger
-PRODUCT_PACKAGES += \
-    sound_trigger.primary.msmnile
-
-$(call soong_config_set,knowles,use_sound_trigger_hal,iaxxx)
-
 # Storage Health
 PRODUCT_PACKAGES += \
     android.hardware.health.storage-service.default
+
+# Sound Trigger
+$(call soong_config_set,knowles,use_sound_trigger_hal,iaxxx)
 
 # Task Profiles
 PRODUCT_COPY_FILES += \
