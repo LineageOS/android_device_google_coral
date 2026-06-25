@@ -164,10 +164,6 @@ include hardware/google/pixel/citadel/citadel.mk
 PRODUCT_COPY_FILES += \
     device/google/coral/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
-# Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # Context Hub
 PRODUCT_PACKAGES += \
     android.hardware.contexthub-service.generic
