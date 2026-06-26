@@ -157,6 +157,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     chre_daemon_msm
 
+$(call soong_config_set_bool,chre,chre_daemon_load_into_sensorspd,true)
+
 # Citadel
 include hardware/google/pixel/citadel/citadel.mk
 
