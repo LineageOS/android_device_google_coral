@@ -281,6 +281,9 @@ PRODUCT_COPY_FILES += \
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
+# libion
+$(call soong_config_set_bool,libion,enabled,true)
+
 # Lights
 PRODUCT_PACKAGES += \
     hardware.google.light@1.1-service \
