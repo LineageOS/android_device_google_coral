@@ -200,10 +200,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
-# Dumpstate
-PRODUCT_PACKAGES += \
-    android.hardware.dumpstate@1.1-service.coral
-
 # ECO Service
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/lib/libcodec2_hidl@1.0.so \
