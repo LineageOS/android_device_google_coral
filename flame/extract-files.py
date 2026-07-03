@@ -27,7 +27,9 @@ from extract_utils.main import (
 namespace_imports = [
     'hardware/google/interfaces',
     'hardware/google/pixel/pixelstats',
+    'hardware/google/pixel/pixelpowerstats',
     'hardware/google/pixel/power-libperfmgr',
+    'hardware/google/pixel/vibrator',
     'hardware/qcom/sm8150/display',
     'hardware/qcom/sm8150/gps',
     'hardware/qcom/wlan/legacy',
