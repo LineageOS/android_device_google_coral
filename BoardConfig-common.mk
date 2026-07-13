@@ -61,7 +61,7 @@ BOARD_KERNEL_CMDLINE += \
     msm_rtb.filter=0x237 ehci-hcd.park=3 service_locator.enable=1 androidboot.memcg=1 \
     cgroup.memory=nokmem usbcore.autosuspend=7 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 \
     androidboot.boot_devices=soc/1d84000.ufshc loop.max_part=7 loop.hw_queue_depth=31 \
-    cgroup_disable=pressure
+    cgroup_disable=pressure androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
