@@ -1,0 +1,2 @@
+dontaudit audioserver vendor_default_prop:file { open read getattr map };
+

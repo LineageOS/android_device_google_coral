@@ -1,2 +1,0 @@
-allow qtelephony default_prop:file read;
-

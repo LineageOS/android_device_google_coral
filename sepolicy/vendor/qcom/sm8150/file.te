@@ -1,1 +1,2 @@
 type netmgr_recovery_data_file, file_type, data_file_type;
+type sysfs_kgsl_gpu_model, sysfs_type, fs_type;

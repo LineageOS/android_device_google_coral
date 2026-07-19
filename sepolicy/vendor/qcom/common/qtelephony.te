@@ -28,3 +28,8 @@ userdebug_or_eng(`
 ')
 
 dontaudit qtelephony property_socket:sock_file write;
+
+dontaudit qtelephony default_prop:file read;
+
+set_prop(qtelephony, qcom_ims_prop)
+get_prop(qtelephony, vendor_default_prop)
