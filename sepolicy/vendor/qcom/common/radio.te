@@ -11,3 +11,5 @@ allow radio hal_imsrcsd_hwservice:hwservice_manager find;
 
 get_prop(radio, vendor_radio_prop)
 get_prop(radio, qcom_ims_prop)
+
+dontaudit radio vendor_default_prop:file { open read getattr map };
