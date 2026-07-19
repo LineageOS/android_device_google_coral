@@ -30,3 +30,5 @@ allow hal_graphics_composer_default display_vendor_data_file:dir create_dir_perm
 allow hal_graphics_composer_default display_vendor_data_file:file create_file_perms;
 
 get_prop(hal_graphics_composer_default, vendor_display_prop)
+
+allow hal_graphics_composer_default hal_pixel_display_service:service_manager add;
