@@ -3,3 +3,4 @@ userdebug_or_eng(`
   allow vendor_init proc_sysrq:file w_file_perms;
 ')
 
+allow vendor_init sysfs_scsi_devices_0000:file w_file_perms;

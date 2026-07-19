@@ -1,0 +1,1 @@
+allow { domain - isolated_app_all } sysfs_kgsl_gpu_model:file r_file_perms;
