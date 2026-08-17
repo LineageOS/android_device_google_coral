@@ -1,0 +1,24 @@
+# Use a custom domain for GoogleCamera, to allow for Hexagon DSP access
+user=_app seinfo=google name=com.google.android.GoogleCamera domain=google_camera_app type=app_data_file levelFrom=all
+
+# Also allow GoogleCameraNext, the dogfood beta version, the same access as GoogleCamera
+user=_app seinfo=googlepulse name=com.google.android.apps.googlecamera.fishfood domain=google_camera_app type=app_data_file levelFrom=all
+
+# Domain for DeviceDropMonitor service
+user=_app seinfo=platform name=com.google.android.devicedropmonitor domain=device_drop_monitor type=app_data_file levelFrom=all
+
+# Domain for Display
+user=_app seinfo=platform name=com.android.hbmsvmanager domain=hbmsvmanager_app type=app_data_file levelFrom=all
+
+# Domain for IpHealthMonitor service
+user=_app seinfo=platform name=com.google.android.iphealthmonitor domain=ip_health_monitor type=app_data_file levelFrom=all
+
+# Domain for UvExposureReporter service
+user=_app isPrivApp=true name=com.google.android.uvexposurereporter domain=uv_exposure_reporter type=app_data_file levelFrom=all
+
+# Domain for connectivity monitor
+user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymonitor domain=con_monitor_app type=app_data_file levelFrom=all
+
+# Verizon for OBDM tool
+user=_app seinfo=verizon name=com.verizon.obdm domain=obdm_app type=app_data_file levelFrom=all
+user=_app seinfo=verizon name=com.verizon.obdm:background domain=obdm_app type=app_data_file levelFrom=all
