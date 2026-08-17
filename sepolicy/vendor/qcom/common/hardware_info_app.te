@@ -1,5 +1,9 @@
 type hardware_info_app, domain;
 
+userdebug_or_eng(`
+    typeattribute hardware_info_app treble_labeling_violators;
+')
+
 app_domain(hardware_info_app)
 
 # App

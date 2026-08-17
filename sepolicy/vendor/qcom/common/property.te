@@ -1,6 +1,6 @@
 # property for uicc_daemon
 vendor_internal_prop(uicc_prop)
-vendor_restricted_prop(qcom_ims_prop)
+vendor_public_prop(qcom_ims_prop)
 vendor_internal_prop(ctl_vendor_netmgrd_prop)
 vendor_internal_prop(ctl_vendor_port-bridge_prop)
 vendor_internal_prop(ctl_qcrild_prop)
@@ -102,7 +102,7 @@ vendor_internal_prop(ctl_vendor_imsrcsservice_prop)
 
 #time service
 vendor_internal_prop(vendor_time_service_prop)
-vendor_restricted_prop(vendor_radio_prop)
+vendor_public_prop(vendor_radio_prop)
 
 # Audio props
 vendor_internal_prop(vendor_audio_prop)
