@@ -1,17 +1,3 @@
-type hardware_info_app, domain;
-
-app_domain(hardware_info_app)
-
-# App
-allow hardware_info_app app_data_file:file execute;
-
-# Services
-allow hardware_info_app app_api_service:service_manager find;
-
-# Shell
-allow hardware_info_app shell_data_file:dir search;
-allow hardware_info_app shell_data_file:file r_file_perms;
-
 # SysFS display
 allow hardware_info_app sysfs_display:dir search;
 allow hardware_info_app sysfs_display:file r_file_perms;
