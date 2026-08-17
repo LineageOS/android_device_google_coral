@@ -1,0 +1,5 @@
+# OMADM app (com.android.omadm.service) is a platform app installed on
+# /product. Per SELinux Treble Labeling, platform apps must be coredomain and
+# defined in platform sepolicy; the seapp_contexts entry lives in the product
+# seapp_contexts (sepolicy/private/seapp_contexts).
+type omadm_app, domain, coredomain;

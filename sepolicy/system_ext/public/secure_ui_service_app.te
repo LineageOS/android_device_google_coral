@@ -1,0 +1,5 @@
+# com.qualcomm.qti.services.secureui is a platform app installed on
+# /system_ext. Per SELinux Treble Labeling it must be coredomain and defined in
+# platform sepolicy; the seapp_contexts entry lives in the system_ext
+# seapp_contexts (sepolicy/system_ext/private/seapp_contexts).
+type secure_ui_service_app, domain, coredomain;

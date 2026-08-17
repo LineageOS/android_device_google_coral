@@ -1,3 +1,4 @@
-# Verizon for OBDM tool
-user=_app seinfo=verizon name=com.verizon.obdm domain=obdm_app type=app_data_file levelFrom=all
-user=_app seinfo=verizon name=com.verizon.obdm:background domain=obdm_app type=app_data_file levelFrom=all
+# NOTE: com.verizon.obdm (obdm_stub) is a platform app installed on
+# /system_ext. Its seapp_contexts entries were moved to the platform
+# seapp_contexts (sepolicy/system_ext/private/seapp_contexts) to satisfy
+# SELinux Treble Labeling. See sepolicy/tests/treble_labeling_tests.md.

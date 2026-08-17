@@ -1,17 +1,9 @@
-type qtelephony, domain;
-app_domain(qtelephony)
-
-allow qtelephony app_api_service:service_manager find;
+# qtelephony is coredomain, declared in platform sepolicy. Access to
+# vendor-owned resources (RIL, IMS RTP HAL, diag, vendor props) stays here.
 allow qtelephony hal_imsrtp_hwservice:hwservice_manager find;
 allow qtelephony hal_telephony_service:service_manager find;
-allow qtelephony radio_service:service_manager find;
 allow qtelephony sysfs_diag:dir search;
 allow qtelephony sysfs_timestamp_switch:file r_file_perms;
-allow qtelephony audioserver_service:service_manager find;
-allow qtelephony cameraserver_service:service_manager find;
-allow qtelephony mediaextractor_service:service_manager find;
-allow qtelephony mediametrics_service:service_manager find;
-allow qtelephony mediaserver_service:service_manager find;
 allow qtelephony sysfs_soc:dir search;
 allow qtelephony sysfs_soc:file r_file_perms;
 
@@ -22,14 +14,12 @@ hal_client_domain(qtelephony, hal_telephony)
 get_prop(qtelephony, vendor_radio_prop)
 get_prop(qtelephony, public_vendor_default_prop)
 get_prop(qtelephony, qcom_ims_prop)
+get_prop(qtelephony, vendor_default_prop)
+set_prop(qtelephony, qcom_ims_prop)
 
 userdebug_or_eng(`
     allow qtelephony diag_device:chr_file rw_file_perms;
 ')
 
 dontaudit qtelephony property_socket:sock_file write;
-
 dontaudit qtelephony default_prop:file read;
-
-set_prop(qtelephony, qcom_ims_prop)
-get_prop(qtelephony, vendor_default_prop)
