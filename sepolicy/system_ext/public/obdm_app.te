@@ -1,0 +1,7 @@
+# com.verizon.obdm (obdm_stub) is a platform app installed on /system_ext. Per
+# SELinux Treble Labeling it must be coredomain and defined in platform
+# sepolicy (previously it was a coredomain defined in vendor sepolicy, which
+# also violated the "no coredomain in vendor sepolicy" rule). The
+# seapp_contexts entries live in the system_ext seapp_contexts
+# (sepolicy/system_ext/private/seapp_contexts).
+type obdm_app, domain, coredomain;

@@ -1,0 +1,6 @@
+# org.codeaurora.ims (ims.apk) and com.qualcomm.qti.telephonyservice
+# (QtiTelephonyService) are platform apps installed on /system_ext, labeled
+# qtelephony. Per SELinux Treble Labeling the domain must be coredomain and
+# defined in platform sepolicy; the seapp_contexts entries live in the
+# system_ext seapp_contexts (sepolicy/system_ext/private/seapp_contexts).
+type qtelephony, domain, coredomain;

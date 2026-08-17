@@ -1,0 +1,23 @@
+# Platform apps installed on /system_ext, relocated out of vendor
+# seapp_contexts to satisfy SELinux Treble Labeling (test #3, "No Platform
+# Apps in Vendor Seapp Contexts"). Their domains are coredomain, declared in
+# sepolicy/system_ext/public. See sepolicy/tests/treble_labeling_tests.md.
+
+# Secure UI service
+user=_app seinfo=platform name=com.qualcomm.qti.services.secureui* domain=secure_ui_service_app levelFrom=all
+
+# ims app
+user=_app seinfo=platform name=org.codeaurora.ims isPrivApp=true domain=qtelephony type=app_data_file levelFrom=all
+
+# DeviceInfoHidlClient
+user=_app seinfo=platform name=com.qualcomm.qti.devicestatisticsservice domain=qtelephony type=app_data_file levelFrom=all
+
+# QtiTelephonyService app
+user=_app seinfo=platform name=com.qualcomm.qti.telephonyservice domain=qtelephony type=app_data_file levelFrom=all
+
+# ExtTelephonyService
+user=_app seinfo=platform name=com.qti.phone domain=qtelephony type=app_data_file levelFrom=all
+
+# Verizon OBDM tool
+user=_app seinfo=verizon name=com.verizon.obdm domain=obdm_app type=app_data_file levelFrom=all
+user=_app seinfo=verizon name=com.verizon.obdm:background domain=obdm_app type=app_data_file levelFrom=all
