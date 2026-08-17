@@ -87,10 +87,9 @@ constexpr char kUfsHealthLifetimeB[]{UFS_DIR "/health/lifetimeB"};
 constexpr char kUfsVersion[]{UFS_DIR "/version"};
 constexpr char kDiskStatsFile[]{"/sys/block/sda/stat"};
 
-constexpr char kTCPMPSYName[]{"tcpm-source-psy-usbpd0"};
-
 #ifndef __ANDROID_RECOVERY__
 static bool needs_wlc_updates = false;
+constexpr char kTCPMPSYName[]{"tcpm-source-psy-usbpd0"};
 constexpr char kWlcCapacity[]{WLC_DIR "/capacity"};
 #endif // !__ANDROID_RECOVERY__
 
