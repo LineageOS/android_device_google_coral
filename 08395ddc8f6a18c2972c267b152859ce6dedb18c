@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e053455_27e5616e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-18T07:04:17Z",
+      "side": 1,
+      "message": "`[   57.672448] type\u003d1400 audit(1787036542.509:12): avc:  denied  { search } for  comm\u003d\"id.hardwareinfo\" name\u003d\"maxfg\" dev\u003d\"sysfs\" ino\u003d68533 scontext\u003du:r:hardware_info_app:s0:c512,c768 tcontext\u003du:object_r:sysfs_batteryinfo:s0 tclass\u003ddir permissive\u003d0 app\u003dcom.google.android.hardwareinfo`\n\nmissed one.",
+      "revId": "08395ddc8f6a18c2972c267b152859ce6dedb18c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
