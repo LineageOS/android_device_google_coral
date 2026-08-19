@@ -103,4 +103,6 @@ hal_client_domain(hal_camera_default, hal_thermal)
 # For camera hal to control priority of current process
 allow hal_camera_default self:capability sys_nice;
 
+r_dir_file(hal_camera_default, persist_drm_file)
+
 dontaudit hal_camera_default property_type:file { open read getattr map };
