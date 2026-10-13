@@ -59,9 +59,11 @@ blob_fixups: blob_fixups_user_type = {
         .apktool_patch('patches/HbmSVManager.patch'),
     'vendor/bin/color_init': blob_fixup()
         .add_needed('libbase_shim.so'),
+    'vendor/bin/hw/android.hardware.biometrics.face@1.0-service.google': blob_fixup()
+        .replace_needed('libbase.so', 'libbase-v33.so')
+        .binary_regex_replace(b'AImageReader_getWindowNativeHandle', b'AImageReader_getWindow\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'),
     (
          'vendor/bin/hw/vendor.google.airbrush@1.0-service',
-         'vendor/bin/hw/android.hardware.biometrics.face@1.0-service.google',
          'vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-noronha',
     ): blob_fixup()
         .replace_needed('libbase.so', 'libbase-v33.so'),
