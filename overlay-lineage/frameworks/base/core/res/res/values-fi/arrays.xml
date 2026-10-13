@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="face_error_vendor">
+        <item>Varmenne vanhentunut</item>
+        <item>Tunnistin väliaikaisesti pois käytöstä</item>
+        <item>Kalibrointivirhe</item>
+        <item>Kasvojentunnistusavaus ei ole saatavilla. Puhelin on liian kuuma.</item>
+        <item>Kasvojentunnistusavaus on määritettävä uudelleen</item>
+    </string-array>
+</resources>

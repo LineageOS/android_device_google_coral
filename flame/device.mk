@@ -32,6 +32,7 @@ TARGET_PRODUCT_PROP += $(LOCAL_PATH)/flame/product.prop
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/flame/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/flame/overlay-lineage
 
 PRODUCT_PACKAGES += \
     SettingsOverlayG020I \

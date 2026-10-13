@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="face_error_vendor">
+        <item>Sertifikatın vaxtı bitib</item>
+        <item>Sensor müvəqqəti deaktivdir</item>
+        <item>Ayarlama xətası</item>
+        <item>Üz ilə kiliddən çıxarma əlçatan deyil. Telefon çox qızıb.</item>
+        <item>Üz ilə kiliddən çıxarma yenidən ayarlanmalıdır</item>
+    </string-array>
+</resources>
